@@ -45,9 +45,26 @@
                     <view key="view" contentMode="scaleToFill" id="GOh-Hz-9pD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eY-Mj-CgA" customClass="IndeterminateLoadingView" customModule="LoadingUITest" customModuleProvider="target">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3Xn-Hg-zeS"/>
+                                    <constraint firstAttribute="width" secondItem="7eY-Mj-CgA" secondAttribute="height" multiplier="1:1" id="3mf-7m-oXB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7eY-Mj-CgA" firstAttribute="centerY" secondItem="GOh-Hz-9pD" secondAttribute="centerY" id="M0A-eg-avy"/>
+                            <constraint firstItem="7eY-Mj-CgA" firstAttribute="centerX" secondItem="GOh-Hz-9pD" secondAttribute="centerX" id="bMt-oZ-i2L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QoQ-XC-7hZ"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingView" destination="7eY-Mj-CgA" id="udh-zV-9Hh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94L-cV-mqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,9 +11,7 @@ import LoadingAnimationUnit
 
 class LoadingViewController: UIViewController {
     
-    var loadingView: IndeterminateLoadingView?
-    
-    
+    @IBOutlet var loadingView: IndeterminateLoadingView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +19,6 @@ class LoadingViewController: UIViewController {
         view.backgroundColor = UIColor.clear
         view.isOpaque = false
         
-        var loadingAnimation = IndeterminateLoadingView()
-        loadingView = loadingAnimation
-        loadingAnimation.frame = CGRect(x: 0, y: 0, width: 240, height: 240)
         
         // Do any additional setup after loading the view.
     }
@@ -34,11 +29,11 @@ class LoadingViewController: UIViewController {
     }
     
     func startLoadAnimation() {
-        loadingView?.startAnimating()
+        loadingView.startAnimating()
     }
     
     func stopLoadAnimation() {
-        loadingView?.stopAnimating()
+        loadingView.stopAnimating()
     }
     
 

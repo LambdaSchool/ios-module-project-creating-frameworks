@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
     override init(frame: CGRect) {
