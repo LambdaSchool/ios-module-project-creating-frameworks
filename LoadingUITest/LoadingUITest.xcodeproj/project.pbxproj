@@ -24,20 +24,6 @@
 			remoteGlobalIDString = 660E32AC230F536B0080126E;
 			remoteInfo = LoadingUI;
 		};
-		660E32E0230F53A80080126E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 660E32DC230F53A80080126E /* LoadingUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 660E32AC230F536B0080126E;
-			remoteInfo = LoadingUI;
-		};
-		660E32E4230F53CD0080126E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 660E32D6230F539C0080126E /* LoadingUI.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 660E32AB230F536B0080126E;
-			remoteInfo = LoadingUI;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,7 +49,6 @@
 		660E32CD230F538A0080126E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		660E32CF230F538A0080126E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		660E32D6230F539C0080126E /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
-		660E32DC230F53A80080126E /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +66,6 @@
 		660E32B7230F53890080126E = {
 			isa = PBXGroup;
 			children = (
-				660E32DC230F53A80080126E /* LoadingUI.xcodeproj */,
 				660E32C2230F53890080126E /* LoadingUITest */,
 				660E32C1230F53890080126E /* Products */,
 				660E32D5230F538E0080126E /* Frameworks */,
@@ -125,14 +109,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		660E32DD230F53A80080126E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				660E32E1230F53A80080126E /* LoadingUI.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,7 +124,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				660E32E5230F53CD0080126E /* PBXTargetDependency */,
 			);
 			name = LoadingUITest;
 			productName = LoadingUITest;
@@ -186,10 +161,6 @@
 					ProductGroup = 660E32D7230F539C0080126E /* Products */;
 					ProjectRef = 660E32D6230F539C0080126E /* LoadingUI.xcodeproj */;
 				},
-				{
-					ProductGroup = 660E32DD230F53A80080126E /* Products */;
-					ProjectRef = 660E32DC230F53A80080126E /* LoadingUI.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -204,13 +175,6 @@
 			fileType = wrapper.framework;
 			path = LoadingUI.framework;
 			remoteRef = 660E32DA230F539C0080126E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		660E32E1230F53A80080126E /* LoadingUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = LoadingUI.framework;
-			remoteRef = 660E32E0230F53A80080126E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -239,14 +203,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		660E32E5230F53CD0080126E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LoadingUI;
-			targetProxy = 660E32E4230F53CD0080126E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		660E32C7230F53890080126E /* Main.storyboard */ = {
