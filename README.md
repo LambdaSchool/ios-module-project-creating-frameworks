@@ -1,6 +1,6 @@
 # Loading UI Framework
 
-The goal of this project is practice creating a framework, including thinking about the public API you want to expose. This project covers the concepts covered in the Creating Frameworks module. After completing the lesson material and this project, you should be able to:
+The goal of this project is practice creating  a framework, including thinking about the public API you want to expose. This project covers the concepts covered in the Creating Frameworks module. After completing the lesson material and this project, you should be able to:
 
 - create a framework for sharing code between multiple apps
 - include sub-projects with a framework in an Xcode app project
