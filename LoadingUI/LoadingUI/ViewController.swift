@@ -22,11 +22,12 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		toggleAnimationSwitch.onTintColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
 		loadingVC.addLoadingView(with: loadingViewContainer)
+		doneLabel.isHidden = true
 	}
-
 
 	func startAnimating() {
 		loadingVC.startAnimation()
+		doneLabel.isHidden = true
 	}
 
 	@IBAction func toggleAnimation(_ sender: UISwitch) {
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
 			loadingVC.startAnimation()
 		} else {
 			loadingVC.stopAnimation()
+			doneLabel.isHidden = false
 		}
 	}
 
