@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B5CB02C02332DA5300CB0349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB02BF2332DA5300CB0349 /* AppDelegate.swift */; };
-		B5CB02C22332DA5300CB0349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB02C12332DA5300CB0349 /* ViewController.swift */; };
 		B5CB02C52332DA5300CB0349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CB02C32332DA5300CB0349 /* Main.storyboard */; };
 		B5CB02C72332DA5400CB0349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CB02C62332DA5400CB0349 /* Assets.xcassets */; };
 		B5CB02CA2332DA5400CB0349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CB02C82332DA5400CB0349 /* LaunchScreen.storyboard */; };
 		B5CB02E42332DAF500CB0349 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CB02E02332DA8700CB0349 /* LoadingUI.framework */; };
 		B5CB02E52332DAF500CB0349 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CB02E02332DA8700CB0349 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5CB02F52332F22700CB0349 /* SimpleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB02F42332F22700CB0349 /* SimpleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +57,12 @@
 /* Begin PBXFileReference section */
 		B5CB02BC2332DA5300CB0349 /* LoadingUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CB02BF2332DA5300CB0349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5CB02C12332DA5300CB0349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5CB02C42332DA5300CB0349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CB02C62332DA5400CB0349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5CB02C92332DA5400CB0349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5CB02CB2332DA5400CB0349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CB02D12332DA6E00CB0349 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
+		B5CB02F42332F22700CB0349 /* SimpleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				B5CB02BF2332DA5300CB0349 /* AppDelegate.swift */,
-				B5CB02C12332DA5300CB0349 /* ViewController.swift */,
 				B5CB02C32332DA5300CB0349 /* Main.storyboard */,
 				B5CB02C62332DA5400CB0349 /* Assets.xcassets */,
 				B5CB02C82332DA5400CB0349 /* LaunchScreen.storyboard */,
 				B5CB02CB2332DA5400CB0349 /* Info.plist */,
+				B5CB02F42332F22700CB0349 /* SimpleVC.swift */,
 			);
 			path = LoadingUITest;
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CB02C22332DA5300CB0349 /* ViewController.swift in Sources */,
+				B5CB02F52332F22700CB0349 /* SimpleVC.swift in Sources */,
 				B5CB02C02332DA5300CB0349 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SimpleVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SimpleVC" customModule="LoadingUITest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dxa-9q-Zwl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ff-zN-iZ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="541.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hlw-Rh-Ds3">
+                                        <rect key="frame" x="0.0" y="541.5" width="414" height="245.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjj-Hg-JsN">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="245.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1D-wF-ezY">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="245.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnn-Zy-R2H">
+                                        <rect key="frame" x="182.5" y="787" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="spinnerSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vgj-eh-EVV"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hlw-Rh-Ds3" firstAttribute="height" secondItem="Dxa-9q-Zwl" secondAttribute="height" multiplier="0.3" id="DfD-xI-QpM"/>
+                                    <constraint firstItem="Hlw-Rh-Ds3" firstAttribute="width" secondItem="Dxa-9q-Zwl" secondAttribute="width" id="SLw-rd-cnt"/>
+                                    <constraint firstItem="5Ff-zN-iZ3" firstAttribute="width" secondItem="Dxa-9q-Zwl" secondAttribute="width" id="nmk-iG-XZS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dxa-9q-Zwl" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="Omt-Ab-Dcf"/>
+                            <constraint firstItem="Dxa-9q-Zwl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jhR-eu-h26"/>
+                            <constraint firstItem="Dxa-9q-Zwl" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="li6-Ma-fRb"/>
+                            <constraint firstItem="Dxa-9q-Zwl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zKN-yQ-sWh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="spinner2View" destination="xjj-Hg-JsN" id="FXk-Pa-oDe"/>
+                        <outlet property="spinner3View" destination="l1D-wF-ezY" id="0Ff-t9-xVG"/>
+                        <outlet property="spinnerView" destination="5Ff-zN-iZ3" id="Tr7-sG-fsh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
