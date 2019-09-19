@@ -26,13 +26,13 @@ class ViewController: UIViewController {
 	}
 
 	func startAnimating() {
-		loadingVC.startAnimation()
 		doneLabel.isHidden = true
+		loadingVC.startAnimation()
 	}
 
 	@IBAction func toggleAnimation(_ sender: UISwitch) {
 		if toggleAnimationSwitch.isOn {
-			loadingVC.startAnimation()
+			startAnimating()
 		} else {
 			loadingVC.stopAnimation()
 			doneLabel.isHidden = false

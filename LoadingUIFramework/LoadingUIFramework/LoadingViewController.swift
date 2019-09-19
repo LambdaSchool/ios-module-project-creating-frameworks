@@ -23,10 +23,6 @@ public class LoadingViewController: UIViewController {
 		view.addSubview(loadingView)
 	}
 
-	public func animationDidFinish(_: Bool) {
-//		loadingView.animationDidStop(loadingView, finished: _)
-	}
-
 	/// Starts animation of the Loading View
 	public func startAnimation() {
 		loadingView.startAnimating()
