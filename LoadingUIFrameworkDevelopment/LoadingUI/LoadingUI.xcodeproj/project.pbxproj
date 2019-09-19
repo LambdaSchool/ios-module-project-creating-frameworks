@@ -10,6 +10,9 @@
 		B5CB02A32332D7B300CB0349 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CB02992332D7B200CB0349 /* LoadingUI.framework */; };
 		B5CB02A82332D7B300CB0349 /* LoadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB02A72332D7B300CB0349 /* LoadingUITests.swift */; };
 		B5CB02AA2332D7B300CB0349 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B5CB029C2332D7B200CB0349 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5CB02EF2332E08700CB0349 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB02ED2332E08100CB0349 /* LoadingVC.swift */; };
+		B5CB02F12332E54900CB0349 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB02F02332E54900CB0349 /* IndeterminateLoadingView.swift */; };
+		B5CB02F32332E58800CB0349 /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB02F22332E58700CB0349 /* PolarPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		B5CB02A22332D7B300CB0349 /* LoadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CB02A72332D7B300CB0349 /* LoadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUITests.swift; sourceTree = "<group>"; };
 		B5CB02A92332D7B300CB0349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5CB02ED2332E08100CB0349 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		B5CB02F02332E54900CB0349 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		B5CB02F22332E58700CB0349 /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				B5CB029C2332D7B200CB0349 /* LoadingUI.h */,
+				B5CB02ED2332E08100CB0349 /* LoadingVC.swift */,
+				B5CB02F02332E54900CB0349 /* IndeterminateLoadingView.swift */,
+				B5CB02F22332E58700CB0349 /* PolarPoint.swift */,
 				B5CB029D2332D7B200CB0349 /* Info.plist */,
 			);
 			path = LoadingUI;
@@ -194,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CB02F32332E58800CB0349 /* PolarPoint.swift in Sources */,
+				B5CB02EF2332E08700CB0349 /* LoadingVC.swift in Sources */,
+				B5CB02F12332E54900CB0349 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +403,7 @@
 		B5CB02B12332D7B300CB0349 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD94K2S3RY;
 				INFOPLIST_FILE = LoadingUITests/Info.plist;
@@ -409,6 +422,7 @@
 		B5CB02B22332D7B300CB0349 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD94K2S3RY;
 				INFOPLIST_FILE = LoadingUITests/Info.plist;
