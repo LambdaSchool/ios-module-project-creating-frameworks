@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import LoadingUI
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func frameworkButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "presentLoadingModallySegue", sender: sender)
+    }
+    
 }
-
