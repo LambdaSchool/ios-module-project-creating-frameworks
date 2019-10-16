@@ -7,14 +7,23 @@
 //
 
 import UIKit
+import LodingUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController  {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUpLoadingWheel()
     }
-
+    
+    
+    func setUpLoadingWheel() {
+        let loadingWheel = IndeterminateLoadingView(frame: CGRect(x: view.center.x, y: view.center.y, width: 100, height: 100))
+        view.addSubview(loadingWheel)
+        loadingWheel.translatesAutoresizingMaskIntoConstraints = false
+    }
 
 }
 

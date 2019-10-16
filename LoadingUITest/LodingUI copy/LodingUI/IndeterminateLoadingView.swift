@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupShapeLayer()
@@ -75,7 +75,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - CAAnimationDelegate
     
-    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         guard !shouldStopAnimationOnNextCycle else {
             shouldStopAnimationOnNextCycle = false
             isAnimating = false
