@@ -10,12 +10,17 @@ import UIKit
 import Loading
 
 class ViewController: UIViewController {
+    
+    let loadingVC = LoadingViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showLoading(_ sender: UIButton) {
+        present(loadingVC, animated: true, completion: nil)
+        //navigationController?.pushViewController(LoadingViewController(), animated: true)
+    }
+    
 }
 
