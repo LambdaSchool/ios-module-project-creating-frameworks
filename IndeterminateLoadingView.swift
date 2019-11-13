@@ -35,6 +35,10 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shouldStopAnimationOnNextCycle = true
     }
     
+    func setColor(_ color: CGColor) {
+        shapeLayer.strokeColor = color
+    }
+    
     // MARK: - Private
     
     private func setupShapeLayer() {
