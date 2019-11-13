@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  LoadingUIFrameworkDevelopment
+//  LoadingUITest
 //
 //  Created by Jesse Ruiz on 11/13/19.
 //  Copyright © 2019 Lambda School. All rights reserved.

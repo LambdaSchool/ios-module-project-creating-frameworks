@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8052CFEF237CB66A00828833 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8052CFE5237CB66900828833 /* LoadingUI.framework */; };
-		8052CFF4237CB66A00828833 /* LoadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8052CFF3237CB66A00828833 /* LoadingUITests.swift */; };
 		8052CFF6237CB66A00828833 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8052CFE8237CB66900828833 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,8 +26,6 @@
 		8052CFE8237CB66900828833 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		8052CFE9237CB66900828833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8052CFEE237CB66A00828833 /* LoadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8052CFF3237CB66A00828833 /* LoadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUITests.swift; sourceTree = "<group>"; };
-		8052CFF5237CB66A00828833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				8052CFE7237CB66900828833 /* LoadingUI */,
-				8052CFF2237CB66A00828833 /* LoadingUITests */,
 				8052CFE6237CB66900828833 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,15 +71,6 @@
 				8052CFE9237CB66900828833 /* Info.plist */,
 			);
 			path = LoadingUI;
-			sourceTree = "<group>";
-		};
-		8052CFF2237CB66A00828833 /* LoadingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8052CFF3237CB66A00828833 /* LoadingUITests.swift */,
-				8052CFF5237CB66A00828833 /* Info.plist */,
-			);
-			path = LoadingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +189,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8052CFF4237CB66A00828833 /* LoadingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
