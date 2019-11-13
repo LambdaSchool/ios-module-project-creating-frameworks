@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A6165973237CA27200D4EBC0 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A6165971237CA27200D4EBC0 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61659A7237CA3E700D4EBC0 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61659A6237CA3E700D4EBC0 /* IndeterminateLoadingView.swift */; };
+		A61659A9237CA5FC00D4EBC0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61659A8237CA5FC00D4EBC0 /* LoadingViewController.swift */; };
+		A61659AB237CA68000D4EBC0 /* LoadingUI.gif in Resources */ = {isa = PBXBuildFile; fileRef = A61659AA237CA68000D4EBC0 /* LoadingUI.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A616596E237CA27200D4EBC0 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6165971237CA27200D4EBC0 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		A6165972237CA27200D4EBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61659A6237CA3E700D4EBC0 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		A61659A8237CA5FC00D4EBC0 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		A61659AA237CA68000D4EBC0 /* LoadingUI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LoadingUI.gif; path = ../../../LoadingUI.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +52,11 @@
 		A6165970237CA27200D4EBC0 /* LoadingUI */ = {
 			isa = PBXGroup;
 			children = (
+				A61659A6237CA3E700D4EBC0 /* IndeterminateLoadingView.swift */,
 				A6165971237CA27200D4EBC0 /* LoadingUI.h */,
 				A6165972237CA27200D4EBC0 /* Info.plist */,
+				A61659A8237CA5FC00D4EBC0 /* LoadingViewController.swift */,
+				A61659AA237CA68000D4EBC0 /* LoadingUI.gif */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					A616596D237CA27200D4EBC0 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -121,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61659AB237CA68000D4EBC0 /* LoadingUI.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61659A7237CA3E700D4EBC0 /* IndeterminateLoadingView.swift in Sources */,
+				A61659A9237CA5FC00D4EBC0 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		A6165977237CA27200D4EBC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FLZ8CLXX64;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GIPGIP.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		A6165978237CA27200D4EBC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FLZ8CLXX64;
