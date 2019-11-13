@@ -12,19 +12,20 @@ public class LoadingViewController: UIViewController {
     
     private var loadingView: IndeterminateLoadingView!
     
-//    required public init() {}
-
-    override public func viewDidLoad() {
-        super.viewDidLoad()
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         let viewWidth = view.frame.height
         let viewHeight = view.frame.height
         let widthHeight = viewWidth > viewHeight ? viewHeight/2 : viewWidth/2
-        let frame = CGRect(x: viewWidth/4, y: viewHeight/4, width: widthHeight, height: widthHeight)
+        let frame = CGRect(x: 0, y: 20, width: widthHeight, height: widthHeight)
         loadingView = IndeterminateLoadingView(frame: frame)
         
+        view.backgroundColor = .white
+        
         setupUI()
-        loadingView.startAnimating()
+        startAnimation()
+        
     }
     
     private func setupUI() {
@@ -34,15 +35,18 @@ public class LoadingViewController: UIViewController {
         view.addSubview(stopButton)
         stopButton.translatesAutoresizingMaskIntoConstraints = false
         
-        stopButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        stopButton.topAnchor.constraint(equalTo: loadingView.bottomAnchor, constant: 20)
-        
+        NSLayoutConstraint.activate([
+            stopButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stopButton.topAnchor.constraint(equalTo: loadingView.bottomAnchor, constant: 20)
+        ])
         stopButton.setTitle("STOP", for: .normal)
+        stopButton.setTitleColor(.black, for: .normal)
         stopButton.addTarget(self, action: #selector(stopAnimation), for: .touchUpInside)
     }
     
     @objc private func stopAnimation() {
         loadingView.stopAnimating()
+        dismiss(animated: true, completion: nil)
     }
     
     private func startAnimation() {
