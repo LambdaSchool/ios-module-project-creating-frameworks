@@ -15,6 +15,23 @@
 		8052CFD4237CB5DA00828833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8052CFD2237CB5DA00828833 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8052D004237CB68400828833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8052CFFF237CB68400828833 /* LoadingUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8052CFE5237CB66900828833;
+			remoteInfo = LoadingUI;
+		};
+		8052D006237CB68400828833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8052CFFF237CB68400828833 /* LoadingUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8052CFEE237CB66A00828833;
+			remoteInfo = LoadingUITests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8052CFC4237CB5D600828833 /* LoadingUIFrameworkDevelopment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUIFrameworkDevelopment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8052CFC7237CB5D600828833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,7 @@
 		8052CFD0237CB5DA00828833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8052CFD3237CB5DA00828833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8052CFD5237CB5DA00828833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8052CFFF237CB68400828833 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +81,18 @@
 				8052CFD0237CB5DA00828833 /* Assets.xcassets */,
 				8052CFD2237CB5DA00828833 /* LaunchScreen.storyboard */,
 				8052CFD5237CB5DA00828833 /* Info.plist */,
+				8052CFFF237CB68400828833 /* LoadingUI.xcodeproj */,
 			);
 			path = LoadingUIFrameworkDevelopment;
+			sourceTree = "<group>";
+		};
+		8052D000237CB68400828833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8052D005237CB68400828833 /* LoadingUI.framework */,
+				8052D007237CB68400828833 /* LoadingUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +141,35 @@
 			mainGroup = 8052CFBB237CB5D600828833;
 			productRefGroup = 8052CFC5237CB5D600828833 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8052D000237CB68400828833 /* Products */;
+					ProjectRef = 8052CFFF237CB68400828833 /* LoadingUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8052CFC3237CB5D600828833 /* LoadingUIFrameworkDevelopment */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8052D005237CB68400828833 /* LoadingUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoadingUI.framework;
+			remoteRef = 8052D004237CB68400828833 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8052D007237CB68400828833 /* LoadingUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LoadingUITests.xctest;
+			remoteRef = 8052D006237CB68400828833 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8052CFC2237CB5D600828833 /* Resources */ = {
