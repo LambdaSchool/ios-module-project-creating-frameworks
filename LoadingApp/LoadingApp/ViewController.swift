@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBAction func showLoading(_ sender: UIButton) {
         present(loadingVC, animated: true, completion: nil)
-        //navigationController?.pushViewController(LoadingViewController(), animated: true)
+        loadingVC.setColor(UIColor.red.cgColor)
     }
     
 }

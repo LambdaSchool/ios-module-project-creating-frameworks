@@ -37,5 +37,9 @@ public class LoadingViewController: UIViewController {
     private func startAnimating() {
         loadingView?.startAnimating()
     }
+    
+    public func setColor(_ color: CGColor) {
+        loadingView?.setColor(color)
+    }
 
 }
