@@ -13,12 +13,10 @@ class ViewController: UIViewController {
     
     let loadingViewController = LoadingViewController()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
 
     @IBAction func startLoading(_ sender: Any) {
         present(loadingViewController, animated: true, completion: nil)
