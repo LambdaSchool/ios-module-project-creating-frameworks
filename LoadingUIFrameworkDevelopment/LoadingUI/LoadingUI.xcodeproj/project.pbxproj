@@ -10,7 +10,6 @@
 		A6165973237CA27200D4EBC0 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A6165971237CA27200D4EBC0 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A61659A7237CA3E700D4EBC0 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61659A6237CA3E700D4EBC0 /* IndeterminateLoadingView.swift */; };
 		A61659A9237CA5FC00D4EBC0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61659A8237CA5FC00D4EBC0 /* LoadingViewController.swift */; };
-		A61659AB237CA68000D4EBC0 /* LoadingUI.gif in Resources */ = {isa = PBXBuildFile; fileRef = A61659AA237CA68000D4EBC0 /* LoadingUI.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +18,6 @@
 		A6165972237CA27200D4EBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A61659A6237CA3E700D4EBC0 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 		A61659A8237CA5FC00D4EBC0 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		A61659AA237CA68000D4EBC0 /* LoadingUI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LoadingUI.gif; path = ../../../LoadingUI.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 				A6165971237CA27200D4EBC0 /* LoadingUI.h */,
 				A6165972237CA27200D4EBC0 /* Info.plist */,
 				A61659A8237CA5FC00D4EBC0 /* LoadingViewController.swift */,
-				A61659AA237CA68000D4EBC0 /* LoadingUI.gif */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -131,7 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61659AB237CA68000D4EBC0 /* LoadingUI.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

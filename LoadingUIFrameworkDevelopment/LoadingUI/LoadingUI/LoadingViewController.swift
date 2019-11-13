@@ -8,18 +8,20 @@
 
 import UIKit
 
-class LoadingViewController: UIViewController {
+public class LoadingViewController: UIViewController {
     
-    private var loadingView: IndeterminateLoadingView {
-        let viewWidth = view.frame.width
+    private var loadingView: IndeterminateLoadingView!
+    
+//    required public init() {}
+
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let viewWidth = view.frame.height
         let viewHeight = view.frame.height
         let widthHeight = viewWidth > viewHeight ? viewHeight/2 : viewWidth/2
-        let loadingView = IndeterminateLoadingView(frame: CGRect(x: viewWidth/4, y: viewHeight/4, width: widthHeight, height: widthHeight))
-        return loadingView
-    }()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        let frame = CGRect(x: viewWidth/4, y: viewHeight/4, width: widthHeight, height: widthHeight)
+        loadingView = IndeterminateLoadingView(frame: frame)
         
         setupUI()
         loadingView.startAnimating()

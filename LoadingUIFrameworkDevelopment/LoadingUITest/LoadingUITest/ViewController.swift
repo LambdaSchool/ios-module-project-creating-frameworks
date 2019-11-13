@@ -10,6 +10,9 @@ import UIKit
 import LoadingUI
 
 class ViewController: UIViewController {
+    
+    let loadingViewController = LoadingViewController()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,5 +20,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func startLoading(_ sender: Any) {
+        present(loadingViewController, animated: true, completion: nil)
+    }
 }
 
