@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Loading
 
 class ViewController: UIViewController {
 
