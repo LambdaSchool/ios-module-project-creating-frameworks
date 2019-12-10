@@ -12,7 +12,6 @@ public class LoadingViewController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
 
     }
 
