@@ -9,14 +9,22 @@
 import UIKit
 
 public class LoadingViewController: UIViewController {
+    
+    let loadingView = UIView()
 
     override public func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        loadingView.center = view.center
+    }
     
     public func beginAnimation() {
         
     }
+    
 }
