@@ -29,7 +29,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         startAnimation()
     }
     
-    func stopAnimating() {
+    public func stopAnimating() {
         guard isAnimating else { return }
         
         shouldStopAnimationOnNextCycle = true

@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LoadingDetailView" {
             if let loadingVC = segue.destination as? LoadingViewController {
-                loadingVC.beginAnimation()
+                loadingVC.runAnimation()
             }
         }
     }

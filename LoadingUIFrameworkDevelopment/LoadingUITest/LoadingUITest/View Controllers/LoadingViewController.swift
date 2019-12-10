@@ -19,8 +19,11 @@ class LoadingViewController: UIViewController {
         
     }
     
-    func beginAnimation() {
-        
+    func runAnimation() {
+        _ = self.view
+        guard isViewLoaded else { return }
+        loadingView.startAnimating()
+        loadingView.stopAnimating()
     }
     
 
