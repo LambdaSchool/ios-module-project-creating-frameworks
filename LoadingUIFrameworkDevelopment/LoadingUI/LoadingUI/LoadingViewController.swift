@@ -1,6 +1,6 @@
 //
 //  LoadingViewController.swift
-//  LoadingUITest
+//  LoadingUI
 //
 //  Created by Bobby Keffury on 12/10/19.
 //  Copyright © 2019 Bobby Keffury. All rights reserved.
