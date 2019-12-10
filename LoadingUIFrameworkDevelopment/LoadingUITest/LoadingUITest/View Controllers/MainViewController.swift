@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  LoadingUITest
 //
 //  Created by Bobby Keffury on 12/10/19.
@@ -9,7 +9,7 @@
 import UIKit
 import LoadingUI
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

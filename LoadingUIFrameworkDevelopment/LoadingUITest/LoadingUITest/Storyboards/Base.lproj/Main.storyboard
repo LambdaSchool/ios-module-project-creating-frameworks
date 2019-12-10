@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoadingUITest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="LoadingUITest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🤙"/>
                                 <connections>
-                                    <segue destination="JKz-Gx-9yJ" kind="presentation" id="aYm-7c-xKU"/>
+                                    <segue destination="JKz-Gx-9yJ" kind="presentation" identifier="LoadingDetailView" id="aYm-7c-xKU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,7 +41,7 @@
         <!--Loading View Controller-->
         <scene sceneID="y4C-iL-FFa">
             <objects>
-                <viewController id="JKz-Gx-9yJ" customClass="LoadingViewController" customModule="LoadingUI" sceneMemberID="viewController">
+                <viewController id="JKz-Gx-9yJ" customClass="LoadingViewController" customModule="LoadingUITest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l7y-kJ-cAq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,6 +63,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8CD-c9-q00"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingView" destination="ysQ-fu-h3G" id="5ub-Z8-ji7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTd-MH-qKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
