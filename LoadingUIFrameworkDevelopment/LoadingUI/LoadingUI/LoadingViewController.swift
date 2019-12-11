@@ -25,7 +25,6 @@ public class LoadingViewController: UIViewController {
         view.backgroundColor = .white
         indeterminateLoadingView = IndeterminateLoadingView(frame: CGRect(x: centerX - width/2, y: centerY - height/2, width: width, height: height))
         setUpUI()
-        startAnimating()
     }
     
     var indeterminateLoadingView: IndeterminateLoadingView!
@@ -45,12 +44,12 @@ public class LoadingViewController: UIViewController {
     private func setUpButtons() {
         
         let startButton = UIButton(frame: CGRect(x: centerX-width, y: centerY+width, width: width*2, height: height/2.0))
-        startButton.setTitle("Start Animating", for: .normal)
+        startButton.setTitle("Start Animation", for: .normal)
         startButton.setTitleColor(.green, for: .normal)
         startButton.addTarget(self, action: #selector(self.startButton), for: .touchUpInside)
         
         let stopButton = UIButton(frame: CGRect(x: centerX-width, y: centerY+width*2, width: width*2, height: height/2.0))
-        stopButton.setTitle("Stop Animating", for: .normal)
+        stopButton.setTitle("Stop Animation", for: .normal)
         stopButton.setTitleColor(.red, for: .normal)
         stopButton.addTarget(self, action: #selector(self.stopButton), for: .touchUpInside)
         
