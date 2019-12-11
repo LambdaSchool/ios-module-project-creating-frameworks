@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922E11C923A0A4510075472F /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922E11C823A0A4510075472F /* LoadingViewController.swift */; };
+		922E11CB23A0A58B0075472F /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922E11CA23A0A58B0075472F /* IndeterminateLoadingView.swift */; };
 		92C68CA023A08E10004AE1D8 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C68C9E23A08E10004AE1D8 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92C68CD123A090AE004AE1D8 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C68CD023A090AE004AE1D8 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922E11C823A0A4510075472F /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		922E11CA23A0A58B0075472F /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 		92C68C9B23A08E10004AE1D8 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C68C9E23A08E10004AE1D8 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		92C68C9F23A08E10004AE1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92C68CD023A090AE004AE1D8 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,8 @@
 			children = (
 				92C68C9E23A08E10004AE1D8 /* LoadingUI.h */,
 				92C68C9F23A08E10004AE1D8 /* Info.plist */,
-				92C68CD023A090AE004AE1D8 /* LoadingViewController.swift */,
+				922E11C823A0A4510075472F /* LoadingViewController.swift */,
+				922E11CA23A0A58B0075472F /* IndeterminateLoadingView.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C68CD123A090AE004AE1D8 /* LoadingViewController.swift in Sources */,
+				922E11C923A0A4510075472F /* LoadingViewController.swift in Sources */,
+				922E11CB23A0A58B0075472F /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -250,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
