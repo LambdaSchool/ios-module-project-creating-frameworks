@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		99341B9C23AA8C6900ACDE98 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 99341B9A23AA8C6900ACDE98 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99341BCD23AA8F9C00ACDE98 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341BCC23AA8F9C00ACDE98 /* LoadingViewController.swift */; };
+		99341BCF23AA91BA00ACDE98 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341BCE23AA91BA00ACDE98 /* LoadingView.swift */; };
+		99341BD123AA923300ACDE98 /* LoadingProgressReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341BD023AA923300ACDE98 /* LoadingProgressReporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		99341B9723AA8C6900ACDE98 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99341B9A23AA8C6900ACDE98 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		99341B9B23AA8C6900ACDE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99341BCC23AA8F9C00ACDE98 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		99341BCE23AA91BA00ACDE98 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		99341BD023AA923300ACDE98 /* LoadingProgressReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProgressReporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				99341B9A23AA8C6900ACDE98 /* LoadingUI.h */,
 				99341B9B23AA8C6900ACDE98 /* Info.plist */,
+				99341BCC23AA8F9C00ACDE98 /* LoadingViewController.swift */,
+				99341BCE23AA91BA00ACDE98 /* LoadingView.swift */,
+				99341BD023AA923300ACDE98 /* LoadingProgressReporter.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					99341B9623AA8C6900ACDE98 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99341BCD23AA8F9C00ACDE98 /* LoadingViewController.swift in Sources */,
+				99341BD123AA923300ACDE98 /* LoadingProgressReporter.swift in Sources */,
+				99341BCF23AA91BA00ACDE98 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		99341BA023AA8C6900ACDE98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22X3GA956P;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonbash.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		99341BA123AA8C6900ACDE98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22X3GA956P;
