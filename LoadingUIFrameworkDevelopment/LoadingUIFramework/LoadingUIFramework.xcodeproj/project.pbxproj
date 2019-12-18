@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BB93B22323AABF44008E91B4 /* LoadingUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BB93B22123AABF44008E91B4 /* LoadingUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB93B25323AAC19A008E91B4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93B25223AAC19A008E91B4 /* LoadingViewController.swift */; };
+		BB93B25523AAC37C008E91B4 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93B25423AAC37C008E91B4 /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB93B21E23AABF44008E91B4 /* LoadingUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB93B22123AABF44008E91B4 /* LoadingUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFramework.h; sourceTree = "<group>"; };
 		BB93B22223AABF44008E91B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB93B25223AAC19A008E91B4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		BB93B25423AAC37C008E91B4 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		BB93B22023AABF44008E91B4 /* LoadingUIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				BB93B25423AAC37C008E91B4 /* IndeterminateLoadingView.swift */,
+				BB93B25223AAC19A008E91B4 /* LoadingViewController.swift */,
 				BB93B22123AABF44008E91B4 /* LoadingUIFramework.h */,
 				BB93B22223AABF44008E91B4 /* Info.plist */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					BB93B21D23AABF44008E91B4 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB93B25323AAC19A008E91B4 /* LoadingViewController.swift in Sources */,
+				BB93B25523AAC37C008E91B4 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		BB93B22723AABF44008E91B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.LoadingUIFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +294,7 @@
 		BB93B22823AABF44008E91B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

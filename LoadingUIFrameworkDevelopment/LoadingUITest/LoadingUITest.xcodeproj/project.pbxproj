@@ -13,6 +13,7 @@
 		BB93B23D23AABF65008E91B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB93B23B23AABF65008E91B4 /* Main.storyboard */; };
 		BB93B23F23AABF6A008E91B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB93B23E23AABF6A008E91B4 /* Assets.xcassets */; };
 		BB93B24223AABF6A008E91B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB93B24023AABF6A008E91B4 /* LaunchScreen.storyboard */; };
+		BB93B25723AAC976008E91B4 /* LoadUITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93B25623AAC976008E91B4 /* LoadUITestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		BB93B24123AABF6A008E91B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB93B24323AABF6A008E91B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB93B24A23AABF8D008E91B4 /* LoadingUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUIFramework.xcodeproj; path = ../../LoadingUIFramework/LoadingUIFramework.xcodeproj; sourceTree = "<group>"; };
+		BB93B25623AAC976008E91B4 /* LoadUITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadUITestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				BB93B23523AABF65008E91B4 /* AppDelegate.swift */,
 				BB93B23723AABF65008E91B4 /* SceneDelegate.swift */,
 				BB93B23923AABF65008E91B4 /* ViewController.swift */,
+				BB93B25623AAC976008E91B4 /* LoadUITestViewController.swift */,
 				BB93B23B23AABF65008E91B4 /* Main.storyboard */,
 				BB93B23E23AABF6A008E91B4 /* Assets.xcassets */,
 				BB93B24023AABF6A008E91B4 /* LaunchScreen.storyboard */,
@@ -184,6 +187,7 @@
 			files = (
 				BB93B23A23AABF65008E91B4 /* ViewController.swift in Sources */,
 				BB93B23623AABF65008E91B4 /* AppDelegate.swift in Sources */,
+				BB93B25723AAC976008E91B4 /* LoadUITestViewController.swift in Sources */,
 				BB93B23823AABF65008E91B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
