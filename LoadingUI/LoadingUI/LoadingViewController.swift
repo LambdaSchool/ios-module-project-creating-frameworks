@@ -8,30 +8,34 @@
 
 import UIKit
 
+/// A presentable view controller that indicates asynchronous data-loading. The `delegate` property should be set and should conform to `LoadingViewControllerDelegate` to function properly. A separate data source will load data in the background, and upon completion will call this object's method `loadingdidFinish(withError:)`.
 public class LoadingViewController: UIViewController {
-    // MARK: - Properties
+    // MARK: - Public API
     
+    /// Indicator of whether data is still loading. Begins as `false`, until the `viewDidAppear(_:)` is called during the view lifecycle, at which point it changes to `true`, and then with `viewDidDisappear` or when `loadingDidFinish` is called (whichever comes first), it is once again set to `false`.
     public private(set) var isLoading: Bool = false
     
+    /// The object which will be informed when loading has completed.
     public weak var delegate: LoadingViewControllerDelegate?
+    /// In seconds, how long the view controller will wait for `loadingDidFinish` to be called, after which point the delegate will be informed that loading has been abandoned by calling its method `loadingViewControllerDidTimeOut(_:)`. Defaults to `10` seconds.
     public var timeout: TimeInterval = 10
     
-    private lazy var loadingView: IndeterminateLoadingView? = {
-        let center = CGPoint(
-            x: view.frame.width / 2.0,
-            y: view.frame.height / 2.0)
-        let width = min(center.x, center.y)
-        
-        let loadingViewFrame = CGRect(
-            x: center.x - (width / 2.0),
-            y: center.y - (width / 2.0),
-            width: width,
-            height: width)
-        
-        return IndeterminateLoadingView(frame: loadingViewFrame)
-    }()
+    /// The color of the loading indicator. Defaults to `black`.
+    public var strokeColor = UIColor.black.cgColor
+    /// The stroke width of the loading indicator. Defaults to `10`.
+    public var strokeWidth: CGFloat = 10.0
     
-    private weak var timer: Timer?
+    /// The method to be called when loading should stop and the UI should call its finishing methods.
+    /// - Parameter error: An optional error that will be passed back to the delegate after completion.
+    public func loadingDidFinish(withError error: Error? = nil) {
+        endLoading()
+        delegate?.loadingViewController(self, didFinishLoadingWithError: error)
+    }
+    
+    /// Method to be called when loading is cancelled by the data source. Calling this will subsequently call the delegate's `loadingViewControllerDidCancelLoading(_:)`.
+    public func loadingDidCancel() {
+        cancelLoading()
+    }
     
     // MARK: - View Lifecycle
     
@@ -51,14 +55,27 @@ public class LoadingViewController: UIViewController {
         super.viewDidDisappear(animated)
     }
     
-    // MARK: - Completion
+    // MARK: - Private
     
-    public func loadingDidFinish(withError error: Error?) {
-        endLoading()
-        delegate?.loadingViewController(self, didFinishLoadingWithError: error)
-    }
+    private lazy var loadingView: IndeterminateLoadingView = {
+        let width = min(view.center.x, view.center.y)
+        
+        let loadingViewFrame = CGRect(
+            x: view.center.x - (width / 2.0),
+            y: view.center.y - (width / 2.0),
+            width: width,
+            height: width)
+        
+        let view = IndeterminateLoadingView(frame: loadingViewFrame)
+        
+        view.strokeColor = strokeColor
+        view.strokeWidth = strokeWidth
+        view.addSubview(view)
+        
+        return view
+    }()
     
-    // MARK: - Private Methods
+    private weak var timer: Timer?
     
     private func beginLoading() {
         self.isLoading = true
