@@ -8,15 +8,18 @@
 
 import UIKit
 
-public class LoadingView: UIView {
-    public var progressIsDeterminate = false
+class LoadingView: UIView {
+    var loadingShape: CAShapeLayer = {
+        var shape = CAShapeLayer()
+        return shape
+    }()
+    
+    var progressIsDeterminate = false
 
-    /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        
     }
-    */
 
 }
