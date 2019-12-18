@@ -11,6 +11,9 @@ import UIKit
 class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     // MARK: - Properties
     
+    var strokeColor = UIColor.black.cgColor
+    var strokeWidth: CGFloat = 10.0
+    
     private(set) var isAnimating = false
 
     private let shapeLayer = CAShapeLayer()
@@ -73,17 +76,15 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     // MARK: - Private Methods
     
     private func setupShapeLayer() {
-        let thickness: CGFloat = 10.0
-        
         shapeLayer.frame = layer.bounds
-        shapeLayer.strokeColor = UIColor.black.cgColor
+        shapeLayer.strokeColor = strokeColor
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.lineWidth = thickness
+        shapeLayer.lineWidth = strokeWidth
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
         layer.addSublayer(shapeLayer)
         
-        let radius = min(bounds.width, bounds.height) / 2.0 - thickness/2.0
+        let radius = min(bounds.width, bounds.height) / 2.0 - strokeWidth/2.0
         let rect = CGRect(x: bounds.midX - radius/2.0, y: bounds.midY - radius/2.0, width: radius, height: radius)
         let path = UIBezierPath(ovalIn: rect)
         
