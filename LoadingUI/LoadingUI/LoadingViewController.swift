@@ -42,7 +42,11 @@ public class LoadingViewController: UIViewController {
     }
     
     public override func viewDidDisappear(_ animated: Bool) {
-        endLoading()
+        if !isLoading {
+            cancelLoading()
+        } else {
+            endLoading()
+        }
         
         super.viewDidDisappear(animated)
     }
@@ -58,17 +62,21 @@ public class LoadingViewController: UIViewController {
     
     private func beginLoading() {
         self.isLoading = true
-        loadingView?.startAnimating()
+        loadingView.startAnimating()
         timer = Timer.scheduledTimer(withTimeInterval: timeout, repeats: false, block: { _ in
             self.delegate?.loadingViewControllerDidTimeOut(self)
             self.timer = nil
         })
-        
     }
     
     private func endLoading() {
         self.isLoading = false
-        loadingView?.stopAnimating()
+        loadingView.stopAnimating()
         timer?.invalidate()
+    }
+    
+    private func cancelLoading() {
+        endLoading()
+        delegate?.loadingViewControllerDidCancelLoading(self)
     }
 }

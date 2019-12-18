@@ -15,4 +15,6 @@ public protocol LoadingViewControllerDelegate: class {
     
     func loadingViewControllerDidTimeOut(
         _ loadingViewController: LoadingViewController)
+    func loadingViewControllerDidCancelLoading(
+        _ loadingViewController: LoadingViewController)
 }
