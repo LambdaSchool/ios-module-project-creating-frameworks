@@ -10,7 +10,9 @@
 		99341B9C23AA8C6900ACDE98 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 99341B9A23AA8C6900ACDE98 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99341BCD23AA8F9C00ACDE98 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341BCC23AA8F9C00ACDE98 /* LoadingViewController.swift */; };
 		99341BCF23AA91BA00ACDE98 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341BCE23AA91BA00ACDE98 /* LoadingView.swift */; };
-		99341BD123AA923300ACDE98 /* LoadingProgressReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341BD023AA923300ACDE98 /* LoadingProgressReporter.swift */; };
+		99341C1C23AAC41A00ACDE98 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341C1A23AAC41A00ACDE98 /* IndeterminateLoadingView.swift */; };
+		99341C1D23AAC41A00ACDE98 /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341C1B23AAC41A00ACDE98 /* PolarPoint.swift */; };
+		99341C1F23AAC6EE00ACDE98 /* LoadingViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99341C1E23AAC6EE00ACDE98 /* LoadingViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +21,9 @@
 		99341B9B23AA8C6900ACDE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99341BCC23AA8F9C00ACDE98 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		99341BCE23AA91BA00ACDE98 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		99341BD023AA923300ACDE98 /* LoadingProgressReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProgressReporter.swift; sourceTree = "<group>"; };
+		99341C1A23AAC41A00ACDE98 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		99341C1B23AAC41A00ACDE98 /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
+		99341C1E23AAC6EE00ACDE98 /* LoadingViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 				99341B9A23AA8C6900ACDE98 /* LoadingUI.h */,
 				99341B9B23AA8C6900ACDE98 /* Info.plist */,
 				99341BCC23AA8F9C00ACDE98 /* LoadingViewController.swift */,
+				99341C1E23AAC6EE00ACDE98 /* LoadingViewControllerDelegate.swift */,
 				99341BCE23AA91BA00ACDE98 /* LoadingView.swift */,
-				99341BD023AA923300ACDE98 /* LoadingProgressReporter.swift */,
+				99341C1A23AAC41A00ACDE98 /* IndeterminateLoadingView.swift */,
+				99341C1B23AAC41A00ACDE98 /* PolarPoint.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				99341BCD23AA8F9C00ACDE98 /* LoadingViewController.swift in Sources */,
-				99341BD123AA923300ACDE98 /* LoadingProgressReporter.swift in Sources */,
+				99341C1C23AAC41A00ACDE98 /* IndeterminateLoadingView.swift in Sources */,
 				99341BCF23AA91BA00ACDE98 /* LoadingView.swift in Sources */,
+				99341C1F23AAC6EE00ACDE98 /* LoadingViewControllerDelegate.swift in Sources */,
+				99341C1D23AAC41A00ACDE98 /* PolarPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
