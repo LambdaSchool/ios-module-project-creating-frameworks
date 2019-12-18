@@ -9,6 +9,15 @@
 import UIKit
 
 class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+    // MARK: - Properties
+    
+    private(set) var isAnimating = false
+
+    private let shapeLayer = CAShapeLayer()
+    private let duration = 1.0
+    private var shouldStopAnimationOnNextCycle = false
+    
+    // MARK: - Init
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,6 +30,8 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         
         setupShapeLayer()
     }
+    
+    // MARK: - Internal Methods
     
     func startAnimating() {
         guard !isAnimating else { return }
@@ -35,7 +46,31 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shouldStopAnimationOnNextCycle = true
     }
     
-    // MARK: - Private
+    // MARK: - CAAnimationDelegate
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        guard !shouldStopAnimationOnNextCycle else {
+            shouldStopAnimationOnNextCycle = false
+            isAnimating = false
+            return
+        }
+        
+        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeEnd" {
+            shapeLayer.strokeStart = 0.0
+            shapeLayer.strokeEnd = 1.0
+            shapeLayer.removeAllAnimations()
+            startAnimation(for: "strokeStart", timing: .easeOut)
+        }
+        
+        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeStart" {
+            shapeLayer.strokeStart = 0.0
+            shapeLayer.strokeEnd = 0.0
+            shapeLayer.removeAllAnimations()
+            startAnimation(for: "strokeEnd", timing: .easeIn)
+        }
+    }
+    
+    // MARK: - Private Methods
     
     private func setupShapeLayer() {
         let thickness: CGFloat = 10.0
@@ -72,36 +107,4 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         animation.timingFunction = CAMediaTimingFunction(name: timing)
         shapeLayer.add(animation, forKey: keyPath)
     }
-    
-    // MARK: - CAAnimationDelegate
-    
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        guard !shouldStopAnimationOnNextCycle else {
-            shouldStopAnimationOnNextCycle = false
-            isAnimating = false
-            return
-        }
-        
-        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeEnd" {
-            shapeLayer.strokeStart = 0.0
-            shapeLayer.strokeEnd = 1.0
-            shapeLayer.removeAllAnimations()
-            startAnimation(for: "strokeStart", timing: .easeOut)
-        }
-        
-        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeStart" {
-            shapeLayer.strokeStart = 0.0
-            shapeLayer.strokeEnd = 0.0
-            shapeLayer.removeAllAnimations()
-            startAnimation(for: "strokeEnd", timing: .easeIn)
-        }
-    }
-    
-    // MARK: - Properties
-    
-    private(set) var isAnimating = false
-
-    private let shapeLayer = CAShapeLayer()
-    private let duration = 1.0
-    private var shouldStopAnimationOnNextCycle = false
 }
