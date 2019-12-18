@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoadingUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cg1-WQ-bCm">
+                                <rect key="frame" x="182.5" y="681" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleAnimation:" destination="BYZ-38-t0r" eventType="valueChanged" id="hoh-Uv-iFr"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toggle Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paU-2b-jbA">
+                                <rect key="frame" x="133.5" y="732" width="147.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUX-r4-xHQ">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MUX-r4-xHQ" secondAttribute="height" multiplier="1:1" id="hj2-dW-2Wx"/>
+                                    <constraint firstAttribute="height" constant="150" id="uxU-b2-On4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B26-B0-7q9">
+                                <rect key="frame" x="168.5" y="144" width="77.5" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MUX-r4-xHQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2zd-sm-j5D"/>
+                            <constraint firstItem="Cg1-WQ-bCm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wzv-Qe-RL1"/>
+                            <constraint firstItem="paU-2b-jbA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XmD-yB-A2y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cg1-WQ-bCm" secondAttribute="bottom" constant="150" id="acJ-6c-7Ym"/>
+                            <constraint firstItem="B26-B0-7q9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ejf-ck-ESj"/>
+                            <constraint firstItem="MUX-r4-xHQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hmz-Ig-h8G"/>
+                            <constraint firstItem="B26-B0-7q9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="kdW-DV-hJo"/>
+                            <constraint firstItem="paU-2b-jbA" firstAttribute="top" secondItem="Cg1-WQ-bCm" secondAttribute="bottom" constant="20" id="sLc-pr-aph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneLabel" destination="B26-B0-7q9" id="9DF-Ee-BmY"/>
+                        <outlet property="loadingViewContainer" destination="MUX-r4-xHQ" id="R3d-TJ-Ijn"/>
+                        <outlet property="toggleAnimationSwitch" destination="Cg1-WQ-bCm" id="J3A-uf-RkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
