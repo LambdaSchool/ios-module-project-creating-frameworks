@@ -66,13 +66,13 @@ public class LoadingViewController: UIViewController {
             width: width,
             height: width)
         
-        let view = IndeterminateLoadingView(frame: loadingViewFrame)
+        let loadingView = IndeterminateLoadingView(frame: loadingViewFrame)
         
-        view.strokeColor = strokeColor
-        view.strokeWidth = strokeWidth
-        view.addSubview(view)
+        loadingView.strokeColor = strokeColor
+        loadingView.strokeWidth = strokeWidth
+        self.view.addSubview(loadingView)
         
-        return view
+        return loadingView
     }()
     
     private weak var timer: Timer?
