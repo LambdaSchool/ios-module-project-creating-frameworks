@@ -9,6 +9,18 @@
 import UIKit
 
 class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+    // MARK: - Properties
+    
+    var strokeColor = UIColor.black.cgColor
+    var strokeWidth: CGFloat = 10.0
+    
+    private(set) var isAnimating = false
+
+    private let shapeLayer = CAShapeLayer()
+    private let duration = 1.0
+    private var shouldStopAnimationOnNextCycle = false
+    
+    // MARK: - Init
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,6 +34,8 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         setupShapeLayer()
     }
     
+    // MARK: - Internal Methods
+    
     func startAnimating() {
         guard !isAnimating else { return }
         defer { isAnimating = true }
@@ -33,44 +47,6 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         guard isAnimating else { return }
         
         shouldStopAnimationOnNextCycle = true
-    }
-    
-    // MARK: - Private
-    
-    private func setupShapeLayer() {
-        let thickness: CGFloat = 10.0
-        
-        shapeLayer.frame = layer.bounds
-        shapeLayer.strokeColor = UIColor.black.cgColor
-        shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.lineWidth = thickness
-        shapeLayer.strokeStart = 0.0
-        shapeLayer.strokeEnd = 0.0
-        layer.addSublayer(shapeLayer)
-        
-        let radius = min(bounds.width, bounds.height) / 2.0 - thickness/2.0
-        let rect = CGRect(x: bounds.midX - radius/2.0, y: bounds.midY - radius/2.0, width: radius, height: radius)
-        let path = UIBezierPath(ovalIn: rect)
-        
-        shapeLayer.path = path.cgPath
-    }
-    
-    private func startAnimation() {
-        shouldStopAnimationOnNextCycle = false
-        shapeLayer.strokeStart = 0.0
-        shapeLayer.strokeEnd = 0.0
-        startAnimation(for: "strokeEnd", timing: .easeIn)
-    }
-    
-    private func startAnimation(for keyPath: String, timing: CAMediaTimingFunctionName) {
-        let animation = CABasicAnimation(keyPath: keyPath)
-        animation.fromValue = 0.0
-        animation.toValue = 1.0
-        animation.duration = duration
-        animation.delegate = self
-        animation.isRemovedOnCompletion = false
-        animation.timingFunction = CAMediaTimingFunction(name: timing)
-        shapeLayer.add(animation, forKey: keyPath)
     }
     
     // MARK: - CAAnimationDelegate
@@ -97,11 +73,39 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         }
     }
     
-    // MARK: - Properties
+    // MARK: - Private Methods
     
-    private(set) var isAnimating = false
-
-    private let shapeLayer = CAShapeLayer()
-    private let duration = 1.0
-    private var shouldStopAnimationOnNextCycle = false
+    private func setupShapeLayer() {
+        shapeLayer.frame = layer.bounds
+        shapeLayer.strokeColor = strokeColor
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.lineWidth = strokeWidth
+        shapeLayer.strokeStart = 0.0
+        shapeLayer.strokeEnd = 0.0
+        layer.addSublayer(shapeLayer)
+        
+        let radius = min(bounds.width, bounds.height) / 2.0 - strokeWidth/2.0
+        let rect = CGRect(x: bounds.midX - radius/2.0, y: bounds.midY - radius/2.0, width: radius, height: radius)
+        let path = UIBezierPath(ovalIn: rect)
+        
+        shapeLayer.path = path.cgPath
+    }
+    
+    private func startAnimation() {
+        shouldStopAnimationOnNextCycle = false
+        shapeLayer.strokeStart = 0.0
+        shapeLayer.strokeEnd = 0.0
+        startAnimation(for: "strokeEnd", timing: .easeIn)
+    }
+    
+    private func startAnimation(for keyPath: String, timing: CAMediaTimingFunctionName) {
+        let animation = CABasicAnimation(keyPath: keyPath)
+        animation.fromValue = 0.0
+        animation.toValue = 1.0
+        animation.duration = duration
+        animation.delegate = self
+        animation.isRemovedOnCompletion = false
+        animation.timingFunction = CAMediaTimingFunction(name: timing)
+        shapeLayer.add(animation, forKey: keyPath)
+    }
 }
