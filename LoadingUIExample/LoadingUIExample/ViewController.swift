@@ -10,25 +10,47 @@ import UIKit
 import LoadingUI
 
 class ViewController: UIViewController {
+    // MARK: - Properties
+    
+    var loadingCancelled = false
+    
+    // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // set up loadingVC
         guard let loadingVC = segue.destination as? LoadingViewController
             else { return }
         
         loadingVC.delegate = self
         loadingVC.timeout = 5
         
+        // successful loading
         if segue.identifier == "PresentCompletingLoadingVC" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                if self.loadingCancelled {
+                    self.loadingCancelled = false
+                    return
+                }
                 loadingVC.loadingDidFinish(withError: nil)
             }
+            
+        // timed-out loading
         } else if segue.identifier == "PresentTimingOutLoadingVC" {
             // do nothing
+            
+        // failed loading
         } else if segue.identifier == "PresentFailingLoadingVC" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                if self.loadingCancelled {
+                    self.loadingCancelled = false
+                    return
+                }
                 loadingVC.loadingDidFinish(withError: URLError(.badURL))
             }
         }
     }
+    
+    // MARK: - Alerts
     
     private func presentSuccessAlert() {
         presentAlert(withTitle: "Success!",
@@ -61,7 +83,10 @@ class ViewController: UIViewController {
     }
 }
 
+// MARK: - LoadingViewControllerDelegate
+
 extension ViewController: LoadingViewControllerDelegate {
+    // called if loading is successful or if completed with error
     func loadingViewController(
         _ loadingViewController: LoadingViewController,
         didFinishLoadingWithError error: Error?)
@@ -86,5 +111,11 @@ extension ViewController: LoadingViewControllerDelegate {
                 self.presentTimeoutAlert()
             }
         }
+    }
+    
+    func loadingViewControllerDidCancelLoading(
+        _ loadingViewController: LoadingViewController)
+    {
+        loadingCancelled = true
     }
 }
