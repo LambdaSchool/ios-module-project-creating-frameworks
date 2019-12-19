@@ -46,7 +46,7 @@ public class LoadingViewController: UIViewController {
     }
     
     public override func viewDidDisappear(_ animated: Bool) {
-        if !isLoading {
+        if isLoading {
             cancelLoading()
         } else {
             endLoading()
@@ -81,6 +81,7 @@ public class LoadingViewController: UIViewController {
         self.isLoading = true
         loadingView.startAnimating()
         timer = Timer.scheduledTimer(withTimeInterval: timeout, repeats: false, block: { _ in
+            self.isLoading = false
             self.delegate?.loadingViewControllerDidTimeOut(self)
             self.timer = nil
         })

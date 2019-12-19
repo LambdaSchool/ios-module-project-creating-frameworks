@@ -85,12 +85,12 @@
 		99341BAD23AA8D3F00ACDE98 /* LoadingUIExample */ = {
 			isa = PBXGroup;
 			children = (
-				99341BAE23AA8D3F00ACDE98 /* AppDelegate.swift */,
-				99341BB023AA8D3F00ACDE98 /* SceneDelegate.swift */,
 				99341BB223AA8D3F00ACDE98 /* ViewController.swift */,
 				99341BB423AA8D3F00ACDE98 /* Main.storyboard */,
-				99341BB723AA8D4200ACDE98 /* Assets.xcassets */,
 				99341BB923AA8D4200ACDE98 /* LaunchScreen.storyboard */,
+				99341BAE23AA8D3F00ACDE98 /* AppDelegate.swift */,
+				99341BB023AA8D3F00ACDE98 /* SceneDelegate.swift */,
+				99341BB723AA8D4200ACDE98 /* Assets.xcassets */,
 				99341BBC23AA8D4200ACDE98 /* Info.plist */,
 			);
 			path = LoadingUIExample;

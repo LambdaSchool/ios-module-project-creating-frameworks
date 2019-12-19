@@ -24,14 +24,16 @@ class ViewController: UIViewController {
         loadingVC.delegate = self
         loadingVC.timeout = 5
         
+        loadingCancelled = false
+        
         // successful loading
         if segue.identifier == "PresentCompletingLoadingVC" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 if self.loadingCancelled {
                     self.loadingCancelled = false
-                    return
+                } else {
+                    loadingVC.loadingDidFinish(withError: nil)
                 }
-                loadingVC.loadingDidFinish(withError: nil)
             }
             
         // timed-out loading
@@ -43,9 +45,9 @@ class ViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 if self.loadingCancelled {
                     self.loadingCancelled = false
-                    return
+                } else {
+                    loadingVC.loadingDidFinish(withError: URLError(.badURL))
                 }
-                loadingVC.loadingDidFinish(withError: URLError(.badURL))
             }
         }
     }
@@ -65,6 +67,11 @@ class ViewController: UIViewController {
     private func presentTimeoutAlert() {
         presentAlert(withTitle: "Timed out!",
                      message: "Loading has taken too long and will cancel.")
+    }
+    
+    private func presentCancellationAlert() {
+        presentAlert(withTitle: "Cancelled!",
+                     message: "Data loading has been manually cancelled.")
     }
     
     private func presentAlert(withTitle title: String, message: String) {
@@ -117,5 +124,6 @@ extension ViewController: LoadingViewControllerDelegate {
         _ loadingViewController: LoadingViewController)
     {
         loadingCancelled = true
+        presentCancellationAlert()
     }
 }
