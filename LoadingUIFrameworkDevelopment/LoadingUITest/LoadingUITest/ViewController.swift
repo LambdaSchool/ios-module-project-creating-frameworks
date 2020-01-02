@@ -15,7 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func loadingPressed(_ sender: Any) {
+        let vc = LoadingViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
