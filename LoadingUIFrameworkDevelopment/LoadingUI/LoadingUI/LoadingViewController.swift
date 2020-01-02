@@ -9,13 +9,21 @@
 import UIKit
 
 public class LoadingViewController: UIViewController {
+    
+    private let indeterminateLoadingView = IndeterminateLoadingView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        // Do any additional setup after loading the view.
+        self.view.addSubview(self.indeterminateLoadingView)
+        self.indeterminateLoadingView.startAnimating()
     }
     
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.indeterminateLoadingView.center = self.view.center
+    }
 
     /*
     // MARK: - Navigation
@@ -28,3 +36,4 @@ public class LoadingViewController: UIViewController {
     */
 
 }
+

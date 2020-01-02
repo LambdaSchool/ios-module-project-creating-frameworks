@@ -16,8 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mf2-Te-6Bo">
-                                <rect key="frame" x="179.5" y="433" width="55" height="30"/>
-                                <state key="normal" title="Loading"/>
+                                <rect key="frame" x="183.5" y="433" width="47" height="30"/>
+                                <state key="normal" title="START"/>
                                 <connections>
                                     <action selector="loadingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrD-pg-9Ss"/>
                                 </connections>
