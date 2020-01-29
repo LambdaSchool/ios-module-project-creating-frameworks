@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		63C9FA0223E229D10050ADD7 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C9FA0023E229D10050ADD7 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C9FA3323E22C330050ADD7 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9FA3223E22C330050ADD7 /* IndeterminateLoadingView.swift */; };
+		63C9FA3523E22C5A0050ADD7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9FA3423E22C5A0050ADD7 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63C9F9FD23E229D10050ADD7 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C9FA0023E229D10050ADD7 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		63C9FA0123E229D10050ADD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C9FA3223E22C330050ADD7 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		63C9FA3423E22C5A0050ADD7 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +51,9 @@
 			isa = PBXGroup;
 			children = (
 				63C9FA0023E229D10050ADD7 /* LoadingUI.h */,
+				63C9FA3223E22C330050ADD7 /* IndeterminateLoadingView.swift */,
 				63C9FA0123E229D10050ADD7 /* Info.plist */,
+				63C9FA3423E22C5A0050ADD7 /* LoadingViewController.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					63C9F9FC23E229D10050ADD7 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C9FA3323E22C330050ADD7 /* IndeterminateLoadingView.swift in Sources */,
+				63C9FA3523E22C5A0050ADD7 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		63C9FA0623E229D10050ADD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P7DFWNNEL3;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chadarutherford.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		63C9FA0723E229D10050ADD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P7DFWNNEL3;

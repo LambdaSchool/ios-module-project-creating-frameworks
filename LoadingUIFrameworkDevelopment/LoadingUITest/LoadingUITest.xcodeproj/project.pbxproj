@@ -13,6 +13,8 @@
 		63C9FA1C23E22A690050ADD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C9FA1A23E22A690050ADD7 /* Main.storyboard */; };
 		63C9FA1E23E22A6A0050ADD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C9FA1D23E22A6A0050ADD7 /* Assets.xcassets */; };
 		63C9FA2123E22A6A0050ADD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C9FA1F23E22A6A0050ADD7 /* LaunchScreen.storyboard */; };
+		63C9FA2F23E22B820050ADD7 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C9FA2E23E22B140050ADD7 /* LoadingUI.framework */; };
+		63C9FA3023E22B820050ADD7 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C9FA2E23E22B140050ADD7 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,20 @@
 			remoteInfo = LoadingUI;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63C9FA3123E22B820050ADD7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				63C9FA3023E22B820050ADD7 /* LoadingUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		63C9FA1123E22A690050ADD7 /* LoadingUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C9FA2F23E22B820050ADD7 /* LoadingUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +122,7 @@
 				63C9FA0D23E22A690050ADD7 /* Sources */,
 				63C9FA0E23E22A690050ADD7 /* Frameworks */,
 				63C9FA0F23E22A690050ADD7 /* Resources */,
+				63C9FA3123E22B820050ADD7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
