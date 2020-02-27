@@ -9,13 +9,23 @@
 import UIKit
 
 open class LoadingViewController: UIViewController {
-    var artist: DrawCircle?
+    lazy var artist = DrawCircle(withTrack: true,
+                                 trackColor: UIColor.white.cgColor,
+                                 radius: 20,
+                                 center: view.center,
+                                 clockwise: true,
+                                 fillColor: UIColor.clear.cgColor,
+                                 strokeColor: UIColor.green.cgColor,
+                                 lineWidth: 8,
+                                 view: self.view)
+    
     var countdownTimer: Timer?
     let totalTime = 5
     var currentTime = 5
     
     func startTimer() {
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        
     }
     
     @discardableResult fileprivate func progress() -> CGFloat {
@@ -36,8 +46,8 @@ open class LoadingViewController: UIViewController {
     
     func drawProgress() {
         DispatchQueue.main.async() {
-            self.artist?.strokeEnd = self.progress()
-            self.artist?.draw()
+            self.artist.strokeEnd = self.progress()
+            self.artist.draw()
         }
         
     }
@@ -67,9 +77,7 @@ open class LoadingViewController: UIViewController {
                             strokeColor: UIColor.systemGreen.cgColor,
                             lineWidth: 4,
                             view: self.view)
-        
-        print(artist!.center)
-        artist?.draw()
+        artist.draw()
         self.view.layoutIfNeeded()
         self.startTimer()
     }
