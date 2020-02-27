@@ -22,7 +22,6 @@
                                 <state key="normal" title="Free Money"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77V-OT-tIZ"/>
-                                    <segue destination="bId-VZ-B2n" kind="presentation" id="4Tw-l1-VI2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,21 +39,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="105"/>
-        </scene>
-        <!--Loading View Controller-->
-        <scene sceneID="K9y-61-Xgh">
-            <objects>
-                <viewController id="bId-VZ-B2n" customClass="LoadingViewController" customModule="LoadingUITest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P4V-ax-2fm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6cF-T0-iCi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SG7-C6-fSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="874" y="106"/>
         </scene>
     </scenes>
 </document>

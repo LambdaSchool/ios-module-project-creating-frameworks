@@ -15,7 +15,6 @@
 		1B6E1B4224071FE500A33BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6E1B4024071FE500A33BB7 /* LaunchScreen.storyboard */; };
 		1B6E1B53240720A100A33BB7 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6E1B502407202700A33BB7 /* LoadingUI.framework */; };
 		1B6E1B54240720A100A33BB7 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6E1B502407202700A33BB7 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1B6E1B5D2408107D00A33BB7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E1B5C2408107D00A33BB7 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		1B6E1B4124071FE500A33BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B6E1B4324071FE500A33BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B6E1B4B2407202700A33BB7 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
-		1B6E1B5C2408107D00A33BB7 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,6 @@
 			children = (
 				1B6E1B3524071FE200A33BB7 /* AppDelegate.swift */,
 				1B6E1B3724071FE200A33BB7 /* SceneDelegate.swift */,
-				1B6E1B5C2408107D00A33BB7 /* LoadingViewController.swift */,
 				1B6E1B3924071FE200A33BB7 /* ViewController.swift */,
 				1B6E1B3B24071FE200A33BB7 /* Main.storyboard */,
 				1B6E1B3E24071FE500A33BB7 /* Assets.xcassets */,
@@ -207,7 +204,6 @@
 				1B6E1B3A24071FE200A33BB7 /* ViewController.swift in Sources */,
 				1B6E1B3624071FE200A33BB7 /* AppDelegate.swift in Sources */,
 				1B6E1B3824071FE200A33BB7 /* SceneDelegate.swift in Sources */,
-				1B6E1B5D2408107D00A33BB7 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
