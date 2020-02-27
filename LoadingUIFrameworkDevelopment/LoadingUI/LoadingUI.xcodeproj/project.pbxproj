@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1B6E1B2324071F7200A33BB7 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B6E1B2124071F7200A33BB7 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B6E1B5A240725F400A33BB7 /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E1B58240725F400A33BB7 /* PolarPoint.swift */; };
+		1B6E1B5B240725F400A33BB7 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E1B59240725F400A33BB7 /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B6E1B1E24071F7200A33BB7 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6E1B2124071F7200A33BB7 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		1B6E1B2224071F7200A33BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B6E1B58240725F400A33BB7 /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
+		1B6E1B59240725F400A33BB7 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				1B6E1B2124071F7200A33BB7 /* LoadingUI.h */,
+				1B6E1B59240725F400A33BB7 /* IndeterminateLoadingView.swift */,
+				1B6E1B58240725F400A33BB7 /* PolarPoint.swift */,
 				1B6E1B2224071F7200A33BB7 /* Info.plist */,
 			);
 			path = LoadingUI;
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					1B6E1B1D24071F7200A33BB7 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6E1B5A240725F400A33BB7 /* PolarPoint.swift in Sources */,
+				1B6E1B5B240725F400A33BB7 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		1B6E1B2724071F7200A33BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XFZ73X2DJQ;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jorgealvarez.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		1B6E1B2824071F7200A33BB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XFZ73X2DJQ;
