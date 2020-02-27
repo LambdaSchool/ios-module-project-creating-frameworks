@@ -64,7 +64,7 @@ open class LoadingViewController: UIViewController {
                                        center: view.center,
                                        clockwise: true,
                                        fillColor: UIColor.clear.cgColor,
-                                       strokeColor: UIColor.systemGreen.cgColor,
+                                       strokeColor: UIColor.blue.cgColor,
                                        lineWidth: 4,
                                        view: self.view)
         artist?.draw()
