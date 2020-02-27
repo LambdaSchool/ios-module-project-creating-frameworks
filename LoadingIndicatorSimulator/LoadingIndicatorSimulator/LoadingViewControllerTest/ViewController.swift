@@ -25,14 +25,5 @@ class ViewController: LoadingViewController {
         view.addSubview(testView)
         print(testView.center)
         load(on: testView)
-        
-        let testRect2 = CGRect(x: 300,
-                              y: 50,
-                              width: 50,
-                              height: 50)
-        let testView2 = UIView(frame: testRect2)
-        testView2.backgroundColor = .systemRed
-        view.addSubview(testView2)
-        load(on: testView2)
     }
 }
