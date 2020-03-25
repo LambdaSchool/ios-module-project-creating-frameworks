@@ -15,6 +15,8 @@
 		B6B9A136242BF01600F8E952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B9A134242BF01600F8E952 /* LaunchScreen.storyboard */; };
 		B6B9A15E242BF0E500F8E952 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B9A15C242BF0DB00F8E952 /* LoadingUI.framework */; };
 		B6B9A15F242BF0E500F8E952 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6B9A15C242BF0DB00F8E952 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6B9A162242BF1EC00F8E952 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9A161242BF1EC00F8E952 /* IndeterminateLoadingView.swift */; };
+		B6B9A164242BF1F500F8E952 /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9A163242BF1F500F8E952 /* PolarPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,13 @@
 			containerPortal = B6B9A157242BF0DA00F8E952 /* LoadingUI.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B6B9A147242BF04600F8E952;
+			remoteInfo = LoadingUI;
+		};
+		B6B9A169242BF43400F8E952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B9A157242BF0DA00F8E952 /* LoadingUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B9A146242BF04600F8E952;
 			remoteInfo = LoadingUI;
 		};
 /* End PBXContainerItemProxy section */
@@ -51,6 +60,8 @@
 		B6B9A135242BF01600F8E952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6B9A137242BF01600F8E952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B9A157242BF0DA00F8E952 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
+		B6B9A161242BF1EC00F8E952 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		B6B9A163242BF1F500F8E952 /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +81,6 @@
 			children = (
 				B6B9A128242BF01500F8E952 /* LoadingUIFrameworkDevelopment */,
 				B6B9A127242BF01500F8E952 /* Products */,
-				B6B9A15D242BF0E500F8E952 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,11 +95,12 @@
 		B6B9A128242BF01500F8E952 /* LoadingUIFrameworkDevelopment */ = {
 			isa = PBXGroup;
 			children = (
-				B6B9A154242BF08300F8E952 /* Frameworks */,
-				B6B9A153242BF07B00F8E952 /* Resources */,
 				B6B9A12D242BF01500F8E952 /* ViewController.swift */,
 				B6B9A12F242BF01500F8E952 /* Main.storyboard */,
 				B6B9A137242BF01600F8E952 /* Info.plist */,
+				B6B9A153242BF07B00F8E952 /* Resources */,
+				B6B9A165242BF20500F8E952 /* Supporting Files */,
+				B6B9A154242BF08300F8E952 /* Frameworks */,
 			);
 			path = LoadingUIFrameworkDevelopment;
 			sourceTree = "<group>";
@@ -121,11 +132,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6B9A15D242BF0E500F8E952 /* Frameworks */ = {
+		B6B9A165242BF20500F8E952 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6B9A163242BF1F500F8E952 /* PolarPoint.swift */,
+				B6B9A161242BF1EC00F8E952 /* IndeterminateLoadingView.swift */,
 			);
-			name = Frameworks;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +156,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B6B9A16A242BF43400F8E952 /* PBXTargetDependency */,
 			);
 			name = LoadingUIFrameworkDevelopment;
 			productName = LoadingUIFrameworkDevelopment;
@@ -219,10 +233,20 @@
 				B6B9A12E242BF01500F8E952 /* ViewController.swift in Sources */,
 				B6B9A12A242BF01500F8E952 /* AppDelegate.swift in Sources */,
 				B6B9A12C242BF01500F8E952 /* SceneDelegate.swift in Sources */,
+				B6B9A162242BF1EC00F8E952 /* IndeterminateLoadingView.swift in Sources */,
+				B6B9A164242BF1F500F8E952 /* PolarPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6B9A16A242BF43400F8E952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingUI;
+			targetProxy = B6B9A169242BF43400F8E952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B6B9A12F242BF01500F8E952 /* Main.storyboard */ = {
@@ -365,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4939K9623X;
 				INFOPLIST_FILE = LoadingUIFrameworkDevelopment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4939K9623X;
 				INFOPLIST_FILE = LoadingUIFrameworkDevelopment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
