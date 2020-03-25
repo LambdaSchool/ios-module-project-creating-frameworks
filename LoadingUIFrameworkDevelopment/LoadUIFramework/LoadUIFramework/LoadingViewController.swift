@@ -10,21 +10,29 @@ import UIKit
 
 class LoadingViewController: UIViewController {
 
+    private let loadingView = IndeterminateLoadingView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        loadingView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,
+            constant: 8).isActive = true
+        loadingView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,
+                                              constant: -8)
+        loadingView.heightAnchor.constraint(equalTo: loadingView.widthAnchor,
+                                            multiplier: 1,
+                                            constant: 0)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    public func startAnimation() {
+        loadingView.startAnimating()
     }
-    */
-
+    
+    public func stopAnimation() {
+        loadingView.stopAnimating()
+    }
+    
 }
