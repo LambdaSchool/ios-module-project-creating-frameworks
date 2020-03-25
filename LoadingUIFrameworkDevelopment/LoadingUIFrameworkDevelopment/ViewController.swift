@@ -11,9 +11,16 @@ import LoadingUI
 
 class ViewController: UIViewController {
 
+    let loadingVC = LoadingViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func showLoadingTapped(_ sender: Any) {
+        loadingVC.modalPresentationStyle = .fullScreen
+        present(loadingVC, animated: true, completion: nil)
     }
 }
 
