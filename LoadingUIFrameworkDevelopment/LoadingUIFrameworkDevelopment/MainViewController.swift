@@ -12,6 +12,7 @@ import LoadingUI
 class MainViewController: UIViewController {
     
     
+    //MARK:- Properties
     
     private let activateButton: UIButton = {
         let button = UIButton()
@@ -26,10 +27,33 @@ class MainViewController: UIViewController {
     }()
     
     
+    private let heartButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(systemName: "heart"), for: .normal)
+        button.tintColor = .white
+        button.layer.cornerRadius = 16
+        button.backgroundColor = .red
+        button.addTarget(self, action: #selector(heartTapped), for: .touchUpInside)
+        return button
+        
+    }()
+    
+    //MARK:- View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
         
+        
+    }
+    
+    
+    //MARK:- Action
+    
+    @objc func heartTapped() {
+        let heartAnimationScene = ReplicateViewController()
+        present(heartAnimationScene, animated: true, completion: nil)
         
     }
 
@@ -44,14 +68,18 @@ class MainViewController: UIViewController {
     
     private func setUpUI() {
         view.addSubview(activateButton)
-        
+        view.addSubview(heartButton)
         NSLayoutConstraint.activate([
             activateButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             activateButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             activateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 80),
-            activateButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -80)
+            activateButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -80),
             
-            
+            heartButton.topAnchor.constraint(equalTo: activateButton.bottomAnchor,constant: 10),
+            heartButton.leadingAnchor.constraint(equalTo: activateButton.leadingAnchor),
+            heartButton.trailingAnchor.constraint(equalTo: activateButton.trailingAnchor),
+            heartButton.heightAnchor.constraint(equalToConstant: 40)
+        
         ])
     }
     

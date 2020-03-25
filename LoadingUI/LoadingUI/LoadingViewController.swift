@@ -16,16 +16,19 @@ public class LoadingViewController : UIViewController
     private let loadingView : IndeterminateLoadingView = {
         let view = IndeterminateLoadingView()
         view.startAnimating()
+       
         view.translatesAutoresizingMaskIntoConstraints = false
         view.tintColor = .red
         return view
     }()
     
+    //MARK:- View Life Cycle
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         view.addSubview(loadingView)
-         view.backgroundColor = .white
+        view.backgroundColor = .white
         
         NSLayoutConstraint.activate([
             loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
