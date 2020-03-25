@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gWG-OF-xtB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoadingViewController" customModule="LoadingUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBQ-Ts-EcG" customClass="IndeterminateLoadingView" customModule="LoadingUI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94C-8O-Abc">
+                                <rect key="frame" x="-29" y="787" width="472" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="6MD-JK-uWP"/>
+                                    <constraint firstAttribute="width" constant="75" id="e8t-JD-B4h"/>
+                                </constraints>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXJ-2l-dqV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="94C-8O-Abc" firstAttribute="leading" secondItem="lKR-0Q-6P3" secondAttribute="leading" constant="77" id="9kA-U4-Sah"/>
+                            <constraint firstItem="lKR-0Q-6P3" firstAttribute="trailing" secondItem="94C-8O-Abc" secondAttribute="trailing" constant="77" id="HS3-K7-aiv"/>
+                            <constraint firstItem="94C-8O-Abc" firstAttribute="bottom" secondItem="lKR-0Q-6P3" secondAttribute="bottom" id="Yua-tA-XSA"/>
+                            <constraint firstItem="94C-8O-Abc" firstAttribute="top" secondItem="lKR-0Q-6P3" secondAttribute="top" constant="699" id="vGH-VH-4o7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lKR-0Q-6P3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="10j-lH-gtg"/>
+                    <connections>
+                        <outlet property="MainView" destination="xBQ-Ts-EcG" id="mPm-20-TLl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C03-fu-mxV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gWG-OF-xtB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="04P-iS-jsJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qXC-M1-Lb5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6a-G3-LD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
