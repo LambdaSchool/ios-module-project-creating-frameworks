@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  LoadingUIFrameworkDevelopment
 //
 //  Created by Nick Nguyen on 3/25/20.
@@ -9,7 +9,7 @@
 import UIKit
 import LoadingUI
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     
     
@@ -34,6 +34,10 @@ class ViewController: UIViewController {
     }
 
     @objc private func activateTapped() {
+        let modalView = LoadingViewController()
+        modalView.modalPresentationStyle = .fullScreen
+        present(modalView, animated: true, completion: nil)
+        modalView.dismissModalView()
         print("Showing modal view")
     }
     

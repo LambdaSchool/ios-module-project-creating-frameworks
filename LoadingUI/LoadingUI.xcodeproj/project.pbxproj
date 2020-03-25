@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6B9A14C242BF04600F8E952 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B9A14A242BF04600F8E952 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6B9A167242BF28100F8E952 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9A166242BF28100F8E952 /* LoadingViewController.swift */; };
+		B6B9A173242BFE6D00F8E952 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9A172242BFE6D00F8E952 /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		B6B9A14A242BF04600F8E952 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		B6B9A14B242BF04600F8E952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B9A166242BF28100F8E952 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		B6B9A172242BFE6D00F8E952 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = "../../LoadingUIFrameworkDevelopment/LoadingUIFrameworkDevelopment/Supporting Files/IndeterminateLoadingView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				B6B9A14A242BF04600F8E952 /* LoadingUI.h */,
 				B6B9A14B242BF04600F8E952 /* Info.plist */,
+				B6B9A172242BFE6D00F8E952 /* IndeterminateLoadingView.swift */,
 				B6B9A166242BF28100F8E952 /* LoadingViewController.swift */,
 			);
 			path = LoadingUI;
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B9A167242BF28100F8E952 /* LoadingViewController.swift in Sources */,
+				B6B9A173242BFE6D00F8E952 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
