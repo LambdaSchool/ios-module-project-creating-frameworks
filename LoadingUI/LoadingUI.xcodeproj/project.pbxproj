@@ -78,7 +78,6 @@
 				5C63A220242BFB1C00EB454B /* Framework */,
 				5C63A1F6242BF80900EB454B /* LoadingUI */,
 				5C63A1F5242BF80900EB454B /* Products */,
-				5C63A227242BFB4A00EB454B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,13 +117,6 @@
 				5C63A226242BFB3900EB454B /* LoadingUIFramework.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5C63A227242BFB4A00EB454B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5C63A21A242BF8AF00EB454B /* LoadingUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C63A218242BF8AF00EB454B /* LoadingUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C63A22F242BFD5600EB454B /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C63A22E242BFD5600EB454B /* PolarPoint.swift */; };
+		5C63A231242BFD5E00EB454B /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C63A230242BFD5E00EB454B /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C63A215242BF8AF00EB454B /* LoadingUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C63A218242BF8AF00EB454B /* LoadingUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFramework.h; sourceTree = "<group>"; };
 		5C63A219242BF8AF00EB454B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C63A22E242BFD5600EB454B /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
+		5C63A230242BFD5E00EB454B /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		5C63A217242BF8AF00EB454B /* LoadingUIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				5C63A22E242BFD5600EB454B /* PolarPoint.swift */,
+				5C63A230242BFD5E00EB454B /* IndeterminateLoadingView.swift */,
 				5C63A218242BF8AF00EB454B /* LoadingUIFramework.h */,
 				5C63A219242BF8AF00EB454B /* Info.plist */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					5C63A214242BF8AF00EB454B = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C63A22F242BFD5600EB454B /* PolarPoint.swift in Sources */,
+				5C63A231242BFD5E00EB454B /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		5C63A21E242BF8AF00EB454B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = T8B9LKFKJY;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.enriquegongora.LoadingUIFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		5C63A21F242BF8AF00EB454B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = T8B9LKFKJY;
