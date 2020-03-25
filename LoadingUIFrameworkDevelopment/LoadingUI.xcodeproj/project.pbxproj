@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7279A83C242BE74300DFAA1A /* Build configuration list for PBXProject "LoadingUIFramework" */;
+			buildConfigurationList = 7279A83C242BE74300DFAA1A /* Build configuration list for PBXProject "LoadingUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -308,7 +308,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7279A83C242BE74300DFAA1A /* Build configuration list for PBXProject "LoadingUIFramework" */ = {
+		7279A83C242BE74300DFAA1A /* Build configuration list for PBXProject "LoadingUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7279A848242BE74300DFAA1A /* Debug */,
