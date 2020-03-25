@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		B521B593242BE86C0000F31E /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B521B591242BE86C0000F31E /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B521B5A5242BEAA80000F31E /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521B5A4242BEAA80000F31E /* IndeterminateLoadingView.swift */; };
+		B521B5A7242BEABD0000F31E /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521B5A6242BEABD0000F31E /* PolarPoint.swift */; };
+		B521B5AA242BEB7D0000F31E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521B5A9242BEB7D0000F31E /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B521B58E242BE86C0000F31E /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B521B591242BE86C0000F31E /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		B521B592242BE86C0000F31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B521B5A4242BEAA80000F31E /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		B521B5A6242BEABD0000F31E /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolarPoint.swift; path = ../../../PolarPoint.swift; sourceTree = "<group>"; };
+		B521B5A9242BEB7D0000F31E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				B521B591242BE86C0000F31E /* LoadingUI.h */,
 				B521B592242BE86C0000F31E /* Info.plist */,
+				B521B5A4242BEAA80000F31E /* IndeterminateLoadingView.swift */,
+				B521B5A6242BEABD0000F31E /* PolarPoint.swift */,
+				B521B5A9242BEB7D0000F31E /* LoadingViewController.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 				TargetAttributes = {
 					B521B58D242BE86C0000F31E = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B521B5A5242BEAA80000F31E /* IndeterminateLoadingView.swift in Sources */,
+				B521B5A7242BEABD0000F31E /* PolarPoint.swift in Sources */,
+				B521B5AA242BEB7D0000F31E /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 		B521B597242BE86C0000F31E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -274,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ElizabethWingate.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,6 +297,7 @@
 		B521B598242BE86C0000F31E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
