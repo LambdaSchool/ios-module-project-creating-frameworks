@@ -16,7 +16,7 @@
 		5CE0B6E5242BFEBD0046C433 /* LoadingUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE0B6E8242BFEBD0046C433 /* LoadingUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFramework.h; sourceTree = "<group>"; };
 		5CE0B6E9242BFEBD0046C433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5CE0B6F0242BFED50046C433 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		5CE0B6F0242BFED50046C433 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../LoadingUI/LoadingUI/IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 		5CE0B6F1242BFED50046C433 /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

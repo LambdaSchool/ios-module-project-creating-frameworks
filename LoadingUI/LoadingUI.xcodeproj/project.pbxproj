@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA12176242C02F900E96080 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA12175242C02F900E96080 /* IndeterminateLoadingView.swift */; };
 		5CE0B701242BFF1D0046C433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0B700242BFF1D0046C433 /* AppDelegate.swift */; };
 		5CE0B703242BFF1D0046C433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0B702242BFF1D0046C433 /* SceneDelegate.swift */; };
 		5CE0B705242BFF1D0046C433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0B704242BFF1D0046C433 /* ViewController.swift */; };
 		5CE0B708242BFF1D0046C433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE0B706242BFF1D0046C433 /* Main.storyboard */; };
 		5CE0B70A242BFF1E0046C433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE0B709242BFF1E0046C433 /* Assets.xcassets */; };
 		5CE0B70D242BFF1E0046C433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE0B70B242BFF1E0046C433 /* LaunchScreen.storyboard */; };
-		5CE0B71B242BFF9F0046C433 /* LoadingUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE0B719242BFF7B0046C433 /* LoadingUIFramework.framework */; };
-		5CE0B71C242BFF9F0046C433 /* LoadingUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE0B719242BFF7B0046C433 /* LoadingUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5CE0B722242C014E0046C433 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0B721242C014E0046C433 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5CE0B718242BFF7B0046C433 /* PBXContainerItemProxy */ = {
+		5CA12173242C029C00E96080 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5CE0B714242BFF7B0046C433 /* LoadingUIFramework.xcodeproj */;
 			proxyType = 2;
@@ -34,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5CE0B71C242BFF9F0046C433 /* LoadingUIFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5CA12175242C02F900E96080 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 		5CE0B6FD242BFF1D0046C433 /* LoadingUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE0B700242BFF1D0046C433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CE0B702242BFF1D0046C433 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +50,8 @@
 		5CE0B709242BFF1E0046C433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE0B70C242BFF1E0046C433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CE0B70E242BFF1E0046C433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5CE0B714242BFF7B0046C433 /* LoadingUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUIFramework.xcodeproj; path = ../LoadingUIFramework/LoadingUIFramework.xcodeproj; sourceTree = "<group>"; };
+		5CE0B714242BFF7B0046C433 /* LoadingUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUIFramework.xcodeproj; path = "/Users/enriquegongora/Desktop/Lambda School/Projects/ios-module-project-creating-frameworks/LoadingUIFramework/LoadingUIFramework.xcodeproj"; sourceTree = "<absolute>"; };
+		5CE0B721242C014E0046C433 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +59,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE0B71B242BFF9F0046C433 /* LoadingUIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA12170242C029C00E96080 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CA12174242C029C00E96080 /* LoadingUIFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5CE0B6F4242BFF1D0046C433 = {
 			isa = PBXGroup;
 			children = (
-				5CE0B714242BFF7B0046C433 /* LoadingUIFramework.xcodeproj */,
 				5CE0B6FF242BFF1D0046C433 /* LoadingUI */,
 				5CE0B6FE242BFF1D0046C433 /* Products */,
 				5CE0B71A242BFF9F0046C433 /* Frameworks */,
@@ -89,6 +96,8 @@
 				5CE0B700242BFF1D0046C433 /* AppDelegate.swift */,
 				5CE0B702242BFF1D0046C433 /* SceneDelegate.swift */,
 				5CE0B704242BFF1D0046C433 /* ViewController.swift */,
+				5CE0B721242C014E0046C433 /* LoadingViewController.swift */,
+				5CA12175242C02F900E96080 /* IndeterminateLoadingView.swift */,
 				5CE0B706242BFF1D0046C433 /* Main.storyboard */,
 				5CE0B709242BFF1E0046C433 /* Assets.xcassets */,
 				5CE0B70B242BFF1E0046C433 /* LaunchScreen.storyboard */,
@@ -97,17 +106,10 @@
 			path = LoadingUI;
 			sourceTree = "<group>";
 		};
-		5CE0B715242BFF7B0046C433 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5CE0B719242BFF7B0046C433 /* LoadingUIFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5CE0B71A242BFF9F0046C433 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CE0B714242BFF7B0046C433 /* LoadingUIFramework.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,7 +163,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5CE0B715242BFF7B0046C433 /* Products */;
+					ProductGroup = 5CA12170242C029C00E96080 /* Products */;
 					ProjectRef = 5CE0B714242BFF7B0046C433 /* LoadingUIFramework.xcodeproj */;
 				},
 			);
@@ -173,11 +175,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5CE0B719242BFF7B0046C433 /* LoadingUIFramework.framework */ = {
+		5CA12174242C029C00E96080 /* LoadingUIFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = LoadingUIFramework.framework;
-			remoteRef = 5CE0B718242BFF7B0046C433 /* PBXContainerItemProxy */;
+			remoteRef = 5CA12173242C029C00E96080 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -201,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE0B705242BFF1D0046C433 /* ViewController.swift in Sources */,
+				5CA12176242C02F900E96080 /* IndeterminateLoadingView.swift in Sources */,
 				5CE0B701242BFF1D0046C433 /* AppDelegate.swift in Sources */,
 				5CE0B703242BFF1D0046C433 /* SceneDelegate.swift in Sources */,
+				5CE0B722242C014E0046C433 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
