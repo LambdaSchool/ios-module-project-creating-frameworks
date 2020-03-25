@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C63A21A242BF8AF00EB454B /* LoadingUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C63A218242BF8AF00EB454B /* LoadingUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C63A22F242BFD5600EB454B /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C63A22E242BFD5600EB454B /* PolarPoint.swift */; };
-		5C63A231242BFD5E00EB454B /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C63A230242BFD5E00EB454B /* IndeterminateLoadingView.swift */; };
+		5CE0B6EA242BFEBD0046C433 /* LoadingUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE0B6E8242BFEBD0046C433 /* LoadingUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CE0B6F2242BFED50046C433 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0B6F0242BFED50046C433 /* IndeterminateLoadingView.swift */; };
+		5CE0B6F3242BFED50046C433 /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0B6F1242BFED50046C433 /* PolarPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C63A215242BF8AF00EB454B /* LoadingUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C63A218242BF8AF00EB454B /* LoadingUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFramework.h; sourceTree = "<group>"; };
-		5C63A219242BF8AF00EB454B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C63A22E242BFD5600EB454B /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
-		5C63A230242BFD5E00EB454B /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		5CE0B6E5242BFEBD0046C433 /* LoadingUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE0B6E8242BFEBD0046C433 /* LoadingUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFramework.h; sourceTree = "<group>"; };
+		5CE0B6E9242BFEBD0046C433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE0B6F0242BFED50046C433 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		5CE0B6F1242BFED50046C433 /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5C63A212242BF8AF00EB454B /* Frameworks */ = {
+		5CE0B6E2242BFEBD0046C433 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,29 +31,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C63A20B242BF8AF00EB454B = {
+		5CE0B6DB242BFEBD0046C433 = {
 			isa = PBXGroup;
 			children = (
-				5C63A217242BF8AF00EB454B /* LoadingUIFramework */,
-				5C63A216242BF8AF00EB454B /* Products */,
+				5CE0B6E7242BFEBD0046C433 /* LoadingUIFramework */,
+				5CE0B6E6242BFEBD0046C433 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5C63A216242BF8AF00EB454B /* Products */ = {
+		5CE0B6E6242BFEBD0046C433 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C63A215242BF8AF00EB454B /* LoadingUIFramework.framework */,
+				5CE0B6E5242BFEBD0046C433 /* LoadingUIFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C63A217242BF8AF00EB454B /* LoadingUIFramework */ = {
+		5CE0B6E7242BFEBD0046C433 /* LoadingUIFramework */ = {
 			isa = PBXGroup;
 			children = (
-				5C63A22E242BFD5600EB454B /* PolarPoint.swift */,
-				5C63A230242BFD5E00EB454B /* IndeterminateLoadingView.swift */,
-				5C63A218242BF8AF00EB454B /* LoadingUIFramework.h */,
-				5C63A219242BF8AF00EB454B /* Info.plist */,
+				5CE0B6E8242BFEBD0046C433 /* LoadingUIFramework.h */,
+				5CE0B6E9242BFEBD0046C433 /* Info.plist */,
+				5CE0B6F0242BFED50046C433 /* IndeterminateLoadingView.swift */,
+				5CE0B6F1242BFED50046C433 /* PolarPoint.swift */,
 			);
 			path = LoadingUIFramework;
 			sourceTree = "<group>";
@@ -61,25 +61,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5C63A210242BF8AF00EB454B /* Headers */ = {
+		5CE0B6E0242BFEBD0046C433 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C63A21A242BF8AF00EB454B /* LoadingUIFramework.h in Headers */,
+				5CE0B6EA242BFEBD0046C433 /* LoadingUIFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5C63A214242BF8AF00EB454B /* LoadingUIFramework */ = {
+		5CE0B6E4242BFEBD0046C433 /* LoadingUIFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C63A21D242BF8AF00EB454B /* Build configuration list for PBXNativeTarget "LoadingUIFramework" */;
+			buildConfigurationList = 5CE0B6ED242BFEBD0046C433 /* Build configuration list for PBXNativeTarget "LoadingUIFramework" */;
 			buildPhases = (
-				5C63A210242BF8AF00EB454B /* Headers */,
-				5C63A211242BF8AF00EB454B /* Sources */,
-				5C63A212242BF8AF00EB454B /* Frameworks */,
-				5C63A213242BF8AF00EB454B /* Resources */,
+				5CE0B6E0242BFEBD0046C433 /* Headers */,
+				5CE0B6E1242BFEBD0046C433 /* Sources */,
+				5CE0B6E2242BFEBD0046C433 /* Frameworks */,
+				5CE0B6E3242BFEBD0046C433 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +87,25 @@
 			);
 			name = LoadingUIFramework;
 			productName = LoadingUIFramework;
-			productReference = 5C63A215242BF8AF00EB454B /* LoadingUIFramework.framework */;
+			productReference = 5CE0B6E5242BFEBD0046C433 /* LoadingUIFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5C63A20C242BF8AF00EB454B /* Project object */ = {
+		5CE0B6DC242BFEBD0046C433 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Enrique Gongora";
 				TargetAttributes = {
-					5C63A214242BF8AF00EB454B = {
+					5CE0B6E4242BFEBD0046C433 = {
 						CreatedOnToolsVersion = 11.4;
 						LastSwiftMigration = 1140;
 					};
 				};
 			};
-			buildConfigurationList = 5C63A20F242BF8AF00EB454B /* Build configuration list for PBXProject "LoadingUIFramework" */;
+			buildConfigurationList = 5CE0B6DF242BFEBD0046C433 /* Build configuration list for PBXProject "LoadingUIFramework" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,18 +113,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 5C63A20B242BF8AF00EB454B;
-			productRefGroup = 5C63A216242BF8AF00EB454B /* Products */;
+			mainGroup = 5CE0B6DB242BFEBD0046C433;
+			productRefGroup = 5CE0B6E6242BFEBD0046C433 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C63A214242BF8AF00EB454B /* LoadingUIFramework */,
+				5CE0B6E4242BFEBD0046C433 /* LoadingUIFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5C63A213242BF8AF00EB454B /* Resources */ = {
+		5CE0B6E3242BFEBD0046C433 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,19 +134,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5C63A211242BF8AF00EB454B /* Sources */ = {
+		5CE0B6E1242BFEBD0046C433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C63A22F242BFD5600EB454B /* PolarPoint.swift in Sources */,
-				5C63A231242BFD5E00EB454B /* IndeterminateLoadingView.swift in Sources */,
+				5CE0B6F2242BFED50046C433 /* IndeterminateLoadingView.swift in Sources */,
+				5CE0B6F3242BFED50046C433 /* PolarPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5C63A21B242BF8AF00EB454B /* Debug */ = {
+		5CE0B6EB242BFEBD0046C433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -209,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		5C63A21C242BF8AF00EB454B /* Release */ = {
+		5CE0B6EC242BFEBD0046C433 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +266,7 @@
 			};
 			name = Release;
 		};
-		5C63A21E242BF8AF00EB454B /* Debug */ = {
+		5CE0B6EE242BFEBD0046C433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -292,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		5C63A21F242BF8AF00EB454B /* Release */ = {
+		5CE0B6EF242BFEBD0046C433 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -320,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C63A20F242BF8AF00EB454B /* Build configuration list for PBXProject "LoadingUIFramework" */ = {
+		5CE0B6DF242BFEBD0046C433 /* Build configuration list for PBXProject "LoadingUIFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C63A21B242BF8AF00EB454B /* Debug */,
-				5C63A21C242BF8AF00EB454B /* Release */,
+				5CE0B6EB242BFEBD0046C433 /* Debug */,
+				5CE0B6EC242BFEBD0046C433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C63A21D242BF8AF00EB454B /* Build configuration list for PBXNativeTarget "LoadingUIFramework" */ = {
+		5CE0B6ED242BFEBD0046C433 /* Build configuration list for PBXNativeTarget "LoadingUIFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C63A21E242BF8AF00EB454B /* Debug */,
-				5C63A21F242BF8AF00EB454B /* Release */,
+				5CE0B6EE242BFEBD0046C433 /* Debug */,
+				5CE0B6EF242BFEBD0046C433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5C63A20C242BF8AF00EB454B /* Project object */;
+	rootObject = 5CE0B6DC242BFEBD0046C433 /* Project object */;
 }
