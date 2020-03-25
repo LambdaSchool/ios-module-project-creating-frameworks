@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LoadingUI
+import LoadUIFramework
 
 class ViewController: UIViewController {
 

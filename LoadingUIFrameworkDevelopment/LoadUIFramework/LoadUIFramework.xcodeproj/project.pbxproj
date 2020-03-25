@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7279A847242BE74300DFAA1A /* LoadingUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7279A845242BE74300DFAA1A /* LoadingUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72FD109A242C0DF100B77AD2 /* LoadUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FD1098242C0DF100B77AD2 /* LoadUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7279A842242BE74300DFAA1A /* LoadingUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7279A845242BE74300DFAA1A /* LoadingUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFramework.h; sourceTree = "<group>"; };
-		7279A846242BE74300DFAA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72FD1095242C0DF100B77AD2 /* LoadUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72FD1098242C0DF100B77AD2 /* LoadUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadUIFramework.h; sourceTree = "<group>"; };
+		72FD1099242C0DF100B77AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7279A83F242BE74300DFAA1A /* Frameworks */ = {
+		72FD1092242C0DF100B77AD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -27,78 +27,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7279A838242BE74300DFAA1A = {
+		72FD108B242C0DF100B77AD2 = {
 			isa = PBXGroup;
 			children = (
-				7279A844242BE74300DFAA1A /* LoadingUIFramework */,
-				7279A843242BE74300DFAA1A /* Products */,
+				72FD1097242C0DF100B77AD2 /* LoadUIFramework */,
+				72FD1096242C0DF100B77AD2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7279A843242BE74300DFAA1A /* Products */ = {
+		72FD1096242C0DF100B77AD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7279A842242BE74300DFAA1A /* LoadingUIFramework.framework */,
+				72FD1095242C0DF100B77AD2 /* LoadUIFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7279A844242BE74300DFAA1A /* LoadingUIFramework */ = {
+		72FD1097242C0DF100B77AD2 /* LoadUIFramework */ = {
 			isa = PBXGroup;
 			children = (
-				7279A845242BE74300DFAA1A /* LoadingUIFramework.h */,
-				7279A846242BE74300DFAA1A /* Info.plist */,
+				72FD1098242C0DF100B77AD2 /* LoadUIFramework.h */,
+				72FD1099242C0DF100B77AD2 /* Info.plist */,
 			);
-			path = LoadingUIFramework;
+			path = LoadUIFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7279A83D242BE74300DFAA1A /* Headers */ = {
+		72FD1090242C0DF100B77AD2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7279A847242BE74300DFAA1A /* LoadingUIFramework.h in Headers */,
+				72FD109A242C0DF100B77AD2 /* LoadUIFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7279A841242BE74300DFAA1A /* LoadingUIFramework */ = {
+		72FD1094242C0DF100B77AD2 /* LoadUIFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7279A84A242BE74300DFAA1A /* Build configuration list for PBXNativeTarget "LoadingUIFramework" */;
+			buildConfigurationList = 72FD109D242C0DF100B77AD2 /* Build configuration list for PBXNativeTarget "LoadUIFramework" */;
 			buildPhases = (
-				7279A83D242BE74300DFAA1A /* Headers */,
-				7279A83E242BE74300DFAA1A /* Sources */,
-				7279A83F242BE74300DFAA1A /* Frameworks */,
-				7279A840242BE74300DFAA1A /* Resources */,
+				72FD1090242C0DF100B77AD2 /* Headers */,
+				72FD1091242C0DF100B77AD2 /* Sources */,
+				72FD1092242C0DF100B77AD2 /* Frameworks */,
+				72FD1093242C0DF100B77AD2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LoadingUIFramework;
-			productName = LoadingUIFramework;
-			productReference = 7279A842242BE74300DFAA1A /* LoadingUIFramework.framework */;
+			name = LoadUIFramework;
+			productName = LoadUIFramework;
+			productReference = 72FD1095242C0DF100B77AD2 /* LoadUIFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7279A839242BE74300DFAA1A /* Project object */ = {
+		72FD108C242C0DF100B77AD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Chris Gonzales";
 				TargetAttributes = {
-					7279A841242BE74300DFAA1A = {
+					72FD1094242C0DF100B77AD2 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
-			buildConfigurationList = 7279A83C242BE74300DFAA1A /* Build configuration list for PBXProject "LoadingUI" */;
+			buildConfigurationList = 72FD108F242C0DF100B77AD2 /* Build configuration list for PBXProject "LoadUIFramework" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,18 +106,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 7279A838242BE74300DFAA1A;
-			productRefGroup = 7279A843242BE74300DFAA1A /* Products */;
+			mainGroup = 72FD108B242C0DF100B77AD2;
+			productRefGroup = 72FD1096242C0DF100B77AD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7279A841242BE74300DFAA1A /* LoadingUIFramework */,
+				72FD1094242C0DF100B77AD2 /* LoadUIFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7279A840242BE74300DFAA1A /* Resources */ = {
+		72FD1093242C0DF100B77AD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,7 +127,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7279A83E242BE74300DFAA1A /* Sources */ = {
+		72FD1091242C0DF100B77AD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,7 +137,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7279A848242BE74300DFAA1A /* Debug */ = {
+		72FD109B242C0DF100B77AD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,7 +200,7 @@
 			};
 			name = Debug;
 		};
-		7279A849242BE74300DFAA1A /* Release */ = {
+		72FD109C242C0DF100B77AD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,7 +257,7 @@
 			};
 			name = Release;
 		};
-		7279A84B242BE74300DFAA1A /* Debug */ = {
+		72FD109E242C0DF100B77AD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,14 +266,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LoadingUIFramework/Info.plist;
+				INFOPLIST_FILE = LoadUIFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisGonzales.LoadingUIFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisGonzales.LoadUIFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -281,7 +281,7 @@
 			};
 			name = Debug;
 		};
-		7279A84C242BE74300DFAA1A /* Release */ = {
+		72FD109F242C0DF100B77AD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -290,14 +290,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LoadingUIFramework/Info.plist;
+				INFOPLIST_FILE = LoadUIFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisGonzales.LoadingUIFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisGonzales.LoadUIFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -308,25 +308,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7279A83C242BE74300DFAA1A /* Build configuration list for PBXProject "LoadingUI" */ = {
+		72FD108F242C0DF100B77AD2 /* Build configuration list for PBXProject "LoadUIFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7279A848242BE74300DFAA1A /* Debug */,
-				7279A849242BE74300DFAA1A /* Release */,
+				72FD109B242C0DF100B77AD2 /* Debug */,
+				72FD109C242C0DF100B77AD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7279A84A242BE74300DFAA1A /* Build configuration list for PBXNativeTarget "LoadingUIFramework" */ = {
+		72FD109D242C0DF100B77AD2 /* Build configuration list for PBXNativeTarget "LoadUIFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7279A84B242BE74300DFAA1A /* Debug */,
-				7279A84C242BE74300DFAA1A /* Release */,
+				72FD109E242C0DF100B77AD2 /* Debug */,
+				72FD109F242C0DF100B77AD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7279A839242BE74300DFAA1A /* Project object */;
+	rootObject = 72FD108C242C0DF100B77AD2 /* Project object */;
 }

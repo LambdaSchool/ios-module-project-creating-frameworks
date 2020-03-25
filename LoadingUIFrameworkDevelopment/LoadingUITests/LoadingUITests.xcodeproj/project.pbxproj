@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,24 +13,24 @@
 		726345DF242BEE78005E33A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726345DD242BEE78005E33A1 /* Main.storyboard */; };
 		726345E1242BEE79005E33A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726345E0242BEE79005E33A1 /* Assets.xcassets */; };
 		726345E4242BEE79005E33A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726345E2242BEE79005E33A1 /* LaunchScreen.storyboard */; };
-		726345FF242BF497005E33A1 /* LoadingUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726345F8242BEF89005E33A1 /* LoadingUIFramework.framework */; };
-		72634600242BF497005E33A1 /* LoadingUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 726345F8242BEF89005E33A1 /* LoadingUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72FD10A9242C0E4700B77AD2 /* LoadUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FD10A5242C0E2C00B77AD2 /* LoadUIFramework.framework */; };
+		72FD10AA242C0E4700B77AD2 /* LoadUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72FD10A5242C0E2C00B77AD2 /* LoadUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		726345F7242BEF89005E33A1 /* PBXContainerItemProxy */ = {
+		72FD10A4242C0E2C00B77AD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 726345F3242BEF89005E33A1 /* LoadingUI.xcodeproj */;
+			containerPortal = 72FD10A0242C0E2C00B77AD2 /* LoadUIFramework.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 7279A842242BE74300DFAA1A;
-			remoteInfo = LoadingUIFramework;
+			remoteGlobalIDString = 72FD1095242C0DF100B77AD2;
+			remoteInfo = LoadUIFramework;
 		};
-		726345FC242BF262005E33A1 /* PBXContainerItemProxy */ = {
+		72FD10A7242C0E4000B77AD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 726345F3242BEF89005E33A1 /* LoadingUI.xcodeproj */;
+			containerPortal = 72FD10A0242C0E2C00B77AD2 /* LoadUIFramework.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 7279A841242BE74300DFAA1A;
-			remoteInfo = LoadingUIFramework;
+			remoteGlobalIDString = 72FD1094242C0DF100B77AD2;
+			remoteInfo = LoadUIFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				72634600242BF497005E33A1 /* LoadingUIFramework.framework in Embed Frameworks */,
+				72FD10AA242C0E4700B77AD2 /* LoadUIFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +57,7 @@
 		726345E0242BEE79005E33A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726345E3242BEE79005E33A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726345E5242BEE79005E33A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		726345F3242BEF89005E33A1 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../LoadingUI.xcodeproj; sourceTree = "<group>"; };
+		72FD10A0242C0E2C00B77AD2 /* LoadUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadUIFramework.xcodeproj; path = ../LoadUIFramework/LoadUIFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				726345FF242BF497005E33A1 /* LoadingUIFramework.framework in Frameworks */,
+				72FD10A9242C0E4700B77AD2 /* LoadUIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +75,8 @@
 		726345CB242BEE78005E33A1 = {
 			isa = PBXGroup;
 			children = (
-				726345F2242BEF55005E33A1 /* Frameworks */,
 				726345D6242BEE78005E33A1 /* LoadingUITests */,
+				726345F2242BEF55005E33A1 /* Frameworks */,
 				726345D5242BEE78005E33A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,15 +106,15 @@
 		726345F2242BEF55005E33A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				726345F3242BEF89005E33A1 /* LoadingUI.xcodeproj */,
+				72FD10A0242C0E2C00B77AD2 /* LoadUIFramework.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		726345F4242BEF89005E33A1 /* Products */ = {
+		72FD10A1242C0E2C00B77AD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				726345F8242BEF89005E33A1 /* LoadingUIFramework.framework */,
+				72FD10A5242C0E2C00B77AD2 /* LoadUIFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				726345FD242BF262005E33A1 /* PBXTargetDependency */,
+				72FD10A8242C0E4000B77AD2 /* PBXTargetDependency */,
 			);
 			name = LoadingUITests;
 			productName = LoadingUITests;
@@ -157,7 +157,7 @@
 				};
 			};
 			buildConfigurationList = 726345CF242BEE78005E33A1 /* Build configuration list for PBXProject "LoadingUITests" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -169,8 +169,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 726345F4242BEF89005E33A1 /* Products */;
-					ProjectRef = 726345F3242BEF89005E33A1 /* LoadingUI.xcodeproj */;
+					ProductGroup = 72FD10A1242C0E2C00B77AD2 /* Products */;
+					ProjectRef = 72FD10A0242C0E2C00B77AD2 /* LoadUIFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -181,11 +181,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		726345F8242BEF89005E33A1 /* LoadingUIFramework.framework */ = {
+		72FD10A5242C0E2C00B77AD2 /* LoadUIFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = LoadingUIFramework.framework;
-			remoteRef = 726345F7242BEF89005E33A1 /* PBXContainerItemProxy */;
+			path = LoadUIFramework.framework;
+			remoteRef = 72FD10A4242C0E2C00B77AD2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -217,10 +217,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		726345FD242BF262005E33A1 /* PBXTargetDependency */ = {
+		72FD10A8242C0E4000B77AD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LoadingUIFramework;
-			targetProxy = 726345FC242BF262005E33A1 /* PBXContainerItemProxy */;
+			name = LoadUIFramework;
+			targetProxy = 72FD10A7242C0E4000B77AD2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -366,6 +366,7 @@
 				DEVELOPMENT_TEAM = 36JMR38FZL;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LoadingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +386,7 @@
 				DEVELOPMENT_TEAM = 36JMR38FZL;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LoadingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
