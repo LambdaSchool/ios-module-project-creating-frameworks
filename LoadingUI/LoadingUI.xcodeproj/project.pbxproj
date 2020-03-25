@@ -13,7 +13,40 @@
 		5C63A1FF242BF80900EB454B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C63A1FD242BF80900EB454B /* Main.storyboard */; };
 		5C63A201242BF80A00EB454B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C63A200242BF80A00EB454B /* Assets.xcassets */; };
 		5C63A204242BF80A00EB454B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C63A202242BF80A00EB454B /* LaunchScreen.storyboard */; };
+		5C63A228242BFB4A00EB454B /* LoadingUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C63A226242BFB3900EB454B /* LoadingUIFramework.framework */; };
+		5C63A229242BFB4A00EB454B /* LoadingUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C63A226242BFB3900EB454B /* LoadingUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C63A225242BFB3900EB454B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C63A221242BFB3900EB454B /* LoadingUIFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C63A215242BF8AF00EB454B;
+			remoteInfo = LoadingUIFramework;
+		};
+		5C63A22B242BFBA000EB454B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C63A221242BFB3900EB454B /* LoadingUIFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C63A214242BF8AF00EB454B;
+			remoteInfo = LoadingUIFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C63A22A242BFB4A00EB454B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C63A229242BFB4A00EB454B /* LoadingUIFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C63A1F4242BF80900EB454B /* LoadingUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +57,7 @@
 		5C63A200242BF80A00EB454B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C63A203242BF80A00EB454B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C63A205242BF80A00EB454B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C63A221242BFB3900EB454B /* LoadingUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = LoadingUIFramework.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C63A228242BFB4A00EB454B /* LoadingUIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +75,10 @@
 		5C63A1EB242BF80900EB454B = {
 			isa = PBXGroup;
 			children = (
+				5C63A220242BFB1C00EB454B /* Framework */,
 				5C63A1F6242BF80900EB454B /* LoadingUI */,
 				5C63A1F5242BF80900EB454B /* Products */,
+				5C63A227242BFB4A00EB454B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +104,29 @@
 			path = LoadingUI;
 			sourceTree = "<group>";
 		};
+		5C63A220242BFB1C00EB454B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5C63A221242BFB3900EB454B /* LoadingUIFramework.xcodeproj */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		5C63A222242BFB3900EB454B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C63A226242BFB3900EB454B /* LoadingUIFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C63A227242BFB4A00EB454B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,10 +137,12 @@
 				5C63A1F0242BF80900EB454B /* Sources */,
 				5C63A1F1242BF80900EB454B /* Frameworks */,
 				5C63A1F2242BF80900EB454B /* Resources */,
+				5C63A22A242BFB4A00EB454B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5C63A22C242BFBA000EB454B /* PBXTargetDependency */,
 			);
 			name = LoadingUI;
 			productName = LoadingUI;
@@ -113,12 +175,28 @@
 			mainGroup = 5C63A1EB242BF80900EB454B;
 			productRefGroup = 5C63A1F5242BF80900EB454B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5C63A222242BFB3900EB454B /* Products */;
+					ProjectRef = 5C63A221242BFB3900EB454B /* LoadingUIFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5C63A1F3242BF80900EB454B /* LoadingUI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5C63A226242BFB3900EB454B /* LoadingUIFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoadingUIFramework.framework;
+			remoteRef = 5C63A225242BFB3900EB454B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5C63A1F2242BF80900EB454B /* Resources */ = {
@@ -145,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C63A22C242BFBA000EB454B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingUIFramework;
+			targetProxy = 5C63A22B242BFBA000EB454B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5C63A1FD242BF80900EB454B /* Main.storyboard */ = {
