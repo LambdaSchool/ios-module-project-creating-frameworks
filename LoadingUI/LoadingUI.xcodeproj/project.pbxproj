@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D2F9CC03242C168D000D9450 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F9CC01242C168D000D9450 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2F9CC36242C1882000D9450 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F9CC35242C1882000D9450 /* LoadingViewController.swift */; };
+		D2F9CC38242C2816000D9450 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F9CC37242C2816000D9450 /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2F9CBFE242C168D000D9450 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F9CC01242C168D000D9450 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		D2F9CC02242C168D000D9450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F9CC35242C1882000D9450 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D2F9CC37242C2816000D9450 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +50,10 @@
 		D2F9CC00242C168D000D9450 /* LoadingUI */ = {
 			isa = PBXGroup;
 			children = (
+				D2F9CC37242C2816000D9450 /* IndeterminateLoadingView.swift */,
 				D2F9CC01242C168D000D9450 /* LoadingUI.h */,
 				D2F9CC02242C168D000D9450 /* Info.plist */,
+				D2F9CC35242C1882000D9450 /* LoadingViewController.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					D2F9CBFD242C168D000D9450 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F9CC36242C1882000D9450 /* LoadingViewController.swift in Sources */,
+				D2F9CC38242C2816000D9450 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		D2F9CC07242C168D000D9450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7SF2KFH336;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.scottharris.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		D2F9CC08242C168D000D9450 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7SF2KFH336;
