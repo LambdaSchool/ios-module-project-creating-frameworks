@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9C2334DE245069B000D2491E /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2334DC245069B000D2491E /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C23351224506EDD00D2491E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23351124506EDD00D2491E /* LoadingViewController.swift */; };
+		9C2335142450702C00D2491E /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2335132450702C00D2491E /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C2334D9245069B000D2491E /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2334DC245069B000D2491E /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		9C2334DD245069B000D2491E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C23351124506EDD00D2491E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		9C2335132450702C00D2491E /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				9C2334DC245069B000D2491E /* LoadingUI.h */,
 				9C2334DD245069B000D2491E /* Info.plist */,
+				9C23351124506EDD00D2491E /* LoadingViewController.swift */,
+				9C2335132450702C00D2491E /* IndeterminateLoadingView.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					9C2334D8245069B000D2491E = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C23351224506EDD00D2491E /* LoadingViewController.swift in Sources */,
+				9C2335142450702C00D2491E /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		9C2334E2245069B000D2491E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hectorledesma.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +294,7 @@
 		9C2334E3245069B000D2491E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
