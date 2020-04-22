@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		045F0BD42450E4AF00D3A03A /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 045F0BD22450E4AF00D3A03A /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		045F0C072450E73C00D3A03A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F0C062450E73C00D3A03A /* LoadingViewController.swift */; };
+		045F0C0A2450E9E800D3A03A /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F0C082450E9E800D3A03A /* IndeterminateLoadingView.swift */; };
+		045F0C0B2450E9E800D3A03A /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F0C092450E9E800D3A03A /* PolarPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		045F0BD22450E4AF00D3A03A /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		045F0BD32450E4AF00D3A03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045F0C062450E73C00D3A03A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		045F0C082450E9E800D3A03A /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		045F0C092450E9E800D3A03A /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolarPoint.swift; path = ../../../PolarPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				045F0BD22450E4AF00D3A03A /* LoadingUI.h */,
 				045F0BD32450E4AF00D3A03A /* Info.plist */,
 				045F0C062450E73C00D3A03A /* LoadingViewController.swift */,
+				045F0C082450E9E800D3A03A /* IndeterminateLoadingView.swift */,
+				045F0C092450E9E800D3A03A /* PolarPoint.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045F0C0B2450E9E800D3A03A /* PolarPoint.swift in Sources */,
 				045F0C072450E73C00D3A03A /* LoadingViewController.swift in Sources */,
+				045F0C0A2450E9E800D3A03A /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
