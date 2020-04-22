@@ -14,8 +14,8 @@ class LoadingViewController: UIViewController {
     @IBOutlet weak var loadButton: UIButton!
     
     var indeterminateLoadingView: IndeterminateLoadingView = {
-        let x = UIScreen.main.bounds.width / 2 
-        let y = UIScreen.main.bounds.height / 2
+        let x = UIScreen.main.bounds.width / 2 - 50
+        let y = UIScreen.main.bounds.height / 2 - 50
         let frame: CGRect = CGRect(origin: CGPoint(x: x, y: y), size: CGSize(width: 100, height: 100))
         return IndeterminateLoadingView(frame: frame)
     }()
