@@ -23,4 +23,6 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
     var circulito = IndeterminateLoadingView()
+    
+    
 }

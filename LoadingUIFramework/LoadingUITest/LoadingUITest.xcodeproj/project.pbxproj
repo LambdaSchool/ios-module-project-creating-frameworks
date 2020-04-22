@@ -15,6 +15,7 @@
 		9C2334FD24506B5100D2491E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2334FB24506B5100D2491E /* LaunchScreen.storyboard */; };
 		9C23350C24506D4A00D2491E /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C23350A24506D0000D2491E /* LoadingUI.framework */; };
 		9C23350D24506D4A00D2491E /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C23350A24506D0000D2491E /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C233516245079E900D2491E /* LoadingUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C233515245079E900D2491E /* LoadingUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9C2334FC24506B5100D2491E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C2334FE24506B5100D2491E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C23350524506D0000D2491E /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
+		9C233515245079E900D2491E /* LoadingUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				9C2334F024506B4F00D2491E /* AppDelegate.swift */,
 				9C2334F224506B4F00D2491E /* SceneDelegate.swift */,
 				9C2334F424506B4F00D2491E /* ViewController.swift */,
+				9C233515245079E900D2491E /* LoadingUIViewController.swift */,
 				9C2334F624506B4F00D2491E /* Main.storyboard */,
 				9C2334F924506B5100D2491E /* Assets.xcassets */,
 				9C2334FB24506B5100D2491E /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 				9C2334F524506B4F00D2491E /* ViewController.swift in Sources */,
 				9C2334F124506B4F00D2491E /* AppDelegate.swift in Sources */,
 				9C2334F324506B4F00D2491E /* SceneDelegate.swift in Sources */,
+				9C233516245079E900D2491E /* LoadingUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

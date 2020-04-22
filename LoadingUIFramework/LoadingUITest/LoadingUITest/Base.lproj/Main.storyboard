@@ -14,7 +14,21 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFc-MX-JU6">
+                                <rect key="frame" x="180" y="424" width="54" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <segue destination="Rm3-NT-IOb" kind="show" id="Kzt-ud-llG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gFc-MX-JU6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EqG-so-5Hd"/>
+                            <constraint firstItem="gFc-MX-JU6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ff1-H0-0oo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="cCb-Ot-vMB"/>
@@ -22,6 +36,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="102.45535714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DnM-Dl-GCv">
+            <objects>
+                <viewController id="Rm3-NT-IOb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1iq-SV-0lX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="32p-as-8Nr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dbq-7u-c6E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NS-ZQ-uF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T2h-V7-oEk">
