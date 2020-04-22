@@ -50,9 +50,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YR-Mo-r0i" customClass="LoadingUIViewController" customModule="LoadingUI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YR-Mo-r0i" customClass="LoadingUIViewController" customModule="LoadingUI">
                                 <rect key="frame" x="20" y="148" width="374" height="374"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6YR-Mo-r0i" secondAttribute="height" multiplier="1:1" id="TGy-do-Met"/>
                                 </constraints>
