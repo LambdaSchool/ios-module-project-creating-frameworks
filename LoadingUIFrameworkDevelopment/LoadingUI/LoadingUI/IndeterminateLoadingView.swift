@@ -22,14 +22,14 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         setupShapeLayer()
     }
     
-    func startAnimating() {
+    public func startAnimating() {
         guard !isAnimating else { return }
         defer { isAnimating = true }
     
         startAnimation()
     }
     
-    func stopAnimating() {
+    public func stopAnimating() {
         guard isAnimating else { return }
         
         shouldStopAnimationOnNextCycle = true
