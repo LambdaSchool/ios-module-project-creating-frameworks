@@ -31,6 +31,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shouldStopAnimationOnNextCycle = true
     }
     
+    // MARK: - ---------------------------------
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,7 +45,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         setupShapeLayer()
     }
     
-    // MARK: - ---------------------------------
+
     
     
     // MARK: - Private
@@ -68,13 +69,25 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     }
     
     private func startAnimation() {
+        // So this function will be called on each loop to determine wether the function that does the animating is called.
+        // I like this concept of separating these tasks. BUT THE NAMES.
+        
+        // So this animation will be on a loop? (Lol aren't they all?)
+        // This property will be checked on each loop?
         shouldStopAnimationOnNextCycle = false
+        // No clue what this is for
+        // Oh the actual animation will be changing these valuse? So it resets them for the next loop?
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
+        // Giving it the exact same name is a little wth man
         startAnimation(for: "strokeEnd", timing: .easeIn)
     }
     
     private func startAnimation(for keyPath: String, timing: CAMediaTimingFunctionName) {
+        // This method does the animating then.
+        
+        // All changes to this key("strokeEnd") will be animated
+        // Why reset strokeStart to 0.0 if it's never changed?
         let animation = CABasicAnimation(keyPath: keyPath)
         animation.fromValue = 0.0
         animation.toValue = 1.0
