@@ -21,7 +21,7 @@ import UIKit
     1. Just create a variable = IndeterminateLoadingView()
  */
 
-public class LoadingViewController: UIViewController {
+open class LoadingViewController: UIViewController {
     let circulito = IndeterminateLoadingView()
     
     public required init?(coder: NSCoder) {

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import LoadingUI
 
-class LoadingUIViewController: UIViewController {
+class LoadingUIViewController: LoadingViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
