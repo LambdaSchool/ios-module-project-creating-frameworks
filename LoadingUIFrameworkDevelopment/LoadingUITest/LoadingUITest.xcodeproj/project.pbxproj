@@ -13,7 +13,33 @@
 		2CFE28CA24510766001EF7C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE28C824510766001EF7C9 /* Main.storyboard */; };
 		2CFE28CC24510767001EF7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE28CB24510767001EF7C9 /* Assets.xcassets */; };
 		2CFE28CF24510767001EF7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE28CD24510767001EF7C9 /* LaunchScreen.storyboard */; };
+		2CFE28DD2451085A001EF7C9 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE28DC24510826001EF7C9 /* LoadingUI.framework */; };
+		2CFE28DE2451085A001EF7C9 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE28DC24510826001EF7C9 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CFE28DB24510826001EF7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CFE28D724510825001EF7C9 /* LoadingUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CFE28AB24510727001EF7C9;
+			remoteInfo = LoadingUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CFE28DF2451085A001EF7C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CFE28DE2451085A001EF7C9 /* LoadingUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2CFE28BF24510766001EF7C9 /* LoadingUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +50,7 @@
 		2CFE28CB24510767001EF7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CFE28CE24510767001EF7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CFE28D024510767001EF7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFE28D724510825001EF7C9 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFE28DD2451085A001EF7C9 /* LoadingUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				2CFE28C124510766001EF7C9 /* LoadingUITest */,
+				2CFE28D624510806001EF7C9 /* Frameworks */,
 				2CFE28C024510766001EF7C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +96,22 @@
 			path = LoadingUITest;
 			sourceTree = "<group>";
 		};
+		2CFE28D624510806001EF7C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE28D724510825001EF7C9 /* LoadingUI.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CFE28D824510825001EF7C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE28DC24510826001EF7C9 /* LoadingUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +122,7 @@
 				2CFE28BB24510766001EF7C9 /* Sources */,
 				2CFE28BC24510766001EF7C9 /* Frameworks */,
 				2CFE28BD24510766001EF7C9 /* Resources */,
+				2CFE28DF2451085A001EF7C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +159,28 @@
 			mainGroup = 2CFE28B624510766001EF7C9;
 			productRefGroup = 2CFE28C024510766001EF7C9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2CFE28D824510825001EF7C9 /* Products */;
+					ProjectRef = 2CFE28D724510825001EF7C9 /* LoadingUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2CFE28BE24510766001EF7C9 /* LoadingUITest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2CFE28DC24510826001EF7C9 /* LoadingUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoadingUI.framework;
+			remoteRef = 2CFE28DB24510826001EF7C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2CFE28BD24510766001EF7C9 /* Resources */ = {
