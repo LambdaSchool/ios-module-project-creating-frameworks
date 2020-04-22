@@ -37,6 +37,14 @@ public class LoadingViewController: UIViewController {
         
     }
     
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     // MARK: - View Lifecycle
     
     public override func viewDidLoad() {
@@ -53,8 +61,8 @@ public class LoadingViewController: UIViewController {
         NSLayoutConstraint.activate([
             loadingView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
             loadingView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
-            loadingView.widthAnchor.constraint(equalToConstant: 100),
-            loadingView.heightAnchor.constraint(equalToConstant: 100),
+            loadingView.widthAnchor.constraint(equalToConstant: 200),
+            loadingView.heightAnchor.constraint(equalToConstant: 200),
         ])
         
         loadingView.startAnimating()
