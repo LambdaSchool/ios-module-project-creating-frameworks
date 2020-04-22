@@ -22,7 +22,9 @@ import UIKit
  */
 
 public class LoadingViewController: UIViewController {
-    var circulito = IndeterminateLoadingView()
+    let circulito = IndeterminateLoadingView()
     
-    
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 }
