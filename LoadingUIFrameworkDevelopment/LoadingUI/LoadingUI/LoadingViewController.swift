@@ -10,7 +10,7 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
 
-    var loadingView = IndeterminateLoadingView()
+    private var loadingView = IndeterminateLoadingView()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
