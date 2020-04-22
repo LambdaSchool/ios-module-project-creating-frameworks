@@ -10,12 +10,17 @@ import UIKit
 import WaitingFramework
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        let controller = LoadingViewController()
+        show(controller, sender: sender)
+    }
+    
+    
 }
 

@@ -71,10 +71,10 @@
 		C49463EE2450DB8D001ED0ED /* WaitingFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C49464172450F16C001ED0ED /* LoadingViewController.swift */,
 				C49464152450E4C4001ED0ED /* IndeterminateLoadingView.swift */,
 				C49463EF2450DB8D001ED0ED /* WaitingFramework.h */,
 				C49463F02450DB8D001ED0ED /* Info.plist */,
-				C49464172450F16C001ED0ED /* LoadingViewController.swift */,
 			);
 			path = WaitingFramework;
 			sourceTree = "<group>";

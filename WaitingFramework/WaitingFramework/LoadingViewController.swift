@@ -17,6 +17,7 @@ public class LoadingViewController: UIViewController {
         super.viewDidLoad()
         
         spinView.frame = self.view.frame
+        view.addSubview(spinView)
         
         spinView.startAnimating()
         
