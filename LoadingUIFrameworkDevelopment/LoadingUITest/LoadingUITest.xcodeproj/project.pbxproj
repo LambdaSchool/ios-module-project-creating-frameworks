@@ -13,7 +13,47 @@
 		AEFD69002450ED5D0059D453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFD68FE2450ED5D0059D453 /* Main.storyboard */; };
 		AEFD69022450ED5E0059D453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFD69012450ED5E0059D453 /* Assets.xcassets */; };
 		AEFD69052450ED5E0059D453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFD69032450ED5E0059D453 /* LaunchScreen.storyboard */; };
+		AEFD69222450EF590059D453 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFD69212450EF590059D453 /* LoadingUI.framework */; };
+		AEFD69232450EF590059D453 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEFD69212450EF590059D453 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE83CDFE2450EF830028634C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEFD690F2450EE8B0059D453 /* LoadingUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEFD68D12450EC900059D453;
+			remoteInfo = LoadingUI;
+		};
+		AE83CE002450EF830028634C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEFD690F2450EE8B0059D453 /* LoadingUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEFD68E02450ECD30059D453;
+			remoteInfo = LoadingUITests;
+		};
+		AE83CE022450EF8E0028634C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEFD690F2450EE8B0059D453 /* LoadingUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AEFD68D02450EC900059D453;
+			remoteInfo = LoadingUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEFD691B2450EE9D0059D453 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEFD69232450EF590059D453 /* LoadingUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AEFD68F52450ED5D0059D453 /* LoadingUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +64,8 @@
 		AEFD69012450ED5E0059D453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEFD69042450ED5E0059D453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEFD69062450ED5E0059D453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFD690F2450EE8B0059D453 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
+		AEFD69212450EF590059D453 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +73,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFD69222450EF590059D453 /* LoadingUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE83CDFA2450EF810028634C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE83CDFF2450EF830028634C /* LoadingUI.framework */,
+				AE83CE012450EF830028634C /* LoadingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AEFD68EC2450ED5D0059D453 = {
 			isa = PBXGroup;
 			children = (
 				AEFD68F72450ED5D0059D453 /* LoadingUITest */,
 				AEFD68F62450ED5D0059D453 /* Products */,
+				AEFD69182450EE9D0059D453 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +120,15 @@
 			path = LoadingUITest;
 			sourceTree = "<group>";
 		};
+		AEFD69182450EE9D0059D453 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD69212450EF590059D453 /* LoadingUI.framework */,
+				AEFD690F2450EE8B0059D453 /* LoadingUI.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,10 +139,12 @@
 				AEFD68F12450ED5D0059D453 /* Sources */,
 				AEFD68F22450ED5D0059D453 /* Frameworks */,
 				AEFD68F32450ED5D0059D453 /* Resources */,
+				AEFD691B2450EE9D0059D453 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE83CE032450EF8E0028634C /* PBXTargetDependency */,
 			);
 			name = LoadingUITest;
 			productName = LoadingUITest;
@@ -113,12 +177,35 @@
 			mainGroup = AEFD68EC2450ED5D0059D453;
 			productRefGroup = AEFD68F62450ED5D0059D453 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE83CDFA2450EF810028634C /* Products */;
+					ProjectRef = AEFD690F2450EE8B0059D453 /* LoadingUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AEFD68F42450ED5D0059D453 /* LoadingUITest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE83CDFF2450EF830028634C /* LoadingUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoadingUI.framework;
+			remoteRef = AE83CDFE2450EF830028634C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE83CE012450EF830028634C /* LoadingUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LoadingUITests.xctest;
+			remoteRef = AE83CE002450EF830028634C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AEFD68F32450ED5D0059D453 /* Resources */ = {
@@ -145,6 +232,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE83CE032450EF8E0028634C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingUI;
+			targetProxy = AE83CE022450EF8E0028634C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AEFD68FE2450ED5D0059D453 /* Main.storyboard */ = {
