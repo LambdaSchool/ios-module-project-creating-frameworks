@@ -27,7 +27,7 @@ import UIKit
  */
 
 open class LoadingViewController: UIViewController {
-    let circulito = IndeterminateLoadingView()
+    private let circulito = IndeterminateLoadingView()
     
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -38,7 +38,7 @@ open class LoadingViewController: UIViewController {
         setUpView()
     }
     
-    public func setUpView() {
+    private func setUpView() {
         circulito.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(circulito)
         circulito.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
