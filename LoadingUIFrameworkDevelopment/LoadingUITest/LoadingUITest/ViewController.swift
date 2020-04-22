@@ -11,11 +11,15 @@ import LoadingUI
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var downloadButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        downloadButton.layer.cornerRadius = 8
     }
 
-
+    @IBAction func downloadButtonTapped(_ sender: Any) {
+        
+    }
 }
 
