@@ -17,7 +17,10 @@ import UIKit
  
     IndeterminateLoadingView subclasses UIView. It takes care of creating paths and animating.
     I'm not exactly sure how to implement it, so I'll do trial and error and document as I go.
+ 
+    1. Just create a variable = IndeterminateLoadingView()
  */
 
 public class LoadingViewController: UIViewController {
+    var circulito = IndeterminateLoadingView()
 }
