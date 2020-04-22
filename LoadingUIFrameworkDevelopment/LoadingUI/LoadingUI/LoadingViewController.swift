@@ -20,7 +20,12 @@ public class LoadingViewController: UIViewController {
     
     public var color: UIColor = .systemBlue
     public var size: Size = .medium
-    public private(set) var isAnimating = false
+    public var isAnimating: Bool {
+        loadingView?.isAnimating ?? false
+    }
+    
+    // MARK: - Private Properties
+    private var loadingView: IndeterminateLoadingView?
     
     // MARK: - Public Methods
     
@@ -32,9 +37,26 @@ public class LoadingViewController: UIViewController {
         
     }
     
+    // MARK: - View Lifecycle
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        loadingView = IndeterminateLoadingView(frame: .zero)
+        
+        guard let loadingView = loadingView else { return }
+        
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(loadingView)
+        
+        NSLayoutConstraint.activate([
+            loadingView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            loadingView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
+            loadingView.widthAnchor.constraint(equalToConstant: 100),
+            loadingView.heightAnchor.constraint(equalToConstant: 100),
+        ])
+        
+        loadingView.startAnimating()
     }
 }
