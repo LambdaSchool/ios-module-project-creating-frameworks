@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		13EBA79F2450DA79004B3778 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 13EBA79D2450DA79004B3778 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13EBA7D22450DB9E004B3778 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBA7D12450DB9E004B3778 /* LoadingViewController.swift */; };
+		13EBA7D52450DDBC004B3778 /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBA7D32450DDBC004B3778 /* PolarPoint.swift */; };
+		13EBA7D62450DDBC004B3778 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBA7D42450DDBC004B3778 /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13EBA79A2450DA79004B3778 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EBA79D2450DA79004B3778 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		13EBA79E2450DA79004B3778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13EBA7D12450DB9E004B3778 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		13EBA7D32450DDBC004B3778 /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolarPoint.swift; path = ../../../PolarPoint.swift; sourceTree = "<group>"; };
+		13EBA7D42450DDBC004B3778 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				13EBA79D2450DA79004B3778 /* LoadingUI.h */,
+				13EBA7D12450DB9E004B3778 /* LoadingViewController.swift */,
+				13EBA7D42450DDBC004B3778 /* IndeterminateLoadingView.swift */,
+				13EBA7D32450DDBC004B3778 /* PolarPoint.swift */,
 				13EBA79E2450DA79004B3778 /* Info.plist */,
 			);
 			path = LoadingUI;
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					13EBA7992450DA79004B3778 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EBA7D22450DB9E004B3778 /* LoadingViewController.swift in Sources */,
+				13EBA7D62450DDBC004B3778 /* IndeterminateLoadingView.swift in Sources */,
+				13EBA7D52450DDBC004B3778 /* PolarPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		13EBA7A32450DA79004B3778 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8TUR2W3V73;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyattharrell.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		13EBA7A42450DA79004B3778 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8TUR2W3V73;
