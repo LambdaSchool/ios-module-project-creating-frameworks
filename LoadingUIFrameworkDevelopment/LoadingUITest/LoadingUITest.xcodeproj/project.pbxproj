@@ -13,7 +13,40 @@
 		045F0BEE2450E52200D3A03A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F0BEC2450E52200D3A03A /* Main.storyboard */; };
 		045F0BF02450E52300D3A03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045F0BEF2450E52300D3A03A /* Assets.xcassets */; };
 		045F0BF32450E52300D3A03A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045F0BF12450E52300D3A03A /* LaunchScreen.storyboard */; };
+		045F0C012450E66700D3A03A /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045F0C002450E65C00D3A03A /* LoadingUI.framework */; };
+		045F0C022450E66700D3A03A /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 045F0C002450E65C00D3A03A /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045F0BFF2450E65C00D3A03A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045F0BFB2450E65C00D3A03A /* LoadingUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 045F0BCF2450E4AF00D3A03A;
+			remoteInfo = LoadingUI;
+		};
+		045F0C042450E67A00D3A03A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045F0BFB2450E65C00D3A03A /* LoadingUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 045F0BCE2450E4AF00D3A03A;
+			remoteInfo = LoadingUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		045F0C032450E66700D3A03A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				045F0C022450E66700D3A03A /* LoadingUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		045F0BE32450E52200D3A03A /* LoadingUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +57,7 @@
 		045F0BEF2450E52300D3A03A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045F0BF22450E52300D3A03A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045F0BF42450E52300D3A03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045F0BFB2450E65C00D3A03A /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045F0C012450E66700D3A03A /* LoadingUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				045F0BE52450E52200D3A03A /* LoadingUITest */,
+				045F0BFA2450E64E00D3A03A /* Frameworks */,
 				045F0BE42450E52200D3A03A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +103,22 @@
 			path = LoadingUITest;
 			sourceTree = "<group>";
 		};
+		045F0BFA2450E64E00D3A03A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045F0BFB2450E65C00D3A03A /* LoadingUI.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		045F0BFC2450E65C00D3A03A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045F0C002450E65C00D3A03A /* LoadingUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,10 +129,12 @@
 				045F0BDF2450E52200D3A03A /* Sources */,
 				045F0BE02450E52200D3A03A /* Frameworks */,
 				045F0BE12450E52200D3A03A /* Resources */,
+				045F0C032450E66700D3A03A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				045F0C052450E67A00D3A03A /* PBXTargetDependency */,
 			);
 			name = LoadingUITest;
 			productName = LoadingUITest;
@@ -113,12 +167,28 @@
 			mainGroup = 045F0BDA2450E52200D3A03A;
 			productRefGroup = 045F0BE42450E52200D3A03A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 045F0BFC2450E65C00D3A03A /* Products */;
+					ProjectRef = 045F0BFB2450E65C00D3A03A /* LoadingUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				045F0BE22450E52200D3A03A /* LoadingUITest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		045F0C002450E65C00D3A03A /* LoadingUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoadingUI.framework;
+			remoteRef = 045F0BFF2450E65C00D3A03A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		045F0BE12450E52200D3A03A /* Resources */ = {
@@ -145,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045F0C052450E67A00D3A03A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingUI;
+			targetProxy = 045F0C042450E67A00D3A03A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		045F0BEC2450E52200D3A03A /* Main.storyboard */ = {
