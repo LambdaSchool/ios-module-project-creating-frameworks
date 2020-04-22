@@ -19,6 +19,11 @@ import UIKit
     I'm not exactly sure how to implement it, so I'll do trial and error and document as I go.
  
     1. Just create a variable = IndeterminateLoadingView()
+        - Add startAnimating method to initializer
+        - Add circulito as subview
+        - Add Center constraint
+        - Add CocoaSubclass to storyboard view controller...... smh lmao
+        - Had to implement setUpView inside of viewDidLoad and make sure to add it as subview before messing with constraints, as well as set translatesAutore.... to false. THANKS JON
  */
 
 open class LoadingViewController: UIViewController {
@@ -26,5 +31,19 @@ open class LoadingViewController: UIViewController {
     
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        setUpView()
+    }
+    
+    public func setUpView() {
+        circulito.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(circulito)
+        circulito.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        circulito.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        circulito.startAnimating()
     }
 }
