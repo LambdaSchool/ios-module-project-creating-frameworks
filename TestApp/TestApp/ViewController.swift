@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WaitingFramework
 
 class ViewController: UIViewController {
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,14 +22,14 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         setupShapeLayer()
     }
     
-    func startAnimating() {
+    public func startAnimating() {
         guard !isAnimating else { return }
         defer { isAnimating = true }
     
         startAnimation()
     }
     
-    func stopAnimating() {
+    public func stopAnimating() {
         guard isAnimating else { return }
         
         shouldStopAnimationOnNextCycle = true

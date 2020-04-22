@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C49463F62450DB8D001ED0ED /* WaitingFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49463EC2450DB8D001ED0ED /* WaitingFramework.framework */; };
-		C49463FB2450DB8D001ED0ED /* WaitingFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49463FA2450DB8D001ED0ED /* WaitingFrameworkTests.swift */; };
 		C49463FD2450DB8D001ED0ED /* WaitingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C49463EF2450DB8D001ED0ED /* WaitingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C49464162450E4C4001ED0ED /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49464152450E4C4001ED0ED /* IndeterminateLoadingView.swift */; };
+		C49464182450F16C001ED0ED /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49464172450F16C001ED0ED /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,8 @@
 		C49463EF2450DB8D001ED0ED /* WaitingFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaitingFramework.h; sourceTree = "<group>"; };
 		C49463F02450DB8D001ED0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49463F52450DB8D001ED0ED /* WaitingFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaitingFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C49463FA2450DB8D001ED0ED /* WaitingFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingFrameworkTests.swift; sourceTree = "<group>"; };
-		C49463FC2450DB8D001ED0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49464152450E4C4001ED0ED /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		C49464172450F16C001ED0ED /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				C49463EE2450DB8D001ED0ED /* WaitingFramework */,
-				C49463F92450DB8D001ED0ED /* WaitingFrameworkTests */,
 				C49463ED2450DB8D001ED0ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,19 +71,12 @@
 		C49463EE2450DB8D001ED0ED /* WaitingFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C49464152450E4C4001ED0ED /* IndeterminateLoadingView.swift */,
 				C49463EF2450DB8D001ED0ED /* WaitingFramework.h */,
 				C49463F02450DB8D001ED0ED /* Info.plist */,
+				C49464172450F16C001ED0ED /* LoadingViewController.swift */,
 			);
 			path = WaitingFramework;
-			sourceTree = "<group>";
-		};
-		C49463F92450DB8D001ED0ED /* WaitingFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				C49463FA2450DB8D001ED0ED /* WaitingFrameworkTests.swift */,
-				C49463FC2450DB8D001ED0ED /* Info.plist */,
-			);
-			path = WaitingFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +141,7 @@
 				TargetAttributes = {
 					C49463EB2450DB8D001ED0ED = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					C49463F42450DB8D001ED0ED = {
 						CreatedOnToolsVersion = 11.2;
@@ -195,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49464162450E4C4001ED0ED /* IndeterminateLoadingView.swift in Sources */,
+				C49464182450F16C001ED0ED /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C49463FB2450DB8D001ED0ED /* WaitingFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +335,7 @@
 		C49464012450DB8D001ED0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZTTC6J4225;
@@ -356,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yesTime.WaitingFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +361,7 @@
 		C49464022450DB8D001ED0ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZTTC6J4225;
@@ -388,6 +386,7 @@
 		C49464042450DB8D001ED0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTTC6J4225;
 				INFOPLIST_FILE = WaitingFrameworkTests/Info.plist;
@@ -406,6 +405,7 @@
 		C49464052450DB8D001ED0ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTTC6J4225;
 				INFOPLIST_FILE = WaitingFrameworkTests/Info.plist;
