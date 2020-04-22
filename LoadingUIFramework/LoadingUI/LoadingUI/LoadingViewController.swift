@@ -43,7 +43,30 @@ open class LoadingViewController: UIViewController {
         view.addSubview(circulito)
         circulito.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         circulito.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//        circulito.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
         circulito.startAnimating()
     }
 }
+
+/*
+   So. A DataSource takes care of anything related to internal data.
+   - Size
+        - Give a default size
+            / shapeLayer, and more specifically, the thickness property, are responsible for size.
+              So delegate and Protocol would have to affect those properties.
+              Could create methods inside of IndeterminateLoadingView.swift to allow for changing those.
+        - Allow to be changed
+            / Same method but without the default values.
+   - Placement
+        - Give default placement
+        - Allow to be changed
+            / As placement can be affected by constraints, it'd be a lot easier to implement. But it splits the responsibilities.
+              So I think the method of somehow providing the value to be used for size from a LoadingVC DataSource class would be the cleanest approach.
+ 
+    A Delegate handles events.
+    - Start & Stop animating
+        - Automatically call Start Animating on view did load.
+        - Automatically call Stop Animating on view will disapper. (idk just in case?)
+*/
+
