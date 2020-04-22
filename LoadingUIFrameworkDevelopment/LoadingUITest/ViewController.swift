@@ -16,6 +16,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    // MARK: - Actions
+    
+    @IBAction func startButton(_ sender: Any) {
+        loadingUIView.show()
+    }
+    
+    @IBAction func stopButton(_ sender: Any) {
+        loadingUIView.hide()
+    }
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var loadingUIView: LoadingUIViewController!
 }
 

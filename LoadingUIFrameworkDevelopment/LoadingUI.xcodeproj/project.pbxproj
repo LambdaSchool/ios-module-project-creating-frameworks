@@ -10,7 +10,7 @@
 		92931B0B2450EC7700B687A4 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 92931B092450EC7700B687A4 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92931B4A2450F06E00B687A4 /* LoadingUI.gif in Resources */ = {isa = PBXBuildFile; fileRef = 92931B472450F06D00B687A4 /* LoadingUI.gif */; };
 		92931B4B2450F06E00B687A4 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92931B482450F06E00B687A4 /* IndeterminateLoadingView.swift */; };
-		92931B4F2450F23700B687A4 /* LoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92931B4E2450F23700B687A4 /* LoadingUI.swift */; };
+		92931B512450F72100B687A4 /* LoadingUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92931B502450F72100B687A4 /* LoadingUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +19,7 @@
 		92931B0A2450EC7700B687A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92931B472450F06D00B687A4 /* LoadingUI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingUI.gif; sourceTree = "<group>"; };
 		92931B482450F06E00B687A4 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
-		92931B4E2450F23700B687A4 /* LoadingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUI.swift; sourceTree = "<group>"; };
+		92931B502450F72100B687A4 /* LoadingUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 				92931B0A2450EC7700B687A4 /* Info.plist */,
 				92931B472450F06D00B687A4 /* LoadingUI.gif */,
 				92931B092450EC7700B687A4 /* LoadingUI.h */,
-				92931B4E2450F23700B687A4 /* LoadingUI.swift */,
+				92931B502450F72100B687A4 /* LoadingUIViewController.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92931B4F2450F23700B687A4 /* LoadingUI.swift in Sources */,
 				92931B4B2450F06E00B687A4 /* IndeterminateLoadingView.swift in Sources */,
+				92931B512450F72100B687A4 /* LoadingUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
