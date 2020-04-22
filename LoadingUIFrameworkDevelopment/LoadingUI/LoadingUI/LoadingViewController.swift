@@ -8,23 +8,33 @@
 
 import UIKit
 
-class LoadingViewController: UIViewController {
+public class LoadingViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public enum Size {
+        case small
+        case medium
+        case large
+    }
+    
+    // MARK: - Public Properties
+    
+    public var color: UIColor = .systemBlue
+    public var size: Size = .medium
+    public private(set) var isAnimating = false
+    
+    // MARK: - Public Methods
+    
+    public func startAnimating() {
+        
+    }
+    
+    public func stopAnimating() {
+        
+    }
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
