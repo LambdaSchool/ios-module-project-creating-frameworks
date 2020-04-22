@@ -8,23 +8,31 @@
 
 import UIKit
 
-class LoadingViewController: UIViewController {
+public class LoadingViewController: UIViewController {
 
-    override func viewDidLoad() {
+    var loadingView = IndeterminateLoadingView()
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setup()
+        start()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setup() {
+        self.modalPresentationStyle = .overCurrentContext
+        self.view.backgroundColor = .clear
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(loadingView)
+        loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
-    */
-
+    
+    private func start() {
+        loadingView.startAnimating()
+    }
+    
+    public func stop() {
+        loadingView.stopAnimating()
+        self.dismiss(animated: true, completion: nil)
+    }
 }
