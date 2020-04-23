@@ -11,18 +11,19 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
     
-    public let spinView = IndeterminateLoadingView()
+    public var spinView: IndeterminateLoadingView? = nil
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        spinView.frame = self.view.frame
-     //   spinView.bounds = CGRect(x: self.view.frame.midX, y: self.view.frame.midY, width: 100, height: 100)
-        spinView.center = CGPoint(x: self.view.frame.midX, y: self.view.frame.midY)
-        print("THIS IS X VALUE: \(self.view.frame.midX) THIS IS Y VALUE: \(self.view.frame.midY)")
-        view.addSubview(spinView)
+        spinView = IndeterminateLoadingView(frame: self.view.frame)
         
-        spinView.startAnimating()
+        if let spinView = spinView {
+            view.addSubview(spinView)
+            spinView.startAnimating()
+        }
+        
+        
         
     }
     

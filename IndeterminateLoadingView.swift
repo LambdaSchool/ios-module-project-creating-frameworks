@@ -37,25 +37,25 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - Private
     
-    /*private*/ public func setupShapeLayer() {
-        let thickness: CGFloat = 100.0
+    private func setupShapeLayer() {
+        let thickness: CGFloat = 10.0
         
         shapeLayer.frame = layer.bounds
         shapeLayer.strokeColor = UIColor.blue.cgColor
-        shapeLayer.fillColor = UIColor.green.cgColor
+        shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = thickness
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
         layer.addSublayer(shapeLayer)
         
-        let radius = min(bounds.width, bounds.height) / 2.0 - thickness/2.0
+        let radius = min(bounds.width, bounds.height) / 4.0 - thickness/2.0
         let rect = CGRect(x: bounds.midX - radius/2.0, y: bounds.midY - radius/2.0, width: radius, height: radius)
         let path = UIBezierPath(ovalIn: rect)
         
         shapeLayer.path = path.cgPath
     }
     
-    /*private*/ public func startAnimation() {
+    private func startAnimation() {
         shouldStopAnimationOnNextCycle = false
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
