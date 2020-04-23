@@ -10,7 +10,7 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
 
-    private var loadingView = IndeterminateLoadingView()
+    private var loadingView: IndeterminateLoadingView!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +19,15 @@ public class LoadingViewController: UIViewController {
     }
     
     private func setup() {
+        loadingView = IndeterminateLoadingView(frame: CGRect(x: view.frame.midX, y: view.frame.midY, width: 200, height: 200))
         self.modalPresentationStyle = .overCurrentContext
         self.view.backgroundColor = .clear
         loadingView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(loadingView)
-        loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loadingView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        loadingView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        loadingView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        loadingView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
     
     private func start() {

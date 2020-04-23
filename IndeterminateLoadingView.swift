@@ -55,6 +55,10 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shapeLayer.path = path.cgPath
     }
     
+    public override func layoutSubviews() {
+        setupShapeLayer()
+    }
+    
     private func startAnimation() {
         shouldStopAnimationOnNextCycle = false
         shapeLayer.strokeStart = 0.0
