@@ -15,6 +15,7 @@
 		2CFE28CF24510767001EF7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE28CD24510767001EF7C9 /* LaunchScreen.storyboard */; };
 		2CFE28DD2451085A001EF7C9 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE28DC24510826001EF7C9 /* LoadingUI.framework */; };
 		2CFE28DE2451085A001EF7C9 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE28DC24510826001EF7C9 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CFE28E22451A711001EF7C9 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE28E12451A711001EF7C9 /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2CFE28CE24510767001EF7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CFE28D024510767001EF7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFE28D724510825001EF7C9 /* LoadingUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUI.xcodeproj; path = ../LoadingUI/LoadingUI.xcodeproj; sourceTree = "<group>"; };
+		2CFE28E12451A711001EF7C9 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../LoadingUI/LoadingUI/IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				2CFE28C224510766001EF7C9 /* AppDelegate.swift */,
 				2CFE28C424510766001EF7C9 /* SceneDelegate.swift */,
 				2CFE28C624510766001EF7C9 /* ViewController.swift */,
+				2CFE28E12451A711001EF7C9 /* IndeterminateLoadingView.swift */,
 				2CFE28C824510766001EF7C9 /* Main.storyboard */,
 				2CFE28CB24510767001EF7C9 /* Assets.xcassets */,
 				2CFE28CD24510767001EF7C9 /* LaunchScreen.storyboard */,
@@ -203,6 +206,7 @@
 				2CFE28C724510766001EF7C9 /* ViewController.swift in Sources */,
 				2CFE28C324510766001EF7C9 /* AppDelegate.swift in Sources */,
 				2CFE28C524510766001EF7C9 /* SceneDelegate.swift in Sources */,
+				2CFE28E22451A711001EF7C9 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
