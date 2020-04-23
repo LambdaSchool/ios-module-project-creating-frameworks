@@ -55,3 +55,6 @@ If you finish early or want to challenge yourself, think about completing one or
 - Implement a more complicated loading animation. The sky's the limit. Any relatively simple, interesting, repeating animation can be used. Take a look at [`CAReplicatorLayer`](https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CAReplicatorLayer_class) which can do some very interesting things.
 - Add support for installing your framework using Carthage. Hint: This is likely easier than you think.
 - Add support for installing your framework using CocoaPods. Hint: This is likely harder than you think 😉.
+
+
+
