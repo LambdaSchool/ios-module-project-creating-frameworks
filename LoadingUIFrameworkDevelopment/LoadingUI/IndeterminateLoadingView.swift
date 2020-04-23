@@ -24,6 +24,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     func startAnimating() {
         guard !isAnimating else { return }
+        // TODO: ? What purpose is defer here?
         defer { isAnimating = true }
     
         startAnimation()
@@ -71,6 +72,8 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         animation.isRemovedOnCompletion = false
         animation.timingFunction = CAMediaTimingFunction(name: timing)
         shapeLayer.add(animation, forKey: keyPath)
+        // TODO: ? This prints repeatedly. How? Why?
+        print("Finished startAnimation \(Date())")
     }
     
     // MARK: - CAAnimationDelegate
