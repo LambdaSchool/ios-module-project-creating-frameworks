@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
-        let controller = LoadingViewController()
-        show(controller, sender: sender)
+     //   let controller = LoadingViewController()
+     //   show(controller, sender: sender)
     }
     
     

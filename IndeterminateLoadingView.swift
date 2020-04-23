@@ -38,11 +38,11 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     // MARK: - Private
     
     /*private*/ public func setupShapeLayer() {
-        let thickness: CGFloat = 10.0
+        let thickness: CGFloat = 100.0
         
         shapeLayer.frame = layer.bounds
-        shapeLayer.strokeColor = UIColor.black.cgColor
-        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.strokeColor = UIColor.blue.cgColor
+        shapeLayer.fillColor = UIColor.green.cgColor
         shapeLayer.lineWidth = thickness
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
