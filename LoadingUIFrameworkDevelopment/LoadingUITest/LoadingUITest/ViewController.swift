@@ -11,14 +11,23 @@ import LoadingUI
 
 class ViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+    // MARK: - IBOutlets
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        present(LoadingViewController(), animated: true)
+    @IBOutlet weak var sizeSelector: UISegmentedControl!
+    let sizeOptions: [LoadingViewController.Size] = [.small, .medium, .large]
+    
+    @IBOutlet weak var colorSelector: UISegmentedControl!
+    let colorOptions: [UIColor] = [.systemBlue, .systemGreen, .systemRed]
+    
+    // MARK: - IBActions
+    
+    @IBAction func presentLoadingViewController(_ sender: Any) {
+        let loadingVC = LoadingViewController()
+        loadingVC.ringSize = sizeOptions[sizeSelector.selectedSegmentIndex]
+        loadingVC.ringColor = colorOptions[colorSelector.selectedSegmentIndex]
+        
+        loadingVC.view.backgroundColor = .white
+        present(loadingVC, animated: true)
     }
     
     
