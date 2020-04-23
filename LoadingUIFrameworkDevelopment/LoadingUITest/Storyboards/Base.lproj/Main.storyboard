@@ -26,6 +26,7 @@
                                                 <state key="normal" title="Start"/>
                                                 <connections>
                                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLP-vt-AgH"/>
+                                                    <segue destination="KqE-YC-ub5" kind="presentation" id="xoM-6g-lYk"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay in Seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-tZ-vqr">
@@ -50,42 +51,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YR-Mo-r0i" customClass="LoadingUIViewController" customModule="LoadingUI">
-                                <rect key="frame" x="20" y="148" width="374" height="374"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6YR-Mo-r0i" secondAttribute="height" multiplier="1:1" id="TGy-do-Met"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6YR-Mo-r0i" firstAttribute="top" secondItem="QN2-GO-UDZ" secondAttribute="bottom" constant="20" id="2Sf-BG-b9z"/>
                             <constraint firstItem="QN2-GO-UDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hps-68-763"/>
-                            <constraint firstItem="6YR-Mo-r0i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iDC-LE-2J7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6YR-Mo-r0i" secondAttribute="trailing" constant="20" id="nSq-sy-HaW"/>
                             <constraint firstItem="QN2-GO-UDZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="u4k-9K-pJv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="loadingUIView" destination="6YR-Mo-r0i" id="YJ4-Zw-CMb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--LoadingUI View Controller-->
         <scene sceneID="Ghm-K3-tUD">
             <objects>
-                <viewController id="KqE-YC-ub5" sceneMemberID="viewController">
+                <viewController id="KqE-YC-ub5" customClass="LoadingUIViewController" customModule="LoadingUI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkY-SO-4eB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xPn-fu-E1O"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zKg-Bs-Ge2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIr-K5-eZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

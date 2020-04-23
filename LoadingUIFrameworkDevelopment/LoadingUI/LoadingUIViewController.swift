@@ -8,19 +8,14 @@
 
 import UIKit
 
-public class LoadingUIViewController: UIView {
+public class LoadingUIViewController: UIViewController {
 
-    var loadUI: IndeterminateLoadingView!
+    var loadUI = IndeterminateLoadingView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-
-        loadUI = IndeterminateLoadingView(frame: frame)
-        self.addSubview(loadUI)        
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    override public func viewDidLoad() {
+        print("viewDidLoad: startAnimating")
+        print(loadUI.frame)
+        loadUI.startAnimating()
     }
     
     public func show() {
@@ -32,15 +27,4 @@ public class LoadingUIViewController: UIView {
         print("stopAnimating")
         loadUI.stopAnimating()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

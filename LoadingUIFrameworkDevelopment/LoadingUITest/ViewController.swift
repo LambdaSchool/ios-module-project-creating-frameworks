@@ -14,14 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        loadingUIView = LoadingUIViewController(frame: CGRect(x: 20, y: 148, width: 100, height: 100))
-        // Set autoresizing mask to false
     }
 
     // MARK: - Actions
     
     @IBAction func startButton(_ sender: Any) {
-        loadingUIView.show()
     }
     
     @IBAction func stopButton(_ sender: Any) {
@@ -30,6 +27,6 @@ class ViewController: UIViewController {
     
     // MARK: - Outlets
     
-    @IBOutlet var loadingUIView: LoadingUIViewController!
+    var loadingUIView = LoadingUIViewController()
 }
 
