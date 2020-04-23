@@ -10,7 +10,18 @@ import UIKit
 
 public class LoadingUIViewController: UIView {
 
-    var loadUI = IndeterminateLoadingView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+    var loadUI: IndeterminateLoadingView!
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+
+        loadUI = IndeterminateLoadingView(frame: frame)
+        self.addSubview(loadUI)        
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     public func show() {
         print("startAnimating")
