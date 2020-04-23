@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopButton(_ sender: Any) {
-        loadingUIView.hide()
+//        loadingUIView.hide()
     }
     
     // MARK: - Outlets
     
-    var loadingUIView = LoadingUIViewController()
+//    var loadingUIView = LoadingUIViewController()
 }
 
