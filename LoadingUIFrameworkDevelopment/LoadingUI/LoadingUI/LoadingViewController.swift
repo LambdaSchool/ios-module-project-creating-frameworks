@@ -46,6 +46,7 @@ public class LoadingViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setUpLoadingView()
     }
     

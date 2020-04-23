@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         loadingVC.ringSize = sizeOptions[sizeSelector.selectedSegmentIndex]
         loadingVC.ringColor = colorOptions[colorSelector.selectedSegmentIndex]
         
-        loadingVC.view.backgroundColor = .white
         present(loadingVC, animated: true)
     }
     
