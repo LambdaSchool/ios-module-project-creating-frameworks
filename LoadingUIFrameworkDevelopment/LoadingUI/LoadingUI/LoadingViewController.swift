@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// Displays an animating loading ring in a view controller for presenting while loading something for an inderterminate amount of time.
 public class LoadingViewController: UIViewController {
-
+    
+    /// Set ring sizes, based off a percentage of the screen size.
     public enum Size: CGFloat {
         case small = 0.2
         case medium = 0.4
@@ -18,7 +20,10 @@ public class LoadingViewController: UIViewController {
     
     // MARK: - Public Properties
     
+    /// The color to use for the loading ring.
     public var ringColor: UIColor = .systemBlue { didSet { loadingView?.strokeColor = ringColor }}
+    
+    /// Which of the pre-defined sizes to use for the loading ring.
     public var ringSize: Size = .small { didSet { setSizeConstraints() }}
     
     // MARK: - Private Properties
