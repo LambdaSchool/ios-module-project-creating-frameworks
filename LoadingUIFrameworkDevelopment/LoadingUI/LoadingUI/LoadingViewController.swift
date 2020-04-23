@@ -19,12 +19,13 @@ public class LoadingViewController: UIViewController {
     // MARK: - Public Properties
     
     public var ringColor: UIColor = .systemBlue { didSet { loadingView?.strokeColor = ringColor }}
-    public var ringSize: Size = .small { didSet { setWidthConstraint() }}
+    public var ringSize: Size = .small { didSet { setSizeConstraints() }}
     
     // MARK: - Private Properties
     
     private var loadingView: IndeterminateLoadingView?
     private var widthConstraint: NSLayoutConstraint?
+    private var heightConstraint: NSLayoutConstraint?
     
     // MARK: - Init
     
@@ -64,20 +65,25 @@ public class LoadingViewController: UIViewController {
         
         view.addSubview(loadingView)
         
-        setWidthConstraint()
+        setSizeConstraints()
         
         NSLayoutConstraint.activate([
             loadingView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
             loadingView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
-            loadingView.heightAnchor.constraint(equalTo: loadingView.widthAnchor),
         ])
     }
     
-    private func setWidthConstraint() {
+    private func setSizeConstraints() {
         guard let loadingView = loadingView else { return }
+        
         let newWidthConstraint = loadingView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: ringSize.rawValue)
         widthConstraint?.isActive = false
         newWidthConstraint.isActive = true
         widthConstraint = newWidthConstraint
+        
+        let newHeightConstraint = loadingView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: ringSize.rawValue)
+        heightConstraint?.isActive = false
+        newHeightConstraint.isActive = true
+        heightConstraint = newHeightConstraint
     }
 }
