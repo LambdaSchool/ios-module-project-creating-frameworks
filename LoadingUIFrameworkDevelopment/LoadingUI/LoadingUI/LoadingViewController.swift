@@ -10,32 +10,23 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
 
-    public enum Size {
-        case small
-        case medium
-        case large
+    public enum Size: CGFloat {
+        case small = 0.2
+        case medium = 0.4
+        case large = 0.6
     }
     
     // MARK: - Public Properties
     
-    public var color: UIColor = .systemBlue
-    public var size: Size = .medium
-    public var isAnimating: Bool {
-        loadingView?.isAnimating ?? false
-    }
+    public var ringColor: UIColor = .systemBlue { didSet { loadingView?.strokeColor = ringColor }}
+    public var ringSize: Size = .small { didSet { setWidthConstraint() }}
     
     // MARK: - Private Properties
+    
     private var loadingView: IndeterminateLoadingView?
+    private var widthConstraint: NSLayoutConstraint?
     
-    // MARK: - Public Methods
-    
-    public func startAnimating() {
-        
-    }
-    
-    public func stopAnimating() {
-        
-    }
+    // MARK: - Init
     
     public init() {
         super.init(nibName: nil, bundle: nil)
@@ -49,22 +40,44 @@ public class LoadingViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpLoadingView()
+    }
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadingView?.startAnimating()
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        loadingView?.stopAnimating()
+    }
+    
+    // MARK: - Private Methods
+    
+    private func setUpLoadingView() {
         loadingView = IndeterminateLoadingView(frame: .zero)
         
         guard let loadingView = loadingView else { return }
-        
+        loadingView.strokeColor = ringColor
         loadingView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(loadingView)
         
+        setWidthConstraint()
+        
         NSLayoutConstraint.activate([
             loadingView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
             loadingView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
-            loadingView.widthAnchor.constraint(equalToConstant: 200),
-            loadingView.heightAnchor.constraint(equalToConstant: 200),
+            loadingView.heightAnchor.constraint(equalTo: loadingView.widthAnchor),
         ])
-        
-        loadingView.startAnimating()
+    }
+    
+    private func setWidthConstraint() {
+        guard let loadingView = loadingView else { return }
+        let newWidthConstraint = loadingView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: ringSize.rawValue)
+        widthConstraint?.isActive = false
+        newWidthConstraint.isActive = true
+        widthConstraint = newWidthConstraint
     }
 }
