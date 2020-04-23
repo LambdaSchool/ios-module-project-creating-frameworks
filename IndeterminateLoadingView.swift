@@ -37,7 +37,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - Private
     
-    private func setupShapeLayer() {
+    /*private*/ public func setupShapeLayer() {
         let thickness: CGFloat = 10.0
         
         shapeLayer.frame = layer.bounds
@@ -55,7 +55,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shapeLayer.path = path.cgPath
     }
     
-    private func startAnimation() {
+    /*private*/ public func startAnimation() {
         shouldStopAnimationOnNextCycle = false
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
@@ -75,7 +75,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - CAAnimationDelegate
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         guard !shouldStopAnimationOnNextCycle else {
             shouldStopAnimationOnNextCycle = false
             isAnimating = false

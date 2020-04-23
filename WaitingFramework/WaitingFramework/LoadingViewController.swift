@@ -11,7 +11,7 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
     
-    let spinView = IndeterminateLoadingView()
+    public let spinView = IndeterminateLoadingView()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
