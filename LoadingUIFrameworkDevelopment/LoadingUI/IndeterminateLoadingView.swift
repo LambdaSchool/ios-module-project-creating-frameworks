@@ -24,6 +24,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     func startAnimating() {
         guard !isAnimating else { return }
+        // TODO: ? What purpose is defer here?
         defer { isAnimating = true }
     
         startAnimation()
@@ -67,10 +68,14 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         animation.fromValue = 0.0
         animation.toValue = 1.0
         animation.duration = duration
+        // This is what causes to be called repeatly. But how?
+        // I can understand "running" animation object but how does the print get called?
         animation.delegate = self
         animation.isRemovedOnCompletion = false
         animation.timingFunction = CAMediaTimingFunction(name: timing)
         shapeLayer.add(animation, forKey: keyPath)
+        // TODO: ? This prints repeatedly. How? Why?
+        print("Finished startAnimation \(Date())")
     }
     
     // MARK: - CAAnimationDelegate
