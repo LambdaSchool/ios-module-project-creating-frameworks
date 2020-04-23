@@ -13,6 +13,8 @@ public class LoadingUIViewController: UIViewController {
     var loadUI = IndeterminateLoadingView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
     
     override public func viewDidLoad() {
+        view.addSubview(loadUI)
+        
         print("viewDidLoad: startAnimating")
         print(loadUI.frame)
         loadUI.startAnimating()
