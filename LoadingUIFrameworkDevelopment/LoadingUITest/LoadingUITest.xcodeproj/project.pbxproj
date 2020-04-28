@@ -13,7 +13,8 @@
 		6357C00C2457DAAB0033DF66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357C00A2457DAAB0033DF66 /* Main.storyboard */; };
 		6357C00E2457DAAB0033DF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6357C00D2457DAAB0033DF66 /* Assets.xcassets */; };
 		6357C0112457DAAB0033DF66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6357C00F2457DAAB0033DF66 /* LaunchScreen.storyboard */; };
-		6357C02A2457E32E0033DF66 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6357C0292457E2C60033DF66 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6357C02D2457E6200033DF66 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6357C0292457E2C60033DF66 /* LoadingUI.framework */; };
+		6357C02E2457E6200033DF66 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6357C0292457E2C60033DF66 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,16 +25,23 @@
 			remoteGlobalIDString = 6357BFED2457D9AE0033DF66;
 			remoteInfo = LoadingUI;
 		};
+		6357C0302457E62E0033DF66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6357C0182457E19C0033DF66 /* LoadingUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6357BFEC2457D9AE0033DF66;
+			remoteInfo = LoadingUI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6357C0232457E21C0033DF66 /* Embed Frameworks */ = {
+		6357C02F2457E6200033DF66 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6357C02A2457E32E0033DF66 /* LoadingUI.framework in Embed Frameworks */,
+				6357C02E2457E6200033DF66 /* LoadingUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6357C02D2457E6200033DF66 /* LoadingUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,11 +137,12 @@
 				6357BFFD2457DAAB0033DF66 /* Sources */,
 				6357BFFE2457DAAB0033DF66 /* Frameworks */,
 				6357BFFF2457DAAB0033DF66 /* Resources */,
-				6357C0232457E21C0033DF66 /* Embed Frameworks */,
+				6357C02F2457E6200033DF66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6357C0312457E62E0033DF66 /* PBXTargetDependency */,
 			);
 			name = LoadingUITest;
 			productName = LoadingUITest;
@@ -213,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6357C0312457E62E0033DF66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingUI;
+			targetProxy = 6357C0302457E62E0033DF66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6357C00A2457DAAB0033DF66 /* Main.storyboard */ = {
