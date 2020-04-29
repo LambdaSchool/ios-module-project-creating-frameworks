@@ -10,11 +10,15 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
 
+    public var shapeView: IndeterminateLoadingView? {
+        return self.view as? IndeterminateLoadingView
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let shapeView = IndeterminateLoadingView()
-        shapeView.startAnimating()
+        if let shapeView = shapeView {
+            shapeView.startAnimating()
+        }
     }
     
 
