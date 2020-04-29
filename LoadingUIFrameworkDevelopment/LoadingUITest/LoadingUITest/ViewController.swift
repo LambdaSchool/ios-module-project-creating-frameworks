@@ -40,7 +40,11 @@ class ViewController: UIViewController {
     }
     
     @objc private func showLoadingVCButtonTapped() {
-        present(LoadingViewController(loadingViewCircleDiameter: 200, loadingDuration: 3), animated: true, completion: nil)
+        let loadingVC = LoadingViewController(loadingViewCircleDiameter: 85,
+                                              delay: 0.5,
+                                              loadingDuration: 3)
+        
+        present(loadingVC, animated: true, completion: nil)
     }
 }
 

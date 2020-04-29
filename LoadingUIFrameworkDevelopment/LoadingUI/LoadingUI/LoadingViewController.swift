@@ -14,11 +14,14 @@ public class LoadingViewController: UIViewController {
     // MARK: - Initializers
 
     public init(loadingViewCircleDiameter: CGFloat = 100,
+                delay: TimeInterval = 0.4,
                 loadingDuration: TimeInterval = 2,
                 isAnimateUntilDismissedEnabled: Bool = false) {
         super.init(nibName: nil, bundle: nil)
         
+        
         self.loadingViewCircleDiameter = loadingViewCircleDiameter
+        self.delay = delay
         self.loadingDuration = loadingDuration
         self.isAnimateUntilDismissedEnabled = isAnimateUntilDismissedEnabled
     }
@@ -32,6 +35,9 @@ public class LoadingViewController: UIViewController {
     
     /// The diameter of the circular loading graphic.
     public var loadingViewCircleDiameter: CGFloat = 100
+    
+    /// The number of seconds until the loading animation begins.
+    public var delay: TimeInterval = 0.4
     
     /// The duration the LoadingViewController will be presented on the screeen.
     public var loadingDuration: TimeInterval = 2
@@ -47,8 +53,10 @@ public class LoadingViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .systemBackground
         setupLoadingView()
-        startLoadingAnimation()
+        perform(#selector(startLoadingAnimation), with: nil, afterDelay: delay)
     }
     
     
@@ -68,15 +76,16 @@ public class LoadingViewController: UIViewController {
         NSLayoutConstraint.activate(loadingViewConstraints)
     }
     
-    private func startLoadingAnimation() {
-        loadingView.stopAnimating()
-        loadingView.startAnimating()
+    @objc private func startLoadingAnimation() {
+        self.loadingView.stopAnimating()
+        self.loadingView.startAnimating()
         
-        if !isAnimateUntilDismissedEnabled {
-            DispatchQueue.main.asyncAfter(deadline: .now() + loadingDuration) {
+        if !self.isAnimateUntilDismissedEnabled {
+            DispatchQueue.main.asyncAfter(deadline: .now() + self.loadingDuration) {
                 self.loadingView.stopAnimating()
                 self.dismiss(animated: true, completion: nil)
             }
         }
     }
+    
 }
