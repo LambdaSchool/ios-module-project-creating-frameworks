@@ -12,7 +12,7 @@ public class LoadingViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let shapeView = IndeterminateLoadingView()
         shapeView.startAnimating()
     }
