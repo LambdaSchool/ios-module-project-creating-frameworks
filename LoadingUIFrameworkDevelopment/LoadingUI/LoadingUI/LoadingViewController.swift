@@ -10,14 +10,14 @@ import UIKit
 
 /// A view controller with a circular loading animation.
 public class LoadingViewController: UIViewController {
-
-    public convenience init() {
-        self.init()
-    }
     
     // MARK: - Properties
     
-    public let loadingView = IndeterminateLoadingView()
+    /// The duration the LoadingViewController will be presented on the screeen.
+    public var loadingDuration: TimeInterval = 3
+    
+    /// When indefiniteLoadingDuration is set to 'true', the loading animation will continue until the view controller is dismissed
+    public var indefiniteLoadingDuration = false
     
     /// The origin of the loadingView which contains the loading animation.
     /// If loadingViewOrigin is set to nil, the loadingView's center will be constrained to the center of its superview.
@@ -28,6 +28,7 @@ public class LoadingViewController: UIViewController {
         }
     }
     
+    /// The diameter of the circular loading graphic.
     public var loadingViewCircleDiameter: CGFloat = 100 {
         didSet {
             guard isViewLoaded else { return }
@@ -35,6 +36,7 @@ public class LoadingViewController: UIViewController {
         }
     }
     
+    private let loadingView = IndeterminateLoadingView()
     private var loadingViewCenterXConstraint: NSLayoutConstraint!
     private var loadingViewCenterYConstraint: NSLayoutConstraint!
     
@@ -44,16 +46,17 @@ public class LoadingViewController: UIViewController {
         super.viewDidLoad()
 
         setupLoadingView()
+        startLoadingAnimation()
     }
     
-    // MARK: - Methods
+    // MARK: - Private Methods
 
     private func setupLoadingView() {
         guard isViewLoaded else { return }
         
         loadingView.translatesAutoresizingMaskIntoConstraints = false
         loadingViewCenterXConstraint = loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        loadingViewCenterXConstraint = loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        loadingViewCenterYConstraint = loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         view.addSubview(loadingView)
         
         updateLoadingViewSize()
@@ -75,5 +78,17 @@ public class LoadingViewController: UIViewController {
     private func updateLoadingViewSize() {
         loadingView.frame.size = CGSize(width: loadingViewCircleDiameter, height: loadingViewCircleDiameter)
         view.layoutIfNeeded()
+    }
+    
+    private func startLoadingAnimation() {
+        loadingView.stopAnimating()
+        loadingView.startAnimating()
+                
+        if !indefiniteLoadingDuration {
+            DispatchQueue.main.asyncAfter(deadline: .now() + loadingDuration) {
+                self.loadingView.stopAnimating()
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
 }
