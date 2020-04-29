@@ -29,7 +29,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         startAnimation()
     }
     
-    func stopAnimating() {
+    public func stopAnimating() {
         guard isAnimating else { return }
         
         shouldStopAnimationOnNextCycle = true
@@ -44,8 +44,8 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeColor = UIColor.gray.cgColor
         shapeLayer.lineWidth = thickness
-        shapeLayer.strokeStart = 0.0
-        shapeLayer.strokeEnd = 1.0
+//        shapeLayer.strokeStart = 0.0
+//        shapeLayer.strokeEnd = 0.0
         layer.addSublayer(shapeLayer)
         
         let radius = min(bounds.width, bounds.height) / 2.0 - thickness/2.0
@@ -58,7 +58,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     private func startAnimation() {
         shouldStopAnimationOnNextCycle = false
         shapeLayer.strokeStart = 0.0
-        shapeLayer.strokeEnd = 0.0
+        shapeLayer.strokeEnd = 1.0
         startAnimation(for: "strokeEnd", timing: .easeIn)
     }
     

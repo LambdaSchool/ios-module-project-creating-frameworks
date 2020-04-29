@@ -19,6 +19,7 @@ public class LoadingViewController: UIViewController {
         super.viewDidLoad()
         if let shapeView = shapeView {
             shapeView.startAnimating()
+            shapeView.stopAnimating()
         }
     }
 }

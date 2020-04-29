@@ -54,23 +54,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0X-LH-fdo" customClass="IndeterminateLoadingView" customModule="LoadingUI">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="157" y="371" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L0X-LH-fdo" secondAttribute="height" multiplier="1:1" id="TJX-UI-K8f"/>
+                                    <constraint firstAttribute="width" constant="100" id="fAz-kS-Sm3"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="L0X-LH-fdo" firstAttribute="leading" secondItem="HqF-7l-DDN" secondAttribute="leading" id="E1w-nr-bYG"/>
-                            <constraint firstItem="L0X-LH-fdo" firstAttribute="top" secondItem="HqF-7l-DDN" secondAttribute="top" id="K6C-It-xSj"/>
-                            <constraint firstItem="HqF-7l-DDN" firstAttribute="bottom" secondItem="L0X-LH-fdo" secondAttribute="bottom" id="Mn9-MH-quz"/>
-                            <constraint firstItem="HqF-7l-DDN" firstAttribute="trailing" secondItem="L0X-LH-fdo" secondAttribute="trailing" id="ZyF-rQ-hds"/>
+                            <constraint firstItem="L0X-LH-fdo" firstAttribute="centerY" secondItem="aHE-o3-Z5B" secondAttribute="centerY" id="EUF-tl-hR9"/>
+                            <constraint firstItem="L0X-LH-fdo" firstAttribute="centerX" secondItem="aHE-o3-Z5B" secondAttribute="centerX" id="bDz-jJ-tfH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HqF-7l-DDN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9W-iz-Q5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="114"/>
+            <point key="canvasLocation" x="798.55072463768124" y="113.83928571428571"/>
         </scene>
     </scenes>
 </document>
