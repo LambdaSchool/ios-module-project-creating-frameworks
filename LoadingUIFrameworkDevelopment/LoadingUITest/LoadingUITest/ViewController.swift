@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         loadingVCButton.titleLabel?.textAlignment = .center
         loadingVCButton.titleLabel?.textColor = .white
         loadingVCButton.backgroundColor = .systemBlue
-        loadingVCButton.layer.cornerRadius = 4
+        loadingVCButton.layer.cornerRadius = 8
         
         // Setup button constraints
         loadingVCButton.translatesAutoresizingMaskIntoConstraints = false
