@@ -11,11 +11,21 @@ import LoadingUI
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loadViewButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadViewButton.backgroundColor = .darkGray
+        loadViewButton.layer.cornerRadius = 4.0
     }
 
-
+    // MARK: Navigaiton
+    
+    func prepare(for segue: UIStoryboardSegue, sender: UIButton) {
+        if segue.identifier == "presentLoadingView" {
+            guard let destinationVC = segue.destination as? LoadingViewController else { return }
+        }
+    }
+    
 }
 
