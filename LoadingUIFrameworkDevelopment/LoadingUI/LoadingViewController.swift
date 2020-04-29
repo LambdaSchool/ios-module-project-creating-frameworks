@@ -11,7 +11,8 @@ import UIKit
 public class LoadingViewController: UIViewController {
 
     public var shapeView: IndeterminateLoadingView? {
-        return self.view as? IndeterminateLoadingView
+        let shapeView = IndeterminateLoadingView(frame: CGRect(x: 0.0, y: 0.0, width: 240, height: 240))
+        return shapeView
     }
     
     public override func viewDidLoad() {
@@ -20,16 +21,5 @@ public class LoadingViewController: UIViewController {
             shapeView.startAnimating()
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+

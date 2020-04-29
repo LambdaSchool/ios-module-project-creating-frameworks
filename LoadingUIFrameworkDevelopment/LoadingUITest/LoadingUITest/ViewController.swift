@@ -23,10 +23,8 @@ class ViewController: UIViewController {
     
     func prepare(for segue: UIStoryboardSegue, sender: UIButton) {
         if segue.identifier == "presentLoadingView" {
-            guard let destinationVC = segue.destination as? LoadingViewController else { return }
-            destinationVC.view = IndeterminateLoadingView()
+            guard ((segue.destination as? LoadingViewController) != nil) else { return }
         }
     }
-    
 }
 

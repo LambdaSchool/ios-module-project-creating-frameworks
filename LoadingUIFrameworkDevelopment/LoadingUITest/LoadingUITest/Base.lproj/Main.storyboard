@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="-10" y="100"/>
         </scene>
         <!--Loading View Controller-->
         <scene sceneID="MYH-xR-kvt">
@@ -53,19 +53,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3od-7J-uc4" customClass="IndeterminateLoadingView" customModule="LoadingUI">
-                                <rect key="frame" x="87" y="301" width="240" height="240"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0X-LH-fdo" customClass="IndeterminateLoadingView" customModule="LoadingUI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="3od-7J-uc4" secondAttribute="height" multiplier="1:1" id="FMC-G3-cYj"/>
-                                    <constraint firstAttribute="width" constant="240" id="aOd-By-Q36"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3od-7J-uc4" firstAttribute="centerY" secondItem="aHE-o3-Z5B" secondAttribute="centerY" id="DDp-Nv-Qhc"/>
-                            <constraint firstItem="3od-7J-uc4" firstAttribute="centerX" secondItem="aHE-o3-Z5B" secondAttribute="centerX" id="o4I-2Q-0la"/>
+                            <constraint firstItem="L0X-LH-fdo" firstAttribute="leading" secondItem="HqF-7l-DDN" secondAttribute="leading" id="E1w-nr-bYG"/>
+                            <constraint firstItem="L0X-LH-fdo" firstAttribute="top" secondItem="HqF-7l-DDN" secondAttribute="top" id="K6C-It-xSj"/>
+                            <constraint firstItem="HqF-7l-DDN" firstAttribute="bottom" secondItem="L0X-LH-fdo" secondAttribute="bottom" id="Mn9-MH-quz"/>
+                            <constraint firstItem="HqF-7l-DDN" firstAttribute="trailing" secondItem="L0X-LH-fdo" secondAttribute="trailing" id="ZyF-rQ-hds"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HqF-7l-DDN"/>
                     </view>

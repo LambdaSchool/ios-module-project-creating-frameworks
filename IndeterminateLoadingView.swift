@@ -22,7 +22,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         setupShapeLayer()
     }
     
-    func startAnimating() {
+    public func startAnimating() {
         guard !isAnimating else { return }
         defer { isAnimating = true }
     
@@ -41,11 +41,11 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         let thickness: CGFloat = 10.0
         
         shapeLayer.frame = layer.bounds
-        shapeLayer.strokeColor = UIColor.black.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.strokeColor = UIColor.gray.cgColor
         shapeLayer.lineWidth = thickness
         shapeLayer.strokeStart = 0.0
-        shapeLayer.strokeEnd = 0.0
+        shapeLayer.strokeEnd = 1.0
         layer.addSublayer(shapeLayer)
         
         let radius = min(bounds.width, bounds.height) / 2.0 - thickness/2.0
