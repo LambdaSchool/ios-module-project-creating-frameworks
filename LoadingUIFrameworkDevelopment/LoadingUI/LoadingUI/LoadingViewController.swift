@@ -11,11 +11,16 @@ import UIKit
 /// A view controller with a circular loading animation.
 public class LoadingViewController: UIViewController {
 
+    public convenience init() {
+        self.init()
+    }
+    
     // MARK: - Properties
     
     public let loadingView = IndeterminateLoadingView()
     
-    // If loadingViewOrigin is set to nil, the loadingView's center will be constrained to the center of its superview
+    /// The origin of the loadingView which contains the loading animation.
+    /// If loadingViewOrigin is set to nil, the loadingView's center will be constrained to the center of its superview.
     public var loadingViewOrigin: CGPoint? {
         didSet {
             guard isViewLoaded else { return }
@@ -71,15 +76,4 @@ public class LoadingViewController: UIViewController {
         loadingView.frame.size = CGSize(width: loadingViewCircleDiameter, height: loadingViewCircleDiameter)
         view.layoutIfNeeded()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
