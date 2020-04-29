@@ -52,8 +52,8 @@
 			children = (
 				6357BFF02457D9AE0033DF66 /* LoadingUI.h */,
 				6357BFF12457D9AE0033DF66 /* Info.plist */,
-				6357C034245905410033DF66 /* IndeterminateLoadingView.swift */,
 				6357C0322457E7D20033DF66 /* LoadingViewController.swift */,
+				6357C034245905410033DF66 /* IndeterminateLoadingView.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
