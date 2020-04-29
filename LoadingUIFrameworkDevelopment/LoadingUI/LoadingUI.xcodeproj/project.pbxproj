@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		95C9DA1D24590E8900C1B7EE /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C9DA1B24590E8900C1B7EE /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C9DA532459110B00C1B7EE /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C9DA522459110B00C1B7EE /* LoadingViewController.swift */; };
+		95C9DA55245911C400C1B7EE /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C9DA54245911C400C1B7EE /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95C9DA1824590E8900C1B7EE /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C9DA1B24590E8900C1B7EE /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		95C9DA1C24590E8900C1B7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C9DA522459110B00C1B7EE /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		95C9DA54245911C400C1B7EE /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,8 @@
 		95C9DA0E24590E8900C1B7EE = {
 			isa = PBXGroup;
 			children = (
+				95C9DA522459110B00C1B7EE /* LoadingViewController.swift */,
+				95C9DA51245910D700C1B7EE /* Model */,
 				95C9DA1A24590E8900C1B7EE /* LoadingUI */,
 				95C9DA1924590E8900C1B7EE /* Products */,
 			);
@@ -50,6 +56,14 @@
 				95C9DA1C24590E8900C1B7EE /* Info.plist */,
 			);
 			path = LoadingUI;
+			sourceTree = "<group>";
+		};
+		95C9DA51245910D700C1B7EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95C9DA54245911C400C1B7EE /* IndeterminateLoadingView.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +109,7 @@
 				TargetAttributes = {
 					95C9DA1724590E8900C1B7EE = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C9DA532459110B00C1B7EE /* LoadingViewController.swift in Sources */,
+				95C9DA55245911C400C1B7EE /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		95C9DA2124590E8900C1B7EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PV8C8697QD;
@@ -276,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jessiegriffin.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +303,7 @@
 		95C9DA2224590E8900C1B7EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PV8C8697QD;
