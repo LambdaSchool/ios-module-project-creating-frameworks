@@ -8,16 +8,15 @@
 
 import UIKit
 
-
 public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupShapeLayer()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         setupShapeLayer()
@@ -38,7 +37,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - Private
     
-    public func setupShapeLayer() {
+    private func setupShapeLayer() {
         let thickness: CGFloat = 10.0
         
         shapeLayer.frame = layer.bounds
@@ -56,14 +55,14 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shapeLayer.path = path.cgPath
     }
     
-    public func startAnimation() {
+    private func startAnimation() {
         shouldStopAnimationOnNextCycle = false
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
         startAnimation(for: "strokeEnd", timing: .easeIn)
     }
     
-    public func startAnimation(for keyPath: String, timing: CAMediaTimingFunctionName) {
+    private func startAnimation(for keyPath: String, timing: CAMediaTimingFunctionName) {
         let animation = CABasicAnimation(keyPath: keyPath)
         animation.fromValue = 0.0
         animation.toValue = 1.0
@@ -102,7 +101,7 @@ public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     private(set) var isAnimating = false
 
-    public let shapeLayer = CAShapeLayer()
-    public let duration = 1.0
+    private let shapeLayer = CAShapeLayer()
+    private let duration = 1.0
     private var shouldStopAnimationOnNextCycle = false
 }

@@ -1,0 +1,6 @@
+framework module LoadingUIFramework {
+  umbrella header "LoadingUIFramework.h"
+
+  export *
+  module * { export * }
+}

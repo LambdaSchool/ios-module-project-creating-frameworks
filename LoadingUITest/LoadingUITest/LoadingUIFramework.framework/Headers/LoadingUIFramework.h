@@ -1,0 +1,19 @@
+//
+//  LoadingUIFramework.h
+//  LoadingUIFramework
+//
+//  Created by Sal B Amer on 4/28/20.
+//  Copyright © 2020 Sal B Amer. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+//! Project version number for LoadingUIFramework.
+FOUNDATION_EXPORT double LoadingUIFrameworkVersionNumber;
+
+//! Project version string for LoadingUIFramework.
+FOUNDATION_EXPORT const unsigned char LoadingUIFrameworkVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <LoadingUIFramework/PublicHeader.h>
+
+
