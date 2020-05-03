@@ -13,7 +13,37 @@
 		128B4B32245B81B0005CDEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128B4B30245B81B0005CDEC1 /* Main.storyboard */; };
 		128B4B34245B81B2005CDEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128B4B33245B81B2005CDEC1 /* Assets.xcassets */; };
 		128B4B37245B81B2005CDEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128B4B35245B81B2005CDEC1 /* LaunchScreen.storyboard */; };
+		12DB0A51245F1DB1006BF40D /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 12DB0A4F245F1DB1006BF40D /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12DB0A54245F1DB1006BF40D /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DB0A4D245F1DB1006BF40D /* LoadingUI.framework */; };
+		12DB0A55245F1DB1006BF40D /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12DB0A4D245F1DB1006BF40D /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12DB0A5E245F1E7C006BF40D /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB0A5A245F1E7B006BF40D /* IndeterminateLoadingView.swift */; };
+		12DB0A60245F1E7C006BF40D /* LoadingUI.gif in Sources */ = {isa = PBXBuildFile; fileRef = 12DB0A5C245F1E7C006BF40D /* LoadingUI.gif */; };
+		12DB0A61245F1E7C006BF40D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 12DB0A5D245F1E7C006BF40D /* README.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12DB0A52245F1DB1006BF40D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 128B4B1F245B81B0005CDEC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12DB0A4C245F1DB1006BF40D;
+			remoteInfo = LoadingUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12DB0A56245F1DB1006BF40D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12DB0A55245F1DB1006BF40D /* LoadingUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		128B4B27245B81B0005CDEC1 /* LoadingUIFrameworkDevelopment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUIFrameworkDevelopment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +54,24 @@
 		128B4B33245B81B2005CDEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128B4B36245B81B2005CDEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128B4B38245B81B2005CDEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DB0A4D245F1DB1006BF40D /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DB0A4F245F1DB1006BF40D /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
+		12DB0A50245F1DB1006BF40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DB0A5A245F1E7B006BF40D /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		12DB0A5C245F1E7C006BF40D /* LoadingUI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingUI.gif; sourceTree = "<group>"; };
+		12DB0A5D245F1E7C006BF40D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		128B4B24245B81B0005CDEC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DB0A54245F1DB1006BF40D /* LoadingUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DB0A4A245F1DB1006BF40D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				128B4B29245B81B0005CDEC1 /* LoadingUIFrameworkDevelopment */,
+				12DB0A4E245F1DB1006BF40D /* LoadingUI */,
 				128B4B28245B81B0005CDEC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				128B4B27245B81B0005CDEC1 /* LoadingUIFrameworkDevelopment.app */,
+				12DB0A4D245F1DB1006BF40D /* LoadingUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +113,30 @@
 			path = LoadingUIFrameworkDevelopment;
 			sourceTree = "<group>";
 		};
+		12DB0A4E245F1DB1006BF40D /* LoadingUI */ = {
+			isa = PBXGroup;
+			children = (
+				12DB0A5A245F1E7B006BF40D /* IndeterminateLoadingView.swift */,
+				12DB0A5C245F1E7C006BF40D /* LoadingUI.gif */,
+				12DB0A5D245F1E7C006BF40D /* README.md */,
+				12DB0A4F245F1DB1006BF40D /* LoadingUI.h */,
+				12DB0A50245F1DB1006BF40D /* Info.plist */,
+			);
+			path = LoadingUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12DB0A48245F1DB1006BF40D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DB0A51245F1DB1006BF40D /* LoadingUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		128B4B26245B81B0005CDEC1 /* LoadingUIFrameworkDevelopment */ = {
@@ -77,15 +146,35 @@
 				128B4B23245B81B0005CDEC1 /* Sources */,
 				128B4B24245B81B0005CDEC1 /* Frameworks */,
 				128B4B25245B81B0005CDEC1 /* Resources */,
+				12DB0A56245F1DB1006BF40D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				12DB0A53245F1DB1006BF40D /* PBXTargetDependency */,
 			);
 			name = LoadingUIFrameworkDevelopment;
 			productName = LoadingUIFrameworkDevelopment;
 			productReference = 128B4B27245B81B0005CDEC1 /* LoadingUIFrameworkDevelopment.app */;
 			productType = "com.apple.product-type.application";
+		};
+		12DB0A4C245F1DB1006BF40D /* LoadingUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12DB0A59245F1DB1006BF40D /* Build configuration list for PBXNativeTarget "LoadingUI" */;
+			buildPhases = (
+				12DB0A48245F1DB1006BF40D /* Headers */,
+				12DB0A49245F1DB1006BF40D /* Sources */,
+				12DB0A4A245F1DB1006BF40D /* Frameworks */,
+				12DB0A4B245F1DB1006BF40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoadingUI;
+			productName = LoadingUI;
+			productReference = 12DB0A4D245F1DB1006BF40D /* LoadingUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,11 +182,17 @@
 		128B4B1F245B81B0005CDEC1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "DenCedeno Co.";
 				TargetAttributes = {
 					128B4B26245B81B0005CDEC1 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					12DB0A4C245F1DB1006BF40D = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -116,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				128B4B26245B81B0005CDEC1 /* LoadingUIFrameworkDevelopment */,
+				12DB0A4C245F1DB1006BF40D /* LoadingUI */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +224,13 @@
 				128B4B37245B81B2005CDEC1 /* LaunchScreen.storyboard in Resources */,
 				128B4B34245B81B2005CDEC1 /* Assets.xcassets in Resources */,
 				128B4B32245B81B0005CDEC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DB0A4B245F1DB1006BF40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +247,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12DB0A49245F1DB1006BF40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DB0A5E245F1E7C006BF40D /* IndeterminateLoadingView.swift in Sources */,
+				12DB0A60245F1E7C006BF40D /* LoadingUI.gif in Sources */,
+				12DB0A61245F1E7C006BF40D /* README.md in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12DB0A53245F1DB1006BF40D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12DB0A4C245F1DB1006BF40D /* LoadingUI */;
+			targetProxy = 12DB0A52245F1DB1006BF40D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		128B4B30245B81B0005CDEC1 /* Main.storyboard */ = {
@@ -283,6 +404,7 @@
 		128B4B3C245B81B2005CDEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDB2NWAVF2;
@@ -301,6 +423,7 @@
 		128B4B3D245B81B2005CDEC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDB2NWAVF2;
@@ -313,6 +436,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12DB0A57245F1DB1006BF40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WDB2NWAVF2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LoadingUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deniscedeno.LoadingUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12DB0A58245F1DB1006BF40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WDB2NWAVF2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LoadingUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deniscedeno.LoadingUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -333,6 +510,15 @@
 			buildConfigurations = (
 				128B4B3C245B81B2005CDEC1 /* Debug */,
 				128B4B3D245B81B2005CDEC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12DB0A59245F1DB1006BF40D /* Build configuration list for PBXNativeTarget "LoadingUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12DB0A57245F1DB1006BF40D /* Debug */,
+				12DB0A58245F1DB1006BF40D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
