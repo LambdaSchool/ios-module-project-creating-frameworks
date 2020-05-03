@@ -105,3 +105,4 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     private let duration = 1.0
     private var shouldStopAnimationOnNextCycle = false
 }
+

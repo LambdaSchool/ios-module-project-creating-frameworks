@@ -10,7 +10,6 @@
 		121A245E245F2775004BD5D4 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DB0A8A245F2616006BF40D /* LoadingUI.framework */; };
 		121A245F245F2775004BD5D4 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12DB0A8A245F2616006BF40D /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		12DB0A6F245F2366006BF40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB0A6E245F2366006BF40D /* AppDelegate.swift */; };
-		12DB0A71245F2366006BF40D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB0A70245F2366006BF40D /* SceneDelegate.swift */; };
 		12DB0A73245F2366006BF40D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB0A72245F2366006BF40D /* ViewController.swift */; };
 		12DB0A76245F2366006BF40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB0A74245F2366006BF40D /* Main.storyboard */; };
 		12DB0A78245F2368006BF40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DB0A77245F2368006BF40D /* Assets.xcassets */; };
@@ -225,7 +224,6 @@
 			files = (
 				12DB0A73245F2366006BF40D /* ViewController.swift in Sources */,
 				12DB0A6F245F2366006BF40D /* AppDelegate.swift in Sources */,
-				12DB0A71245F2366006BF40D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

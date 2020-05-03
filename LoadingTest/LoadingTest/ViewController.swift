@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import LoadingUI
 
 class ViewController: UIViewController {
+    
+    let loadingVC = LoadingViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        loadingVC.embed(in: view, parent: self)
     }
 
+    @IBAction func toggle(_ sender: Any) {
+        loadingVC.isAnimating = !loadingVC.isAnimating
+    }
+    
 
 }
 
