@@ -18,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		121A2461245F27A0004BD5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12DB0A82245F2616006BF40D /* LoadingUIFrameworkDevelopment.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 12DB0A4C245F1DB1006BF40D;
+			remoteInfo = LoadingUI;
+		};
 		12DB0A87245F2616006BF40D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 12DB0A82245F2616006BF40D /* LoadingUIFrameworkDevelopment.xcodeproj */;
@@ -135,6 +142,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				121A2462245F27A0004BD5D4 /* PBXTargetDependency */,
 			);
 			name = LoadingTest;
 			productName = LoadingTest;
@@ -222,6 +230,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		121A2462245F27A0004BD5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingUI;
+			targetProxy = 121A2461245F27A0004BD5D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		12DB0A74245F2366006BF40D /* Main.storyboard */ = {
