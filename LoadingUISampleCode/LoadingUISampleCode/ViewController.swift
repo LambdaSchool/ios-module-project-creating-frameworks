@@ -24,9 +24,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func presentLoadingScreen(_ sender: UIButton) {
+//        loadingScreen.animateUponLoad = false
+        
         present(loadingScreen, animated: true)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//            self.loadingScreen.startLoading()
+//        }
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+//            self.loadingScreen.stopLoading()
+//        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 9) {
             self.loadingScreen.dismiss(animated: true, completion: nil)
         }
     }

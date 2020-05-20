@@ -8,15 +8,19 @@
 
 import UIKit
 
-/// UIViewController that displays a spinning loading icon.
+/// UIViewController that displays a spinning loading icon. Begins animation upon loading by default.
 open class LoadingViewController: UIViewController {
     
     @IBOutlet weak var loadingView: IndeterminateLoadingView!
     
-    public override func viewDidLoad() {
+    public var animateUponLoad = true
+    
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
-        startLoading()
+        if animateUponLoad {
+            startLoading()
+        }
     }
     
     /// Manually starts the spinning animation for the given loading screen.
