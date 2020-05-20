@@ -10,17 +10,19 @@ import UIKit
 
 public class LoadingSymbol: UIView {
     
-    
-    public required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     //MARK: - Properties
     
     
     //MARK: - Methods
     public override func draw(_ rect: CGRect) {
         //TODO: Draw Circle
+        if let context = UIGraphicsGetCurrentContext() {
+            context.move(to: CGPoint(x: 0, y: 0))
+            context.addLine(to: CGPoint(x: 100, y: 100))
+            context.setStrokeColor(UIColor.black.cgColor)
+            context.setLineWidth(3.0)
+            context.strokePath()
+        }
     }
 
     func playAnimation() {

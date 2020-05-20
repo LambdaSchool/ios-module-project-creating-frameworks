@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD90D8DB2475C72100D30D49 /* Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = DD90D8D92475C72100D30D49 /* Loading.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD90D90E2475CD2C00D30D49 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90D90D2475CD2C00D30D49 /* Animation.swift */; };
+		DD90D90E2475CD2C00D30D49 /* LoadingSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90D90D2475CD2C00D30D49 /* LoadingSymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +26,7 @@
 		DD90D8D92475C72100D30D49 /* Loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
 		DD90D8DA2475C72100D30D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90D9012475C7E400D30D49 /* LoadingScreenTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingScreenTest.xcodeproj; path = ../LoadingScreenTest/LoadingScreenTest.xcodeproj; sourceTree = "<group>"; };
-		DD90D90D2475CD2C00D30D49 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		DD90D90D2475CD2C00D30D49 /* LoadingSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			children = (
 				DD90D8D92475C72100D30D49 /* Loading.h */,
 				DD90D8DA2475C72100D30D49 /* Info.plist */,
-				DD90D90D2475CD2C00D30D49 /* Animation.swift */,
+				DD90D90D2475CD2C00D30D49 /* LoadingSymbol.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD90D90E2475CD2C00D30D49 /* Animation.swift in Sources */,
+				DD90D90E2475CD2C00D30D49 /* LoadingSymbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,5 @@ class ViewController: UIViewController {
     }
 
     //MARK: - Properties
-    
-    
 }
 
