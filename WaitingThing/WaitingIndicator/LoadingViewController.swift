@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoadingViewController: UIViewController {
+public class LoadingViewController: UIViewController {
 
     public var spinView: IndeterminateLoadingView? = nil
     
