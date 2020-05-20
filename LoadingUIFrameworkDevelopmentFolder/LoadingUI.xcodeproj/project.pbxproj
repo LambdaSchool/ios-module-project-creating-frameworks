@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		18415CA72475C11D00888ECE /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 18415CA52475C11D00888ECE /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18780CF32475C814002A2001 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18780CF22475C814002A2001 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18415CA22475C11D00888ECE /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18415CA52475C11D00888ECE /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		18415CA62475C11D00888ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18780CF22475C814002A2001 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				18415CA52475C11D00888ECE /* LoadingUI.h */,
+				18780CF22475C814002A2001 /* LoadingViewController.swift */,
 				18415CA62475C11D00888ECE /* Info.plist */,
 			);
 			path = LoadingUI;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					18415CA12475C11D00888ECE = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18780CF32475C814002A2001 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		18415CAB2475C11D00888ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.markpoggi.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		18415CAC2475C11D00888ECE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
