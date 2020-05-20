@@ -25,6 +25,13 @@
 			remoteGlobalIDString = 18415CA22475C11D00888ECE;
 			remoteInfo = LoadingUI;
 		};
+		18780CED2475C2CE002A2001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18780CE42475C1BD002A2001 /* LoadingUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 18415CA12475C11D00888ECE;
+			remoteInfo = LoadingUI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,6 +134,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				18780CEE2475C2CE002A2001 /* PBXTargetDependency */,
 			);
 			name = LoadingUITest;
 			productName = LoadingUITest;
@@ -207,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18780CEE2475C2CE002A2001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingUI;
+			targetProxy = 18780CED2475C2CE002A2001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18415C8A2475C10700888ECE /* Main.storyboard */ = {
