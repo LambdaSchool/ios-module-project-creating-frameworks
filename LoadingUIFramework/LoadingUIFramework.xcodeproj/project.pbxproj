@@ -46,10 +46,18 @@
 		1D7178B42475E6D100ABAE94 /* LoadingUIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				1DC02E2D2475EBC900C052D8 /* LoadingUIFrameworkDevelopment */,
 				1D7178B52475E6D100ABAE94 /* LoadingUIFramework.h */,
 				1D7178B62475E6D100ABAE94 /* Info.plist */,
 			);
 			path = LoadingUIFramework;
+			sourceTree = "<group>";
+		};
+		1DC02E2D2475EBC900C052D8 /* LoadingUIFrameworkDevelopment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoadingUIFrameworkDevelopment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
