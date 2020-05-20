@@ -8,23 +8,33 @@
 
 import UIKit
 
-class LoadingViewController: UIViewController {
+public class LoadingViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Properties
 
-        // Do any additional setup after loading the view.
+    private lazy var loadingView: IndeterminateLoadingView = {
+        let width = min(view.center.x, view.center.y)
+
+        let loadingViewFrame = CGRect(x: view.center.x - (width / 2.0), y: view.center.y - (width / 2.0), width: width, height: width)
+        
+        let loadingView = IndeterminateLoadingView(frame: loadingViewFrame)
+
+        self.view.addSubview(loadingView)
+
+        return loadingView
+    }()
+
+    // MARK: - View Lifecycle
+
+    /// Presents animated circle graphic.
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        startLoading()
     }
-    
 
-    /*
-    // MARK: - Navigation
+    // MARK: - Methods
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func startLoading() {
+        loadingView.startAnimating()
     }
-    */
-
 }
