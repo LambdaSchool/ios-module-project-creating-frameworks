@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// UIViewController that displays a spinning loading icon.
 open class LoadingViewController: UIViewController {
     
     @IBOutlet weak var loadingView: IndeterminateLoadingView!
@@ -17,11 +18,13 @@ open class LoadingViewController: UIViewController {
         
         startLoading()
     }
-        
+    
+    /// Manually starts the spinning animation for the given loading screen.
     public func startLoading() {
         loadingView.startAnimating()
     }
     
+    /// Manually stops the spinning animation for the given loading screen.
     public func stopLoading() {
         loadingView.stopAnimating()
     }

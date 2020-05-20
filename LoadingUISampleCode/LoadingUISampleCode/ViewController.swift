@@ -10,6 +10,13 @@ import UIKit
 import LoadingUI
 
 class ViewController: UIViewController {
+    
+    let loadingScreen: LoadingViewController = {
+        let bundle = Bundle(for: LoadingViewController.self)
+        let VC = LoadingViewController(nibName: nil, bundle: bundle)
+        VC.modalPresentationStyle = .fullScreen
+        return VC
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,13 +24,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func presentLoadingScreen(_ sender: UIButton) {
-        let bundle = Bundle(for: LoadingViewController.self)
-        let VC = LoadingViewController(nibName: nil, bundle: bundle)
-        VC.modalPresentationStyle = .fullScreen
-        present(VC, animated: true)
+        present(loadingScreen, animated: true)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            VC.dismiss(animated: true, completion: nil)
+            self.loadingScreen.dismiss(animated: true, completion: nil)
         }
     }
 }

@@ -52,11 +52,11 @@
 		2B8E759A2475BA150013B8E9 /* LoadingUI */ = {
 			isa = PBXGroup;
 			children = (
+				2B8E75BA2475C4B80013B8E9 /* LoadingViewController.swift */,
+				2B8E75BB2475C4B80013B8E9 /* LoadingViewController.xib */,
 				2B8E75B02475BB8F0013B8E9 /* IndeterminateLoadingView.swift */,
 				2B8E759B2475BA150013B8E9 /* LoadingUI.h */,
 				2B8E759C2475BA150013B8E9 /* Info.plist */,
-				2B8E75BA2475C4B80013B8E9 /* LoadingViewController.swift */,
-				2B8E75BB2475C4B80013B8E9 /* LoadingViewController.xib */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
