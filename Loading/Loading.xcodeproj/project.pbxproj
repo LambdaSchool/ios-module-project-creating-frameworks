@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD90D8DB2475C72100D30D49 /* Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = DD90D8D92475C72100D30D49 /* Loading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD90D90E2475CD2C00D30D49 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD90D90D2475CD2C00D30D49 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		DD90D8D92475C72100D30D49 /* Loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
 		DD90D8DA2475C72100D30D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD90D9012475C7E400D30D49 /* LoadingScreenTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingScreenTest.xcodeproj; path = ../LoadingScreenTest/LoadingScreenTest.xcodeproj; sourceTree = "<group>"; };
+		DD90D90D2475CD2C00D30D49 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				DD90D8D92475C72100D30D49 /* Loading.h */,
 				DD90D8DA2475C72100D30D49 /* Info.plist */,
+				DD90D90D2475CD2C00D30D49 /* Animation.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -115,6 +118,7 @@
 				TargetAttributes = {
 					DD90D8D52475C72100D30D49 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -167,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD90D90E2475CD2C00D30D49 /* Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +301,7 @@
 		DD90D8DF2475C72100D30D49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LK46YD5GM2;
@@ -312,6 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BW.Loading;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,6 +327,7 @@
 		DD90D8E02475C72100D30D49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LK46YD5GM2;

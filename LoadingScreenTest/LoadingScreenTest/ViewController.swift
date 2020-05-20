@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Loading
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    //MARK: - Properties
+    var animation = Animation() 
 
 }
 
