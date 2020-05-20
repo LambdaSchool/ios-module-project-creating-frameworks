@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
 
     //MARK: - Properties
-    var animation = Animation() 
-
+    
+    
 }
 
