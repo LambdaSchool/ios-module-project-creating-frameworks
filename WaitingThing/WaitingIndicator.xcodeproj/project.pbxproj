@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C48408A62475C9AE0046E13C /* WaitingIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = C48408A42475C9AE0046E13C /* WaitingIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C48408B92475D0D10046E13C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48408B82475D0D10046E13C /* LoadingViewController.swift */; };
+		C48408BB2475D14B0046E13C /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48408BA2475D14B0046E13C /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C48408A12475C9AE0046E13C /* WaitingIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaitingIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48408A42475C9AE0046E13C /* WaitingIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaitingIndicator.h; sourceTree = "<group>"; };
 		C48408A52475C9AE0046E13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48408B82475D0D10046E13C /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		C48408BA2475D14B0046E13C /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				C48408A42475C9AE0046E13C /* WaitingIndicator.h */,
 				C48408A52475C9AE0046E13C /* Info.plist */,
+				C48408B82475D0D10046E13C /* LoadingViewController.swift */,
+				C48408BA2475D14B0046E13C /* IndeterminateLoadingView.swift */,
 			);
 			path = WaitingIndicator;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					C48408A02475C9AE0046E13C = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48408B92475D0D10046E13C /* LoadingViewController.swift in Sources */,
+				C48408BB2475D14B0046E13C /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		C48408AA2475C9AE0046E13C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZTTC6J4225;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yesTime.WaitingIndicator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		C48408AB2475C9AE0046E13C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZTTC6J4225;
