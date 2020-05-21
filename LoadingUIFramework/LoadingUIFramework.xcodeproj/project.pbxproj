@@ -58,6 +58,13 @@
 			path = LoadingUIFramework;
 			sourceTree = "<group>";
 		};
+		1DC02E2D2475EBC900C052D8 /* LoadingUIFrameworkDevelopment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoadingUIFrameworkDevelopment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
