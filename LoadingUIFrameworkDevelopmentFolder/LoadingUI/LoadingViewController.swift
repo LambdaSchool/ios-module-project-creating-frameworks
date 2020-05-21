@@ -10,6 +10,8 @@ import UIKit
 
 class LoadingViewController: UIViewController {
     
+    // MARK: - Properties
+    
     
 
     override func viewDidLoad() {
