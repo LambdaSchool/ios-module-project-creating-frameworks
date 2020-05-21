@@ -12,26 +12,21 @@ import LoadingUI
 class LoadingViewController: UIViewController {
     
     //MARK: - Properties
+    
+    public var loadView: IndeterminateLoadingView?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadView = IndeterminateLoadingView(frame: self.view.frame)
 
-   @IBOutlet weak var loadButton: UIButton!
-
-   var indeterminateLoadingView: IndeterminateLoadingView = {
-       let x = UIScreen.main.bounds.width / 2
-       let y = UIScreen.main.bounds.height / 2
-       let frame: CGRect = CGRect(origin: CGPoint(x: x, y: y), size: CGSize(width: 100, height: 100))
-       return IndeterminateLoadingView(frame: frame)
-   }()
-
-   override func viewDidLoad() {
-       super.viewDidLoad()
-
-   }
-
-    // MARK: - Actions
-   @IBAction func startLoad(_ sender: Any) {
-   }
-
-
+               if let loadView = loadView {
+                   view.addSubview(loadView)
+                   loadView.startAnimating()
+               }
+        
+    }
+    
 
 
 }
