@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D080A962476E23A003685F3 /* LoadingUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D080A952476E1DE003685F3 /* LoadingUIFramework.framework */; };
-		1D080A972476E23A003685F3 /* LoadingUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D080A952476E1DE003685F3 /* LoadingUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D7178CA2475E79F00ABAE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7178C92475E79F00ABAE94 /* AppDelegate.swift */; };
 		1D7178CC2475E79F00ABAE94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7178CB2475E79F00ABAE94 /* SceneDelegate.swift */; };
 		1D7178CE2475E79F00ABAE94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7178CD2475E79F00ABAE94 /* ViewController.swift */; };
@@ -17,16 +15,6 @@
 		1D7178D62475E7A200ABAE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7178D42475E7A200ABAE94 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1D080A942476E1DE003685F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D080A902476E1DE003685F3 /* LoadingUIFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D7178B22475E6D100ABAE94;
-			remoteInfo = LoadingUIFramework;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		1DC02E2C2475EAFC00C052D8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -34,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1D080A972476E23A003685F3 /* LoadingUIFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +29,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D080A902476E1DE003685F3 /* LoadingUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingUIFramework.xcodeproj; path = ../../LoadingUIFramework/LoadingUIFramework.xcodeproj; sourceTree = "<group>"; };
 		1D7178C62475E79F00ABAE94 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7178C92475E79F00ABAE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D7178CB2475E79F00ABAE94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,21 +44,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D080A962476E23A003685F3 /* LoadingUIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D080A912476E1DE003685F3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1D080A952476E1DE003685F3 /* LoadingUIFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1D7178BD2475E79F00ABAE94 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +84,6 @@
 		1D7178DD2475E7B500ABAE94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D080A902476E1DE003685F3 /* LoadingUIFramework.xcodeproj */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -159,28 +135,12 @@
 			mainGroup = 1D7178BD2475E79F00ABAE94;
 			productRefGroup = 1D7178C72475E79F00ABAE94 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1D080A912476E1DE003685F3 /* Products */;
-					ProjectRef = 1D080A902476E1DE003685F3 /* LoadingUIFramework.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D7178C52475E79F00ABAE94 /* TestApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1D080A952476E1DE003685F3 /* LoadingUIFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = LoadingUIFramework.framework;
-			remoteRef = 1D080A942476E1DE003685F3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D7178C42475E79F00ABAE94 /* Resources */ = {
