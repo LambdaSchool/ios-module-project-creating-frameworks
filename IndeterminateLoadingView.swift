@@ -8,9 +8,9 @@
 
 import UIKit
 
-class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         setupShapeLayer()
@@ -22,14 +22,14 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         setupShapeLayer()
     }
     
-    func startAnimating() {
+   public func startAnimating() {
         guard !isAnimating else { return }
         defer { isAnimating = true }
     
         startAnimation()
     }
     
-    func stopAnimating() {
+   public func stopAnimating() {
         guard isAnimating else { return }
         
         shouldStopAnimationOnNextCycle = true
@@ -41,7 +41,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         let thickness: CGFloat = 10.0
         
         shapeLayer.frame = layer.bounds
-        shapeLayer.strokeColor = UIColor.black.cgColor
+        shapeLayer.strokeColor = UIColor.blue.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = thickness
         shapeLayer.strokeStart = 0.0
@@ -75,7 +75,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - CAAnimationDelegate
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         guard !shouldStopAnimationOnNextCycle else {
             shouldStopAnimationOnNextCycle = false
             isAnimating = false
