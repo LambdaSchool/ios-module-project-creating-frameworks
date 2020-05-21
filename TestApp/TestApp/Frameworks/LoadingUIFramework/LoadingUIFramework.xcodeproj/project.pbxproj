@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3D432F2476E6B50076A944 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3D432E2476E6B50076A944 /* IndeterminateLoadingView.swift */; };
 		1D7178B72475E6D100ABAE94 /* LoadingUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7178B52475E6D100ABAE94 /* LoadingUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DC02E302476C03100C052D8 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC02E2F2476C03000C052D8 /* IndeterminateLoadingView.swift */; };
 		1DC02E322476C15000C052D8 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC02E312476C15000C052D8 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D3D432E2476E6B50076A944 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 		1D7178B22475E6D100ABAE94 /* LoadingUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7178B52475E6D100ABAE94 /* LoadingUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFramework.h; sourceTree = "<group>"; };
 		1D7178B62475E6D100ABAE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DC02E2F2476C03000C052D8 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 		1DC02E312476C15000C052D8 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,19 +50,12 @@
 		1D7178B42475E6D100ABAE94 /* LoadingUIFramework */ = {
 			isa = PBXGroup;
 			children = (
-				1DC02E2F2476C03000C052D8 /* IndeterminateLoadingView.swift */,
+				1D3D432E2476E6B50076A944 /* IndeterminateLoadingView.swift */,
 				1DC02E312476C15000C052D8 /* LoadingViewController.swift */,
 				1D7178B52475E6D100ABAE94 /* LoadingUIFramework.h */,
 				1D7178B62475E6D100ABAE94 /* Info.plist */,
 			);
 			path = LoadingUIFramework;
-			sourceTree = "<group>";
-		};
-		1DC02E2D2475EBC900C052D8 /* LoadingUIFrameworkDevelopment */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoadingUIFrameworkDevelopment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC02E302476C03100C052D8 /* IndeterminateLoadingView.swift in Sources */,
 				1DC02E322476C15000C052D8 /* LoadingViewController.swift in Sources */,
+				1D3D432F2476E6B50076A944 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
