@@ -14,13 +14,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBe-eT-hw3">
+                                <rect key="frame" x="69.5" y="433" width="275" height="30"/>
+                                <state key="normal" title="Push this to load nothing endlessly... 😉"/>
+                                <connections>
+                                    <segue destination="Sxz-7c-h9O" kind="presentation" id="jaq-pN-h9Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CBe-eT-hw3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uil-AF-4h1"/>
+                            <constraint firstItem="CBe-eT-hw3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dHI-Ja-VSJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="JRn-Rs-7AQ">
+            <objects>
+                <viewController id="Sxz-7c-h9O" customClass="LoadingViewController" customModule="LoadingUIFramework" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ykc-hR-gHx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9q5-bd-r5b"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWV-78-b8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="114"/>
         </scene>
     </scenes>
 </document>
