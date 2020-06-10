@@ -11,22 +11,45 @@ import LoadingUI
 
 class ViewController: UIViewController {
    
+   private var isLoaderAnimating = true
+   private let loadingVC = LoadingViewController()
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let loadingVC = LoadingViewController()
+      setUpSubviews()
+   }
+   
+   private func setUpSubviews() {
+      
+      // loader
       view.addSubview(loadingVC.view)
+      addChild(loadingVC)
+      loadingVC.didMove(toParent: self)
+      
       loadingVC.view.translatesAutoresizingMaskIntoConstraints = false
       NSLayoutConstraint.activate([
          loadingVC.view.centerXAnchor.constraint(equalTo: view.centerXAnchor),
          loadingVC.view.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-         loadingVC.view.widthAnchor.constraint(equalToConstant: 100),
-         loadingVC.view.heightAnchor.constraint(equalToConstant: 100),
       ])
       
       loadingVC.foregroundColor = .systemBlue
       loadingVC.startAnimating()
       
-      loadingVC.view.layer.borderWidth = 0.5
+      // button
+      let toggleButton = UIButton(type: .system)
+      toggleButton.setTitle("toggle animation", for: .normal)
+      toggleButton.addTarget(self, action: #selector(toggleLoader), for: .touchUpInside)
+      view.addSubview(toggleButton)
+      toggleButton.translatesAutoresizingMaskIntoConstraints = false
+      NSLayoutConstraint.activate([
+         toggleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+         toggleButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100),
+      ])
+   }
+   
+   @objc func toggleLoader() {
+      isLoaderAnimating.toggle()
+      isLoaderAnimating ? loadingVC.startAnimating() : loadingVC.stopAnimating()
    }
 }
