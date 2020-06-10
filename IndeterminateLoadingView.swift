@@ -9,6 +9,12 @@
 import UIKit
 
 class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+   
+   var foregroundColor: UIColor = .black {
+      didSet {
+         setupShapeLayer()
+      }
+   }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,7 +47,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         let thickness: CGFloat = 10.0
         
         shapeLayer.frame = layer.bounds
-        shapeLayer.strokeColor = UIColor.black.cgColor
+        shapeLayer.strokeColor = foregroundColor.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineWidth = thickness
         shapeLayer.strokeStart = 0.0
