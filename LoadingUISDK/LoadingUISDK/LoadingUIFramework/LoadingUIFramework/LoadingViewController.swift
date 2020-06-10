@@ -10,9 +10,15 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
-
+        startLoadingUI()
     }
 
+    public func startLoadingUI() {
+        let loadingUI = IndeterminateLoadingView(frame: self.view.frame)
+        view.addSubview(loadingUI)
+        loadingUI.startAnimating()
+    }
+    
 }

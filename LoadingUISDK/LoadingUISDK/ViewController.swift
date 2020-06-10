@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import LoadingUIFramework
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loadingUIButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadingUIButton.layer.cornerRadius = loadingUIButton.frame.height / 2
     }
 
 

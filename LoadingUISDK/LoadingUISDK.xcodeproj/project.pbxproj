@@ -71,7 +71,6 @@
 				C929703E248F39900038E8A7 /* LoadingUISDK */,
 				C92970E9249081770038E8A7 /* LoadingUIFramework */,
 				C929703D248F39900038E8A7 /* Products */,
-				C92970F0249081A40038E8A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,13 +110,6 @@
 				C92970EF249081870038E8A7 /* LoadingUIFramework.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C92970F0249081A40038E8A7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
