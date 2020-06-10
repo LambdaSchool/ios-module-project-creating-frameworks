@@ -24,6 +24,9 @@ class ViewController: UIViewController {
          loadingVC.view.heightAnchor.constraint(equalToConstant: 100),
       ])
       
+      loadingVC.foregroundColor = .systemBlue
+      loadingVC.startAnimating()
+      
       loadingVC.view.layer.borderWidth = 0.5
    }
 }

@@ -10,7 +10,11 @@ import UIKit
 
 public class LoadingViewController: UIViewController {
    
-   public var foregroundColor: UIColor = .systemBlue
+   public var foregroundColor: UIColor = .systemBlue {
+      didSet {
+         loadingView.foregroundColor = foregroundColor
+      }
+   }
    private let loadingView = IndeterminateLoadingView()
    
    public override func viewDidLoad() {
@@ -27,11 +31,10 @@ public class LoadingViewController: UIViewController {
    }
    
    public func startAnimating() {
-      // temp:
-      view.backgroundColor = foregroundColor
+      loadingView.startAnimating()
    }
    
    public func stopAnimating() {
-      
+      loadingView.stopAnimating()
    }
 }
