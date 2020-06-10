@@ -10,12 +10,19 @@ import UIKit
 import LoadingUI
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var loadViewButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showLoadingView" {
+            guard let destinationVC = segue.destination as? LoadingViewController else { return }
+        }
+    }
 
 }
 
