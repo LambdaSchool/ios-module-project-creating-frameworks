@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showLoadingView" {
             guard let destinationVC = segue.destination as? LoadingViewController else { return }
+            destinationVC.view = IndeterminateLoadingView()
         }
     }
 

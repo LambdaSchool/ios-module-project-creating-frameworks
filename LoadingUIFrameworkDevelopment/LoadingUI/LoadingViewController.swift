@@ -9,11 +9,11 @@
 import UIKit
 
 public class LoadingViewController: UIViewController {
-
+    
+    public var indeterminateLoadingView: IndeterminateLoadingView!
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
-        let indeterminateLoadingView = IndeterminateLoadingView()
         indeterminateLoadingView.startAnimating()
     }
-
 }
