@@ -15,6 +15,7 @@
 		B47B556D249AB11500A58FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47B556B249AB11500A58FED /* LaunchScreen.storyboard */; };
 		B47B557D249AB3E400A58FED /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47B557C249AB3E400A58FED /* LoadingUI.framework */; };
 		B47B557F249AB44F00A58FED /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B557E249AB44F00A58FED /* LoadingViewController.swift */; };
+		B47B5581249ABA6A00A58FED /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B5580249ABA6A00A58FED /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B47B556E249AB11500A58FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B47B557C249AB3E400A58FED /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47B557E249AB44F00A58FED /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		B47B5580249ABA6A00A58FED /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				B47B5560249AB11300A58FED /* AppDelegate.swift */,
 				B47B5562249AB11300A58FED /* SceneDelegate.swift */,
 				B47B5564249AB11300A58FED /* ViewController.swift */,
+				B47B5580249ABA6A00A58FED /* IndeterminateLoadingView.swift */,
 				B47B557E249AB44F00A58FED /* LoadingViewController.swift */,
 				B47B5566249AB11300A58FED /* Main.storyboard */,
 				B47B5569249AB11500A58FED /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B47B5565249AB11300A58FED /* ViewController.swift in Sources */,
+				B47B5581249ABA6A00A58FED /* IndeterminateLoadingView.swift in Sources */,
 				B47B5561249AB11300A58FED /* AppDelegate.swift in Sources */,
 				B47B5563249AB11300A58FED /* SceneDelegate.swift in Sources */,
 				B47B557F249AB44F00A58FED /* LoadingViewController.swift in Sources */,
