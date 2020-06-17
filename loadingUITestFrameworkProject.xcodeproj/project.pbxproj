@@ -13,8 +13,8 @@
 		50C4DCAD2499DC0400FE342E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C4DCAB2499DC0400FE342E /* Main.storyboard */; };
 		50C4DCAF2499DC0600FE342E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C4DCAE2499DC0600FE342E /* Assets.xcassets */; };
 		50C4DCB22499DC0600FE342E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C4DCB02499DC0600FE342E /* LaunchScreen.storyboard */; };
-		50C4DCC12499DD8C00FE342E /* LoadingUIFrameworkDevelopment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C4DCBF2499DD5900FE342E /* LoadingUIFrameworkDevelopment.framework */; };
-		50C4DCC22499DD8C00FE342E /* LoadingUIFrameworkDevelopment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50C4DCBF2499DD5900FE342E /* LoadingUIFrameworkDevelopment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50EA698F249AC18D008CA438 /* LoadingUIFrameworkDevelopment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C4DCBF2499DD5900FE342E /* LoadingUIFrameworkDevelopment.framework */; };
+		50EA6990249AC18D008CA438 /* LoadingUIFrameworkDevelopment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50C4DCBF2499DD5900FE342E /* LoadingUIFrameworkDevelopment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,23 +25,16 @@
 			remoteGlobalIDString = 50C4DC8E2499DBDD00FE342E;
 			remoteInfo = LoadingUIFrameworkDevelopment;
 		};
-		50C4DCC42499DDAC00FE342E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50C4DCBA2499DD5800FE342E /* LoadingUIFrameworkDevelopment.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 50C4DC8D2499DBDD00FE342E;
-			remoteInfo = LoadingUIFrameworkDevelopment;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		50C4DCC32499DD8C00FE342E /* Embed Frameworks */ = {
+		50EA6991249AC18D008CA438 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				50C4DCC22499DD8C00FE342E /* LoadingUIFrameworkDevelopment.framework in Embed Frameworks */,
+				50EA6990249AC18D008CA438 /* LoadingUIFrameworkDevelopment.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C4DCC12499DD8C00FE342E /* LoadingUIFrameworkDevelopment.framework in Frameworks */,
+				50EA698F249AC18D008CA438 /* LoadingUIFrameworkDevelopment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +71,7 @@
 				50C4DCB92499DD2A00FE342E /* FrameWorks */,
 				50C4DCA42499DC0400FE342E /* loadingUITestFrameworkProject */,
 				50C4DCA32499DC0400FE342E /* Products */,
-				50C4DCC02499DD8C00FE342E /* Frameworks */,
+				50EA698E249AC18D008CA438 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +113,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50C4DCC02499DD8C00FE342E /* Frameworks */ = {
+		50EA698E249AC18D008CA438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -137,12 +130,11 @@
 				50C4DC9E2499DC0400FE342E /* Sources */,
 				50C4DC9F2499DC0400FE342E /* Frameworks */,
 				50C4DCA02499DC0400FE342E /* Resources */,
-				50C4DCC32499DD8C00FE342E /* Embed Frameworks */,
+				50EA6991249AC18D008CA438 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50C4DCC52499DDAC00FE342E /* PBXTargetDependency */,
 			);
 			name = loadingUITestFrameworkProject;
 			productName = loadingUITestFrameworkProject;
@@ -223,14 +215,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50C4DCC52499DDAC00FE342E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LoadingUIFrameworkDevelopment;
-			targetProxy = 50C4DCC42499DDAC00FE342E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50C4DCAB2499DC0400FE342E /* Main.storyboard */ = {

@@ -7,14 +7,25 @@
 //
 
 import UIKit
+import LoadingUIFrameworkDevelopment
 
-class ViewController: UIViewController {
+class LoadingAnimationViewController: LoadingViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        startAnimating()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        stopAnimating()
+    }
+    
+
+    
 
 }
 

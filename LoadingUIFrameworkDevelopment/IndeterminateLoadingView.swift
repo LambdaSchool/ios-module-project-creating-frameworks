@@ -1,14 +1,15 @@
 //
-//  LoadingView.swift
-//  LoadingUI
+//  IndeterminateLoadingView.swift
+//  LoadingUIFrameworkDevelopment
 //
-//  Created by Andrew R Madsen on 9/18/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
+//  Created by Kelson Hartle on 6/17/20.
+//  Copyright © 2020 Kelson Hartle. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -75,7 +76,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - CAAnimationDelegate
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         guard !shouldStopAnimationOnNextCycle else {
             shouldStopAnimationOnNextCycle = false
             isAnimating = false

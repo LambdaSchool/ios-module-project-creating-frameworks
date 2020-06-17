@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		50C4DC932499DBDD00FE342E /* LoadingUIFrameworkDevelopment.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C4DC912499DBDD00FE342E /* LoadingUIFrameworkDevelopment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50C4DCCE249A96B000FE342E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4DCCD249A96B000FE342E /* LoadingViewController.swift */; };
+		50C4DCD3249AB7C500FE342E /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4DCD2249AB7C500FE342E /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50C4DC8E2499DBDD00FE342E /* LoadingUIFrameworkDevelopment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUIFrameworkDevelopment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C4DC912499DBDD00FE342E /* LoadingUIFrameworkDevelopment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUIFrameworkDevelopment.h; sourceTree = "<group>"; };
 		50C4DC922499DBDD00FE342E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C4DCCD249A96B000FE342E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		50C4DCD2249AB7C500FE342E /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				50C4DC912499DBDD00FE342E /* LoadingUIFrameworkDevelopment.h */,
 				50C4DC922499DBDD00FE342E /* Info.plist */,
+				50C4DCCD249A96B000FE342E /* LoadingViewController.swift */,
+				50C4DCD2249AB7C500FE342E /* IndeterminateLoadingView.swift */,
 			);
 			path = LoadingUIFrameworkDevelopment;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					50C4DC8D2499DBDD00FE342E = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C4DCCE249A96B000FE342E /* LoadingViewController.swift in Sources */,
+				50C4DCD3249AB7C500FE342E /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +269,10 @@
 		50C4DC972499DBDD00FE342E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6WA5TYMFND;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +287,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.KelsonHartle.LoadingUIFrameworkDevelopment;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,8 +296,10 @@
 		50C4DC982499DBDD00FE342E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6WA5TYMFND;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
