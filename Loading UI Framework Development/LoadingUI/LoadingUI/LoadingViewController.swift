@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class LoadingViewController: UIViewController {
+open class LoadingViewController: UIViewController {
     //MARK: - Properties -
     private var loadingRing: IndeterminateLoadingView?
     
