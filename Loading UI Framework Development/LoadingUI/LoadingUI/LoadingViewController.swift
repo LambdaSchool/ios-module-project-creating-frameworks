@@ -14,7 +14,7 @@ open class LoadingViewController: UIViewController {
     
     
     //MARK: - Life Cycles -
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
     }
     
