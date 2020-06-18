@@ -21,7 +21,7 @@ open class LoadingViewController: UIViewController {
     
     //MARK: - Methods -
     ///must call new ring before calling start or stop ring on screen.
-    private func newRing() {
+    public func newRing() {
         let ringBounds = CGRect(x: 25, y: 25, width: 75, height: 68)
         self.loadingRing = IndeterminateLoadingView(frame: ringBounds)
         loadingRing?.translatesAutoresizingMaskIntoConstraints = false
