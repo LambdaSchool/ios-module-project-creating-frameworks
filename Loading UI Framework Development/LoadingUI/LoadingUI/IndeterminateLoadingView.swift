@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     // MARK: - Properties -
     private(set) var isAnimating = false
     private let shapeLayer = CAShapeLayer()
@@ -28,6 +28,30 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     }
     
     
+    // MARK: - CAAnimationDelegate
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        guard !shouldStopAnimationOnNextCycle else {
+            shouldStopAnimationOnNextCycle = false
+            isAnimating = false
+            return
+        }
+        
+        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeEnd" {
+            shapeLayer.strokeStart = 0.0
+            shapeLayer.strokeEnd = 1.0
+            shapeLayer.removeAllAnimations()
+            startAnimation(for: "strokeStart", timing: .easeOut)
+        }
+        
+        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeStart" {
+            shapeLayer.strokeStart = 0.0
+            shapeLayer.strokeEnd = 0.0
+            shapeLayer.removeAllAnimations()
+            startAnimation(for: "strokeEnd", timing: .easeIn)
+        }
+    }
+    
+    
     //MARK: - Actions -
     func startAnimating() {
         guard !isAnimating else { return }
@@ -43,7 +67,6 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     }
     
     // MARK: - Private
-    
     private func setupShapeLayer() {
         let thickness: CGFloat = 10.0
         
@@ -78,29 +101,6 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         animation.isRemovedOnCompletion = false
         animation.timingFunction = CAMediaTimingFunction(name: timing)
         shapeLayer.add(animation, forKey: keyPath)
-    }
-    
-    // MARK: - CAAnimationDelegate
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        guard !shouldStopAnimationOnNextCycle else {
-            shouldStopAnimationOnNextCycle = false
-            isAnimating = false
-            return
-        }
-        
-        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeEnd" {
-            shapeLayer.strokeStart = 0.0
-            shapeLayer.strokeEnd = 1.0
-            shapeLayer.removeAllAnimations()
-            startAnimation(for: "strokeStart", timing: .easeOut)
-        }
-        
-        if let anim = anim as? CABasicAnimation, anim.keyPath == "strokeStart" {
-            shapeLayer.strokeStart = 0.0
-            shapeLayer.strokeEnd = 0.0
-            shapeLayer.removeAllAnimations()
-            startAnimation(for: "strokeEnd", timing: .easeIn)
-        }
     }
 }
 

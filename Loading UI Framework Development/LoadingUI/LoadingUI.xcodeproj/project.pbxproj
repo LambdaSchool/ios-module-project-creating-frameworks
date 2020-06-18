@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5EDF7A64249ABBC40081E62C /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EDF7A62249ABBC40081E62C /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EDF7A8B249AF51B0081E62C /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF7A8A249AF51B0081E62C /* IndeterminateLoadingView.swift */; };
+		5EDF7A8D249B09040081E62C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF7A8C249B09040081E62C /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		5EDF7A62249ABBC40081E62C /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		5EDF7A63249ABBC40081E62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EDF7A8A249AF51B0081E62C /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		5EDF7A8C249B09040081E62C /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				5EDF7A62249ABBC40081E62C /* LoadingUI.h */,
 				5EDF7A63249ABBC40081E62C /* Info.plist */,
 				5EDF7A8A249AF51B0081E62C /* IndeterminateLoadingView.swift */,
+				5EDF7A8C249B09040081E62C /* LoadingViewController.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EDF7A8B249AF51B0081E62C /* IndeterminateLoadingView.swift in Sources */,
+				5EDF7A8D249B09040081E62C /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
