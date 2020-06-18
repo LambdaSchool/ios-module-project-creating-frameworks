@@ -7,13 +7,20 @@
 //
 
 import UIKit
-import LoadingUI 
+import LoadingUI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        startSpinningCircle() 
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        stopSpinningCircle()
     }
 
 

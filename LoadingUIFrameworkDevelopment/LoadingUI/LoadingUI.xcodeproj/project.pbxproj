@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FE422958249C1DAD005D746B /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = FE422956249C1DAD005D746B /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEBE89C3249C24B200930062 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE89C2249C24B200930062 /* LoadingViewController.swift */; };
+		FEBE89C5249C254C00930062 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE89C4249C254C00930062 /* IndeterminateLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE422953249C1DAD005D746B /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE422956249C1DAD005D746B /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		FE422957249C1DAD005D746B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBE89C2249C24B200930062 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		FEBE89C4249C254C00930062 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				FE422956249C1DAD005D746B /* LoadingUI.h */,
 				FE422957249C1DAD005D746B /* Info.plist */,
+				FEBE89C2249C24B200930062 /* LoadingViewController.swift */,
+				FEBE89C4249C254C00930062 /* IndeterminateLoadingView.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					FE422952249C1DAD005D746B = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBE89C3249C24B200930062 /* LoadingViewController.swift in Sources */,
+				FEBE89C5249C254C00930062 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		FE42295C249C1DAD005D746B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HarmonyRadley.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +294,7 @@
 		FE42295D249C1DAD005D746B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
