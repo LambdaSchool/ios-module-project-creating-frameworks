@@ -20,7 +20,7 @@ open class LoadingViewController: UIViewController {
     
     
     //MARK: - Methods -
-    ///must call new ring before calling start or stop ring on screen.
+    ///Must call new ring before calling start ring on screen. Consecutive instances of a ring will need newRing run each time.
     public func newRing() {
         let ringBounds = CGRect(x: 25, y: 25, width: 75, height: 68)
         self.loadingRing = IndeterminateLoadingView(frame: ringBounds)
@@ -37,6 +37,7 @@ open class LoadingViewController: UIViewController {
     
     public func stopRing() {
         loadingRing?.stopAnimating()
+        loadingRing?.removeFromSuperview()
     }
     
 

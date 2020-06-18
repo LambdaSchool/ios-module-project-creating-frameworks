@@ -15,6 +15,7 @@ class TestRingViewController: LoadingViewController {
     
     var isTesting: Bool = false
     
+    
     //MARK: - Life Cycles -
     override func viewDidLoad() {
         super.viewDidLoad()
