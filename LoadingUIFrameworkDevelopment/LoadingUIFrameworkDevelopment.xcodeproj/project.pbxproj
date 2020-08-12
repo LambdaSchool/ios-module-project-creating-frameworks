@@ -16,6 +16,8 @@
 		0B76F17524E3853100F52FB9 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B76F17324E3853100F52FB9 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B76F17824E3853100F52FB9 /* LoadingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B76F17124E3853100F52FB9 /* LoadingUI.framework */; };
 		0B76F17924E3853100F52FB9 /* LoadingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B76F17124E3853100F52FB9 /* LoadingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0B76F17F24E3861900F52FB9 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F17E24E3861900F52FB9 /* IndeterminateLoadingView.swift */; };
+		0B76F18124E3883F00F52FB9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76F18024E3883F00F52FB9 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		0B76F17124E3853100F52FB9 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B76F17324E3853100F52FB9 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		0B76F17424E3853100F52FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B76F17E24E3861900F52FB9 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		0B76F18024E3883F00F52FB9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				0B76F15724E384F300F52FB9 /* LoadingUIFrameworkDevelopment */,
-				0B76F17224E3853100F52FB9 /* LoadingUI */,
 				0B76F15624E384F300F52FB9 /* Products */,
+				0B76F17224E3853100F52FB9 /* LoadingUI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +103,7 @@
 				0B76F15824E384F300F52FB9 /* AppDelegate.swift */,
 				0B76F15A24E384F300F52FB9 /* SceneDelegate.swift */,
 				0B76F15C24E384F300F52FB9 /* ViewController.swift */,
+				0B76F18024E3883F00F52FB9 /* LoadingViewController.swift */,
 				0B76F15E24E384F300F52FB9 /* Main.storyboard */,
 				0B76F16124E384F600F52FB9 /* Assets.xcassets */,
 				0B76F16324E384F600F52FB9 /* LaunchScreen.storyboard */,
@@ -110,6 +115,7 @@
 		0B76F17224E3853100F52FB9 /* LoadingUI */ = {
 			isa = PBXGroup;
 			children = (
+				0B76F17E24E3861900F52FB9 /* IndeterminateLoadingView.swift */,
 				0B76F17324E3853100F52FB9 /* LoadingUI.h */,
 				0B76F17424E3853100F52FB9 /* Info.plist */,
 			);
@@ -182,6 +188,7 @@
 					};
 					0B76F17024E3853100F52FB9 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -232,6 +239,7 @@
 				0B76F15D24E384F300F52FB9 /* ViewController.swift in Sources */,
 				0B76F15924E384F300F52FB9 /* AppDelegate.swift in Sources */,
 				0B76F15B24E384F300F52FB9 /* SceneDelegate.swift in Sources */,
+				0B76F18124E3883F00F52FB9 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B76F17F24E3861900F52FB9 /* IndeterminateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +398,7 @@
 		0B76F16A24E384F600F52FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoadingUIFrameworkDevelopment/Info.plist;
@@ -406,6 +416,7 @@
 		0B76F16B24E384F600F52FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoadingUIFrameworkDevelopment/Info.plist;
@@ -423,6 +434,7 @@
 		0B76F17B24E3853100F52FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -439,6 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.claytonwatkins.LoadingUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -449,6 +462,7 @@
 		0B76F17C24E3853100F52FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
