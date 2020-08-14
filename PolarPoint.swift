@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct PolarPoint {
     
@@ -47,3 +48,4 @@ extension CGPoint {
         self.init(x: x, y: y)
     }
 }
+
