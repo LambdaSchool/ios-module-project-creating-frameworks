@@ -10,7 +10,7 @@ import LoadingUI
 
 class ViewController: UIViewController {
 
-    var animationDuration: CGFloat = 5
+    var animationDuration: Double = 5
     let loadingViewController = LoadingViewController()
     
     @IBOutlet weak var animationLengthLabel: UILabel!
@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func animationLengthSelected(_ sender: UISlider) {
-        animationDuration = CGFloat(sender.value)
-        loadingViewController.duration = CGFloat(sender.value)
+        animationDuration = Double(sender.value)
+        loadingViewController.duration = Double(sender.value)
         let labelValue = Int(sender.value)
         if labelValue > 1 {
             animationLengthLabel.text = "Animation Length: \(labelValue) seconds"
