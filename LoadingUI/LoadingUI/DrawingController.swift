@@ -9,7 +9,7 @@ import Foundation
 import SceneKit
 
 internal class DrawingController {
-    private let cupColor = UIColor(red: 0/255, green: 200/255, blue: 200/255, alpha: 0.8)
+    private let cupColor = UIColor(red: 0/255, green: 200/255, blue: 200/255, alpha: 0.75)
     private let teaColor = UIColor(red: 180/255, green: 120/255, blue: 50/255, alpha: 1)
     internal let tea = SCNCylinder(radius: 1.4, height: 0)
     internal var teaNode = SCNNode()

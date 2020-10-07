@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TeaParticle: UIView {
+internal class TeaParticle: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
