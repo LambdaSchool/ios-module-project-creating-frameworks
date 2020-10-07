@@ -93,7 +93,7 @@ internal class DrawingController {
         stream.particleColorVariation = SCNVector4(0.01, 0.01, 0.01, 0)
         stream.particleSize = 0.15
         stream.particleSizeVariation = 0.05
-        stream.birthRate = 200
+        stream.birthRate = CGFloat((duration * 100))
         stream.isBlackPassEnabled = true
         stream.emissionDuration = CGFloat(duration - 1.5)
         stream.particleLifeSpan = 1
