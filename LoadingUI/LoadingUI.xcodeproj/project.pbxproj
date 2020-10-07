@@ -10,6 +10,7 @@
 		1AC4F1DF252C23550076088E /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC4F1DD252C23550076088E /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AC4F214252C25FC0076088E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4F213252C25FC0076088E /* LoadingViewController.swift */; };
 		1AC4F223252D02910076088E /* TeaParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4F222252D02910076088E /* TeaParticle.swift */; };
+		1AC4F227252D542F0076088E /* DrawingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4F226252D542F0076088E /* DrawingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		1AC4F1DE252C23550076088E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC4F213252C25FC0076088E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		1AC4F222252D02910076088E /* TeaParticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaParticle.swift; sourceTree = "<group>"; };
+		1AC4F226252D542F0076088E /* DrawingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				1AC4F1DE252C23550076088E /* Info.plist */,
 				1AC4F213252C25FC0076088E /* LoadingViewController.swift */,
 				1AC4F222252D02910076088E /* TeaParticle.swift */,
+				1AC4F226252D542F0076088E /* DrawingController.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC4F227252D542F0076088E /* DrawingController.swift in Sources */,
 				1AC4F223252D02910076088E /* TeaParticle.swift in Sources */,
 				1AC4F214252C25FC0076088E /* LoadingViewController.swift in Sources */,
 			);

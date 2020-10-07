@@ -10,8 +10,10 @@ import UIKit
 class TeaParticle: UIView {
     
     override init(frame: CGRect) {
-        super.init(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-        backgroundColor = .brown
+        super.init(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        backgroundColor = UIColor(red: 180/255, green: 120/255, blue: 50/255, alpha: 1)
+        layer.cornerRadius = 5
+        layer.masksToBounds = true
     }
     
     required init?(coder: NSCoder) {
