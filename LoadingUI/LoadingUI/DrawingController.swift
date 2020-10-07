@@ -32,9 +32,7 @@ internal class DrawingController {
         teaNode = SCNNode(geometry: tea)
         teaNode.position = SCNVector3(0, -1.5, 0)
         cupNode.addChildNode(teaNode)
-        
-//        perform(#selector(fill), with: nil, afterDelay: TimeInterval(1.75))
-        
+                
         let teapot = SCNCone(topRadius: 1, bottomRadius: 2, height: 3.5)
         teapot.materials.first?.diffuse.contents = UIColor.systemIndigo
         let teapotNode = SCNNode(geometry: teapot)
