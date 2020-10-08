@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C9BFF84252D0DE10017942D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BFF83252D0DE10017942D /* LoadingViewController.swift */; };
 		7CBBBAA7252D02B1003CA8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBBAA6252D02B1003CA8B2 /* AppDelegate.swift */; };
 		7CBBBAA9252D02B1003CA8B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBBAA8252D02B1003CA8B2 /* SceneDelegate.swift */; };
 		7CBBBAAB252D02B1003CA8B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBBAAA252D02B1003CA8B2 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7C9BFF83252D0DE10017942D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		7CBBBAA3252D02B1003CA8B2 /* LoadingUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBBBAA6252D02B1003CA8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CBBBAA8252D02B1003CA8B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CADECF7252D5169005037E3 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				7CBBBAA6252D02B1003CA8B2 /* AppDelegate.swift */,
+				7CBBBAA8252D02B1003CA8B2 /* SceneDelegate.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
 		7CBBBA9A252D02B1003CA8B2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +96,13 @@
 		7CBBBAA5252D02B1003CA8B2 /* LoadingUITest */ = {
 			isa = PBXGroup;
 			children = (
-				7CBBBAA6252D02B1003CA8B2 /* AppDelegate.swift */,
-				7CBBBAA8252D02B1003CA8B2 /* SceneDelegate.swift */,
 				7CBBBAAA252D02B1003CA8B2 /* ViewController.swift */,
+				7C9BFF83252D0DE10017942D /* LoadingViewController.swift */,
 				7CBBBAAC252D02B1003CA8B2 /* Main.storyboard */,
-				7CBBBAAF252D02B4003CA8B2 /* Assets.xcassets */,
 				7CBBBAB1252D02B4003CA8B2 /* LaunchScreen.storyboard */,
+				7CBBBAAF252D02B4003CA8B2 /* Assets.xcassets */,
 				7CBBBAB4252D02B4003CA8B2 /* Info.plist */,
+				7CADECF7252D5169005037E3 /* Lifecycle */,
 			);
 			path = LoadingUITest;
 			sourceTree = "<group>";
@@ -202,6 +213,7 @@
 				7CBBBAAB252D02B1003CA8B2 /* ViewController.swift in Sources */,
 				7CBBBAA7252D02B1003CA8B2 /* AppDelegate.swift in Sources */,
 				7CBBBAA9252D02B1003CA8B2 /* SceneDelegate.swift in Sources */,
+				7C9BFF84252D0DE10017942D /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
