@@ -1,16 +1,19 @@
 //
-//  LoadingView.swift
+//  IndeterminateLoadingView.swift
 //  LoadingUI
 //
-//  Created by Andrew R Madsen on 9/18/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
+//  Created by BrysonSaclausa on 10/6/20.
 //
 
+import Foundation
 import UIKit
 
-class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
-    override init(frame: CGRect) {
+public class IndeterminateLoadingView: UIView, CAAnimationDelegate {
+    
+    
+
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupShapeLayer()
@@ -22,14 +25,14 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         setupShapeLayer()
     }
     
-    func startAnimating() {
+    public func startAnimating() {
         guard !isAnimating else { return }
         defer { isAnimating = true }
     
         startAnimation()
     }
     
-    func stopAnimating() {
+    public func stopAnimating() {
         guard isAnimating else { return }
         
         shouldStopAnimationOnNextCycle = true
@@ -55,7 +58,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
         shapeLayer.path = path.cgPath
     }
     
-    private func startAnimation() {
+    public func startAnimation() {
         shouldStopAnimationOnNextCycle = false
         shapeLayer.strokeStart = 0.0
         shapeLayer.strokeEnd = 0.0
@@ -75,7 +78,7 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
     
     // MARK: - CAAnimationDelegate
     
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         guard !shouldStopAnimationOnNextCycle else {
             shouldStopAnimationOnNextCycle = false
             isAnimating = false

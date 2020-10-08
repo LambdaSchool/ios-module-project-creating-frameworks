@@ -37,7 +37,7 @@ Start by creating a new framework project. You should also set up a test app so 
 
 When creating a new API component for a framework, or even in app code, it's helpful to start by figuring out the external interface you want to expose _before_ you start implementing the API's functionality.
 
-1. Create a subclass of `UIViewController` called `LoadingViewController`. Should this be public, internal, or private?
+1. Create a subclass of `UIViewController` called `LoadingViewController`. Should this be public, internal, or private? 
 2. Add stubs for the `public` methods you want to expose on `LoadingViewController`. These need not be final. You can always refine the interface as you go, but you want to start with something to guide you
 3. Are there any other types, functions, or methods you should expose publicly in your framework?
 4. Write code in your app (`LoadingUITest`) to use `LoadingViewController`. How you do this is up to you, but you might make it so that a button on the view controller modally presents a `LoadingViewController` and starts animating it. Your goal here is to allow you to test your framework code, but also to get an idea of how the API you're creating feels in practice.
